@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{816BD9C7-F8B0-4856-912C-944260EEA986}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NDC2010</RootNamespace>
+    <AssemblyName>NDC2010</AssemblyName>
+    <MtouchSdkVersion>3.0</MtouchSdkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BundleDisplayName>NDC 2010</BundleDisplayName>
+    <BundleIcon>Icon.png</BundleIcon>
+    <BundleIdentifier>net.alexyork.ndc2010</BundleIdentifier>
+    <BundleVersion>1.0.0</BundleVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignProvision>DC659520-7E55-4345-9777-6A0AEC64B734</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Distribution</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <MtouchI18n />
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignProvision>AB514926-B40B-4C0E-93B9-28C3BAEF2F0E</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchLink>Full</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="AppDelegateUIBuilder.cs" />
+    <Compile Include="Sessions\SessionsTableViewController.cs" />
+    <Compile Include="Speakers\SpeakersTableViewController.cs" />
+    <Compile Include="Twitter\TwitterTableViewController.cs" />
+    <Compile Include="Sessions\DaysTableViewController.cs" />
+    <Compile Include="Sessions\SessionTableViewController.cs" />
+    <Compile Include="DefaultSessionsRepository.cs" />
+    <Compile Include="Speakers\SpeakerTableViewController.cs" />
+    <Compile Include="Twitter\TweetCellController.xib.cs">
+      <DependentUpon>TableCell\TweetCellController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Twitter\TweetCellController.xib.designer.cs">
+      <DependentUpon>TableCell\TweetCellController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Reachability.cs" />
+    <Compile Include="NetworkActivity.cs" />
+    <Compile Include="StopwatchTimer.cs" />
+    <Compile Include="NDC2010DetailsTableViewSource.cs" />
+    <Compile Include="NDC2010NavigationController.cs" />
+    <Compile Include="NDC2010TableViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sessions\" />
+    <Folder Include="Speakers\" />
+    <Folder Include="Twitter\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sessions\TabIcon.png" />
+    <Content Include="Speakers\TabIcon.png" />
+    <Content Include="Twitter\TabIcon.png" />
+    <Content Include="App_Data\sessions.xml" />
+    <Content Include="Default.png" />
+    <Content Include="Images\background.png" />
+    <Content Include="Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Twitter\TweetCellController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDC2010.Logic\NDC2010.Logic.csproj">
+      <Project>{F4090AB0-145B-4BE8-9962-81D10B815A91}</Project>
+      <Name>NDC2010.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDC2010.Model\NDC2010.Model.csproj">
+      <Project>{7DA1FBBF-1EB5-4D22-A5E1-49BA1219D9EB}</Project>
+      <Name>NDC2010.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sessions>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info>Jon Skeet is a Java developer for Google in London, but he plays with C# (somewhat obsessively) in his free time</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>1</day>
+    <track>1</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Strategies Against Architecture</title>
+    <speakers>
+      <speaker>
+        <name>Kevlin Henney</name>
+        <info>Kevlin Henney is an independent consultant and trainer, based in the UK but consulting and training throughout Europe and further afield. The focus of his work is in programming languages, OO, patterns, software architecture and development process.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>1</track>
+    <description>Good architecture requires good vision and good people, but there are times when actions and decisions taken with the best of intent begin to work against an architecture. Instead of helping a system achieve a long life, speculation about reuse, flexibility and generality can bring a system to an early grave, weighing the codebase down with accidental complexity that invites workarounds and, ultimately, a new ad hoc architectural style. Documentation intended to be helpful becomes shelfware, ignored equally by its authors and its prospective readership. Dysfunctional memes in code and tests go unchecked because the detail of code is not considered a part of the architecture. Instead of stability and responsiveness, an architecture achieves stasis and loses reflex.This session looks at the reality of how development process and practices interact with the grander vision of architecture, the pitfalls of "architect as cop" and how to employ speculation and uncertainty to a system's advantage.</description>
+  </session>
+  <session>
+    <title>Intro to F#</title>
+    <speakers>
+      <speaker>
+        <name>Amanda Laucher</name>
+        <info>Amanda Laucher is a ThoughtWorker. She enjoys teaching others and helping clients implement all sorts of bleeding edge solutions. Amanda is author of F# In Action. She resides in Chicago and speaks at technical conferences all over the world.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>2</track>
+    <description>Welcome to F# 101. This new language is getting quite a bit of airtime by .NET alphageeks.. This is a discussion for those who have not yet written their first F# application. We’ll look at VS2010, the F# REPL, and why you would want to get started with F# at all. We’ll discuss what makes F# a functional language and we’ll break down the syntax and conceptual barriers. By the end of this discussion you should feel comfortable starting a new F# project and diving into your first application.</description>
+  </session>
+  <session>
+    <title>Cloud reality check: Creating a real cloud market between Amazon, Microsoft and Co</title>
+    <speakers>
+      <speaker>
+        <name>Erich Eichinger</name>
+        <info>Erich Eichinger is working as a Consultant and Developer at Open Credo Ltd, UK.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>3</track>
+    <description>Cloud Computing promises to enable cost reduction by dynamically scaling resource consumption according to your needs. In theory this sounds great, but as long as you do not have a clear understanding of your computing and storage utilization as well as a transparent market combined with the ability to move between vendors, you are unlikely to fully capitalise the potential of cloud computing. This talk focuses on the business perspective of successful cloud computing, where cloud computing already stands and what it needs to successfully integrate cloud computing into your IT strategy.</description>
+  </session>
+  <session>
+    <title>The Myth of Developer Productivity</title>
+    <speakers>
+      <speaker>
+        <name>Scott Bellware</name>
+        <info>Scott Bellware is a software product designer, developer, manager, and agile coach living in Austin, Texas. He is a five-time recipient of Microsoft's Most Valuable Professional award and the founder of the AgileATX community of agile software practitioners in Austin.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>4</track>
+    <description>Most uses of the term "Developer Productivity" really refer to "Developer Efficiency" and obscure meaningful and actionable understandings of "Productivity". This presentation examines the current myths of Developer Productivity and recasts some specific examples of developer productivity misnomers and discusses why they are often mere efficiencies that often reduce actual productivity. Lean Software Development techniques and principles are used to create a picture of the hidden productivity sink holes in software development practices and that are often created and reinforced by the shape and behavior of software development organizations and teams.</description>
+  </session>
+  <session>
+    <title>Seven Key Success Factors for Agile Testing</title>
+    <speakers>
+      <speaker>
+        <name>Lisa Crispin</name>
+        <info>Lisa Crispin is an agile testing coach and practitioner. She is the co-author, with Janet Gregory, of Agile Testing: A Practical Guide for Testers and Agile Teams. She specializes in showing testers and agile teams how testers can add value and how to guide development with business-facing tests.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>5</track>
+    <description>Agile development approaches present unique challenges for testers and test teams. Working in short iterations, often with limited written requirements, agile development teams can leave traditional testers behind. Common testing-related activities such as user acceptance testing, testing inter-product relationships, and installation testing need different approaches to fit into agile projects. Lisa Crispin explains seven key factors for testing success within agile projects that you can also apply to more traditional methodologies. Using a whole team approach and adopting an agile testing mindset are among the important components of a successful agile testing strategy. Learn how to overcome cultural and organizational obstacles and barriers to success in areas such as test automation. Discover the seven critical factors that provide a foundation for building your team's focus on quality and that deliver maximum value to your business.</description>
+  </session>
+  <session>
+    <title>Advanced T-SQL Tips &amp; Tricks</title>
+    <speakers>
+      <speaker>
+        <name>Itzik Ben-Gan</name>
+        <info>Itzik Ben-Gan is a Mentor and Co-Founder of Solid Quality Mentors. A SQL Server Microsoft MVP since 1999, Itzik has delivered numerous training events around the world focused on T-SQL Querying, Query Tuning and Programming.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>6</track>
+    <description>This session covers advanced T-SQL tips and tricks. It will demonstrate how to solve common T-SQL problems elegantly and efficiently. The session will cover techniques in SQL Server 2005, and where relevant it will also cover techniques that involve new features and enhancements in SQL Server 2008. The purpose of the session is not only to learn tips and tricks, rather also to have some fun with T-SQL.</description>
+  </session>
+  <session>
+    <title>Multicore - The Future of Computing</title>
+    <speakers>
+      <speaker>
+        <name>Terje Mathisen</name>
+        <info>Terje has worked with system-level programming and optimization since 1981.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>1</day>
+    <track>7</track>
+    <description>Since hitting both the memory and power wall about 3-5 years ago, all cpu vendors have been forced to turn from making the fastest possible single-thread cpu to instead putting several (sometimes simpler) cores on a single chip. Reducing the clock frequency by 50% can reduce power usage by 80%, so actual throughput per watt can improve a lot, as long as the code can be parallelized. Existing GPUs from Nvidia and AMD, Cell processors as used in the PS3 and Intel's announced Larrabee architecture can all supply an order of magnitude more fp processing power per watt than what is currently available from normal cpus.</description>
+  </session>
+  <session>
+    <title>Individuals &amp; Interaction Over Processes and Tools</title>
+    <speakers>
+      <speaker>
+        <name>Kevlin Henney</name>
+        <info>Kevlin Henney is an independent consultant and trainer, based in the UK but consulting and training throughout Europe and further afield. The focus of his work is in programming languages, OO, patterns, software architecture and development process.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>1</track>
+    <description>Although it is a simple value, the idea that individuals and interactions are more significant than processes and tools is overlooked perhaps more often than it is valued. Of course, processes and tools make a difference -- sometimes a very big difference -- but what determines whether a process or tool is effective is related to the individuals and interactions. To best achieve agility you need to start with the current context and understand how people actually behave in response to their environment, their beliefs and one another. What actually motivates and demotivates people, developers in particular? What actually makes their work easier or harder? Does making "business value" the centrepiece of what they do actually motivate the people who ultimately produce such business value? Or is it more about the individuals and interactions?</description>
+  </session>
+  <session>
+    <title>Advanced Topics in F#</title>
+    <speakers>
+      <speaker>
+        <name>Amanda Laucher</name>
+        <info>Amanda Laucher is a ThoughtWorker. She enjoys teaching others and helping clients implement all sorts of bleeding edge solutions. Amanda is author of F# In Action. She resides in Chicago and speaks at technical conferences all over the world.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>2</track>
+    <description>: You’ve already heard the sales pitch and you’ve seen the syntax overviews (because you attended my last session, Intro to F#). Now it’s time to take a look at some more advanced topics. I’ll discuss higher order functions, lazy evaluation, monadic abstractions, function currying, and other topics that almost never get covered in conference sessions. We’ll take the big words out and make it easy to understand what those wordy functional people are talking about. It’s time to take your F# knowledge to the next level. This will allow you to get moving on current projects.</description>
+  </session>
+  <session>
+    <title>Pivoting Data in SQL Server</title>
+    <speakers>
+      <speaker>
+        <name>Itzik Ben-Gan</name>
+        <info>Itzik Ben-Gan is a Mentor and Co-Founder of Solid Quality Mentors. A SQL Server Microsoft MVP since 1999, Itzik has delivered numerous training events around the world focused on T-SQL Querying, Query Tuning and Programming.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>3</track>
+    <description>Pivoting data involves rotating data from a state of rows to a state of columns, possibly aggregating the data along the way. Pivoting is used for various purposes, including reporting, custom aggregations, and others. This session describes techniques to achieve pivoting and demonstrates different use cases. This session also explains how to achieve dynamic pivoting when the elements to be pivoted are unknown ahead.</description>
+  </session>
+  <session>
+    <title>Architecture of the Client Tier for WPF &amp; Silverlight</title>
+    <speakers>
+      <speaker>
+        <name>Billy Hollis</name>
+        <info>Billy Hollis was the author or co-author of many of the earliest books on .NET, and is also the author of a forthcoming book on Windows Presentation Foundation from Microsoft Press.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>4</track>
+    <description>Stateful client-based technologies for user interfaces, such as WPF and Silverlight, require more sophisticated design and architecture for the client tier than typical web applications. This session discusses the construction of a client-based navigation shell that replaces server-based navigation for a cleaner, more responsive user experience in multi-page applications. Implementation of capabilities such as data validation, temporary caching of unsaved data to allow for network downtime, and graceful shutdown will all be discussed. The session features a working model that attendees can use as a starting point for their own projects.</description>
+  </session>
+  <session>
+    <title>Dealing with Defects - An Agile Approach</title>
+    <speakers>
+      <speaker>
+        <name>Lisa Crispin</name>
+        <info>Lisa Crispin is an agile testing coach and practitioner. She is the co-author, with Janet Gregory, of Agile Testing: A Practical Guide for Testers and Agile Teams. She specializes in showing testers and agile teams how testers can add value and how to guide development with business-facing tests.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>5</track>
+    <description>Software defects bug everybody. How should we report and track them? Who will fix them, and when? What do we do with this big pile of old bug reports? Aren’t backlogs of defects just waste? Which defect tracking system is best? Should we track defects at all? In this session, Lisa Crispin will explain how agile teams address these issues, and how you can apply an agile approach to defects that frees your team to work better. She’ll present ideas and examples of:Why you should use a defect tracking systemWhy you shouldn’t use a defect tracking systemAlternatives to traditional bug reportingWhat to do with that long list of old bugsHow to shift your team’s mindset to bug prevention</description>
+  </session>
+  <session>
+    <title>Agility is the tool</title>
+    <speakers>
+      <speaker>
+        <name>Tom Gilb</name>
+        <info>Tom Joined IBM Oslo, in 1958, and has been a business consultant since 1960, with his own company.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>6</track>
+    <description>"Agility is the Tool, Not the Master: Gilb's Ten Key Agile Principles to deliver stakeholder value, avoid bureaucracy and give creative freedom"INTRODUCTION· What is Stakeholder Value?· How does Stakeholder value Relate to Business benefits?· How does IT System Quality related to Stakeholder values?· What Does Scrum Do About this? Why is Scum Inadequate· What New Front End Do We need for Scum - or any Agile Variant?10 Principles For Agile Value Delivery (Main points in Talk) My Values for Agile value delivery</description>
+  </session>
+  <session>
+    <title>Overview of Concurrent Programming Techniques</title>
+    <speakers>
+      <speaker>
+        <name>Steve Strong</name>
+        <info>Steve has around 20 years of commercial software development experience, the last 10 of which have predominantly been on the .Net platform.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>1</day>
+    <track>7</track>
+    <description>This talk gives an overview of some of the options available for concurrent programming on .Net. It examines the principles of concurrent programming and the reasons for adopting it, and also looks at the issues that such techniques introduce.</description>
+  </session>
+  <session>
+    <title>C# Puzzlers</title>
+    <speakers>
+      <speaker>
+        <name>Neal Gafter</name>
+        <info>Neal Gafter works for Microsoft on the dotNet platform languages.</info>
+      </speaker>
+      <speaker>
+        <name>Eric Lippert</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>How to Get the Best ROI From a Scrum Team as a Product Owner</title>
+    <speakers>
+      <speaker>
+        <name>Geoff Watts</name>
+        <info>Geoff is a Certified Scrum Trainer and agile coach with a proven track record of helping individuals, teams and organisations in their adoption of agile, and Scrum in particular.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>2</track>
+    <description>The Product Owner is probably the role that has received the least attention and help of all the three Scrum roles but it is paramount to an organisation's success with Scrum. While most projects benefit immediately from switching or adopting Scrum, to get the best out of the project a Product Owner really needs to understand both the team and the Scrum framework. In this tutorial Geoff will share his views and experiences of working with Scrum teams to provide you with a number of tips to improve your ROI.</description>
+  </session>
+  <session>
+    <title>.NET Design Patterns for Agile Software Processes</title>
+    <speakers>
+      <speaker>
+        <name>Kevin McNeish</name>
+        <info>Kevin McNeish is President and Chief Software Architect of Oak Leaf Enterprises, Inc, and has been a Microsoft .NET MVP for the last seven years.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>3</track>
+    <description>In the world of agile programming techniques, one of your best tools is design patterns. This session provides practical examples and implementation of design patterns in .NET. Familiarizing yourself with patterns such as Model-View-Controller, Observer, Abstract and Concrete Factories, and concepts such as programming to an interface rather than an implementation will help you build applications quickly that can easily adapt to your customer’s changing needs.</description>
+  </session>
+  <session>
+    <title>What has Mono done for .NET developers Lately?</title>
+    <speakers>
+      <speaker>
+        <name>Jackson Harper</name>
+        <info>Jackson Harper has been an active developer on the Mono project since 2002, first as an open source contributer and now as an engineer at Novell.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>4</track>
+    <description>Mono is an open-source, cross-platform implementation of the .NET framework based on the ECMA standards for C# and the Common Language Infrastructure. With Mono, users can run .NET applications written and compiled in Visual Studio on Windows, Linux, and Mac OS X. This session will provide an introduction to cross-platform development and deployment with Mono. Participants will see how they can leverage their existing skills and tools to write .NET applications that will run on multiple platforms and architectures with Mono. The presentation will also include a discussion of cross-platform considerations for leveraging Mono, and demonstrate how to use MoMA, the Mono Migration Analyzer, to determine how ready an application is for cross-platform deployment. Additional demonstrations will examine how best to leverage Visual Studio to develop and deploy to Linux and OS X, and take a peek at the current state of Moonlight 3 and 4.</description>
+  </session>
+  <session>
+    <title>Programming with GUTs - Good Unit Tests</title>
+    <speakers>
+      <speaker>
+        <name>Kevlin Henney</name>
+        <info>Kevlin Henney is an independent consultant and trainer, based in the UK but consulting and training throughout Europe and further afield. The focus of his work is in programming languages, OO, patterns, software architecture and development process.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>5</track>
+    <description>These days testing is considered sexy for programmers. Who'd have thought it? But there is a lot more to effective programmer testing than the fashionable donning of a unit-testing framework: writing Good Unit Tests (GUTs) involves (a lot) more than knowledge of assertion syntax.Testing represents a form of communication and, as such, it offers multiple levels and forms of feedback, not just basic defect detection. Effective unit testing requires an understanding of what forms of feedback and communication are offered by tests, and what styles encourage or discourage such qualities.What style of test partitioning is most common, and yet scales poorly and is ineffective at properly expressing the behaviour of a class or component? What styles, tricks and tips can be used to make tests more specification-like and scalable? In answering these questions (and more), this session uses C# and NUnit to examine what it takes to program with GUTs.</description>
+  </session>
+  <session>
+    <title>CouchDB for .NET Developers</title>
+    <speakers>
+      <speaker>
+        <name>Hadi Hariri</name>
+        <info>Hadi Hariri is a Technical Evangelist at JetBrains. His passions include software architecture and best practices.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>6</track>
+    <description>RDBMS has been the standard for many years, when it has come to data storage. However, recently there has been an increase in document databases. In this talk we are going to cover the basics of CouchDB and how to consume this kind of database from .NET applications.</description>
+  </session>
+  <session>
+    <title>Patterns for Parallel Programming</title>
+    <speakers>
+      <speaker>
+        <name>Tiberiu Covaci</name>
+        <info>Tiberiu started his developer career in 1991, but wasn't until 1994 that he got introduced into the Microsoft world of technologies. He wrote his first scheduler for multitasking systems that run under DOS 1995.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>1</day>
+    <track>7</track>
+    <description>Every five to ten years the world of computer programming is facing now a new paradigm shift, like GUI, object orientation, or generics. Right now we are facing a new paradigm shift, the multi-core one. Successful research in this area has been done for the past 30 years, but we are still not using the results efficiently. A pattern is a working solution to a recurring problem, and parallel/multi-core programming has its own problems which led to a set of patterns. Come and see in this session about which patterns exists in the area of parallel/multi-core programming and how they can be used with Visual Studio 2010.</description>
+  </session>
+  <session>
+    <title>You're Overthinking It: Why Web Forms Are Not Rockets</title>
+    <speakers>
+      <speaker>
+        <name>Rob Conery</name>
+        <info>Rob Conery recently worked at Microsoft on the ASP.NET team. He is co-founder of Tekpub and the creator of SubSonic.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Inside modern JavaScript</title>
+    <speakers>
+      <speaker>
+        <name>Scott Allen</name>
+        <info>Scott is the founder and Principal Consultant with OdeToCode LLC. He is also a member of the Pluralsight technical staff.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>2</track>
+    <description>JavaScript is a dynamic, functional, ubiquitous language that has many hidden secrets. In this session we will take a deep look at the core JavaScript features that many contemporary libraries leverage, including constructor functions, prototypical inheritance, closures, hash parameters, method chaining, and more. Having a solid grasp of these features will not only help you write more maintainable JavaScript code, but also allow you to take greater advantage of today’s JavaScript libraries.</description>
+  </session>
+  <session>
+    <title>Design, Don't Decorate</title>
+    <speakers>
+      <speaker>
+        <name>Billy Hollis</name>
+        <info>Billy Hollis was the author or co-author of many of the earliest books on .NET, and is also the author of a forthcoming book on Windows Presentation Foundation from Microsoft Press.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>3</track>
+    <description>Putting the advanced capabilities of WPF and Silverlight to full use requires collaboration, experimentation, and iterative prototyping. In this session, you’ll see all five sequential prototypes for the acclaimed StaffLynx application (as seen on .NET Rocks TV), and discuss practices that worked and didn't work in real-world advanced UI development. We'll also discuss the role of visual and interactive designers in creating new era user interfaces, give some tips on how to think about using WPF and Silverlight capabilities to make interfaces feel natural and less stressful to users, and cover the most valuable lessons learned from a real-world project using advanced, next generation user interface technology.</description>
+  </session>
+  <session>
+    <title>Mono - A Great Platform for .NET in the Cloud</title>
+    <speakers>
+      <speaker>
+        <name>Jackson Harper</name>
+        <info>Jackson Harper has been an active developer on the Mono project since 2002, first as an open source contributer and now as an engineer at Novell.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>4</track>
+    <description>ASP.NET WebForms and MVC apps run out-of-the-box on Mono on a variety of platforms. With so many options for hosting Linux servers on services such as EC2 and Linode, Mono has become an attractive platform for cloud deployment. This presentation will walk through several approaches to developing, debugging, and deploying .NET applications to the cloud with Mono.</description>
+  </session>
+  <session>
+    <title>Agile development and reporting with TFS 2010</title>
+    <speakers>
+      <speaker>
+        <name>Stephanie Cuthbertson</name>
+        <info>Stephanie Saad Cuthbertson is a Group Program Manager for Team Foundation Server.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>5</track>
+    <description>Learn about new features in Team Foundation Server 2010 that support Agile project management practices. In this presentation we’ll walk through the new MSF for Agile 5.0 process template and see how a Scrum team uses Team Foundation Server to manage their product backlog, plan and run sprints, measure progress, and perform retrospectives.</description>
+  </session>
+  <session>
+    <title>Lean Quality Assurance</title>
+    <speakers>
+      <speaker>
+        <name>Tom Gilb</name>
+        <info>Tom Joined IBM Oslo, in 1958, and has been a business consultant since 1960, with his own company.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>6</track>
+    <description>Quality Assurance (QA) in software worldwide has in fact degenerated into testing alone. Software/IT management has ignorantly allowed this to happen.Of course many parts of the industry have been well-aware of more cost-effective ways of delivering required quality in practice, but this has in fact been largely ignored; while granting very large resources to testing alone.It is time for a wakeup call!This manifesto is here to tell the industry that;testing alone is 10x more costly than doing Real QA. testing alone is not good enough, this can and need not go on. We know how to do real QA much much better than testing alone, using smarter upstream engineering practices, based on design, prevention and upstream inspections.</description>
+  </session>
+  <session>
+    <title>CHESS - Finding &amp; Reproducing Heisenbugs in Concurrent Programs</title>
+    <speakers>
+      <speaker>
+        <name>Steve Strong</name>
+        <info>Steve has around 20 years of commercial software development experience, the last 10 of which have predominantly been on the .Net platform.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>1</day>
+    <track>7</track>
+    <description>CHESS is a tool from Microsoft Research that aims to find and reproduce hard to locate concurrency bugs. It does so by repeatedly running tests, systematically enumerating how the various threads are interleaved on each run. When (if) errors occur, CHESS can also then re--]run the specific interleaving that resulted in the error, massively simplifying the debugging effort.</description>
+  </session>
+  <session>
+    <title>Building a Real-World, E-Commerce, Data-Driven Web Site</title>
+    <speakers>
+      <speaker>
+        <name>Chris Sells</name>
+        <info>Chris Sells is a Program Manager for the Business Platform Division.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>1</track>
+    <description>In this session, I'll take you on a tour of what it took to go from an empty space in my ISPs web farm and turn it into a functional ecommerce web site. We'll include a discussion of how the domain was attached, how the site was built in ASP.NET, where the graphics and layout came from, how the products and site settings were managed in SQL Server, how the site was published, how shipping, taxes and handling are calculated, how money is collected and how the site is maintained. If you've ever wanted to see what it takes to start from scratch and build a real-world ecommerce web site, this is the place for you.</description>
+  </session>
+  <session>
+    <title>Noda time: An Alternative Date &amp; Time Framework</title>
+    <speakers>
+      <speaker>
+        <name>Jon Skeet</name>
+        <info>Jon Skeet is a Java developer for Google in London, but he plays with C# (somewhat obsessively) in his free time</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>2</track>
+    <description></description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>3</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Real-World Design with the Visual Studio 2010 Modelling Tools</title>
+    <speakers>
+      <speaker>
+        <name>Kevin McNeish</name>
+        <info>Kevin McNeish is President and Chief Software Architect of Oak Leaf Enterprises, Inc, and has been a Microsoft .NET MVP for the last seven years.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>4</track>
+    <description>Visual Studio 2010 introduces new Layer, Class, Activity, Use Case, Sequence, and Component diagrams. This session provides an overview of each of these diagrams and demonstrates practical examples of when they are useful, and when they are not! You will see how VS 2010 allows you to reverse-engineer your existing .NET code and generate sequence diagrams that graphically depict the object interaction in your applications. You’ll also get a tour of the new Architecture Explorer, and learn how you can best fit these design tools into your software development processes - including agile software processes.</description>
+  </session>
+  <session>
+    <title>Does Self-Organization Actually Work &amp; Are Agile Teams Actually Motivated By It?</title>
+    <speakers>
+      <speaker>
+        <name>Geoff Watts</name>
+        <info>Geoff is a Certified Scrum Trainer and agile coach with a proven track record of helping individuals, teams and organisations in their adoption of agile, and Scrum in particular.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>5</track>
+    <description>Self-organising teams are a key component of all of the agile methodologies, but do teams and organisations know what they are actually letting themselves in for when signing up for things like Scrum? In my experience the definition of "self-organisation" is widely different from organisation to organisation, team to team and even individual to individual within a team. This leads to fear, sub-optimisation and in a lot of cases subversion of the principle such that teams are being directed to work in sprints or iterations. In this session, Geoff will share his experiences of self-organisation, the common characteristics that are required for self-organisation to work and how commonly these characteristics are found in organisations that say that are "doing agile".</description>
+  </session>
+  <session>
+    <title>TDD/BDD &amp; Functional Programming</title>
+    <speakers>
+      <speaker>
+        <name>Amanda Laucher</name>
+        <info>Amanda Laucher is a ThoughtWorker. She enjoys teaching others and helping clients implement all sorts of bleeding edge solutions. Amanda is author of F# In Action. She resides in Chicago and speaks at technical conferences all over the world.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>6</track>
+    <description>We’ve all been hearing about how important functional programming is going to be when dealing with multicore development and advanced logic programming. If we are not already, we will be introducing some sort of functional code into our current systems. We’ve spent years looking at how agile techniques help us to develop better software. We use TDD and BDD to drive abstractions in object oriented languages, but can the same be done with functional abstractions? It has become invaluable to have the regression suite available for updates to our software. Do we need such a suite with functional languages that encourage no side effects? In this session we’ll look at what practices will be necessary to effectively introduce functional languages into our systems.</description>
+  </session>
+  <session>
+    <title>Tasks &amp; Threading in .NET 4.0</title>
+    <speakers>
+      <speaker>
+        <name>Ingo Rammer</name>
+        <info>Ingo Rammer is co-founder of thinktecture, a company providing architecture, design, review, and troubleshooting services for software architects and developers. He focuses mainly on improving performance, scalability and reliability of critical .NET applications.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>1</day>
+    <track>7</track>
+    <description>Writing multi-threaded applications in hard - making them work is even harder. Scaling applications to the current and future multiple-core machines can really be a daunting task --- but it doesn't have to be! In this session, Ingo Rammer shows you the new task-based API and how it simplifies the creation of multi-core supporting applications. You will learn how you can take advantage of the fine-grained parallelism and control which is offered by this new .NET feature. Ingo will also show you how to extend your in-memory LINQ query to run in parallel, and how the new Visual Studio 10 debugging tools will make troubleshooting this kind of applications a lot easier.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>1</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>2</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Discover the Power of Row Numbers</title>
+    <speakers>
+      <speaker>
+        <name>Itzik Ben-Gan</name>
+        <info>Itzik Ben-Gan is a Mentor and Co-Founder of Solid Quality Mentors. A SQL Server Microsoft MVP since 1999, Itzik has delivered numerous training events around the world focused on T-SQL Querying, Query Tuning and Programming.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>3</track>
+    <description>SQL Server supports various window calculations including the ROW_NUMBER function. This function, as well as window calculations in general provides developers with extremely powerful capabilities, enabling simplifying and improving the performance of existing solutions to many types of querying problems. This session describes the ROW_NUMBER function and provides several examples for using it for problem solving purposes.</description>
+  </session>
+  <session>
+    <title>How Microsoft Does Development</title>
+    <speakers>
+      <speaker>
+        <name>Stephanie Cuthbertson</name>
+        <info>Stephanie Saad Cuthbertson is a Group Program Manager for Team Foundation Server.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>4</track>
+    <description>This is an in-depth look at how Microsoft does development. Learn about how teams have applied agile techniques as well as examples of how teams define vision, plan, develop, organize version control and branching, use continuous quality gates to handle very complex quality requirements, create transparency across large projects and gather customer feedback., This will look at practices in the largest divisions on major releases.</description>
+  </session>
+  <session>
+    <title>The Whole Team Approach to Testing</title>
+    <speakers>
+      <speaker>
+        <name>Lisa Crispin</name>
+        <info>Lisa Crispin is an agile testing coach and practitioner. She is the co-author, with Janet Gregory, of Agile Testing: A Practical Guide for Testers and Agile Teams. She specializes in showing testers and agile teams how testers can add value and how to guide development with business-facing tests.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>5</track>
+    <description>Many test teams find themselves “squeezed to the end”, with code delivered too late to complete all the testing before the release deadline. They can’t get traction on critical activities such as test automation, and find themselves falling further and further behind. The software development organization is weighed down by increasing technical debt. Customers aren’t getting the software they wanted. Serious bugs get out to production, slowing the team down more as fixing one bug might cause two more. It can seem impossible to break out of this downward spiral.One way to turn this trend around is to get the whole team involved in building quality into the application, and solving testing problems together. In this session, Lisa Crispin will explain how to make quality a team responsibility, and testing a team’s problem to solve. She’ll explain how the “whole team” approach, leveraging multiple skill sets and planning in time for testing activities, leads to more testable code, better testing solutions. Participants will leave with some practical ideas to try right away.</description>
+  </session>
+  <session>
+    <title>Exploring Software Transactional Memory in .NET</title>
+    <speakers>
+      <speaker>
+        <name>Steve Strong</name>
+        <info>Steve has around 20 years of commercial software development experience, the last 10 of which have predominantly been on the .Net platform.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>6</track>
+    <description>In contrast to Axum (essentially a shared--]nothing model), STM revolves around providing an easier approach to handling concurrency with shared state. Instead of the traditional (and error prone) approach of locks, STM provides the ability to mark a section of code as “transactional”, giving the Atomicity and Isolated properties of the ACID acronym.</description>
+  </session>
+  <session>
+    <title>Distributed Computing 2.0</title>
+    <speakers>
+      <speaker>
+        <name>Filip Van Laenen</name>
+        <info>Filip van Laenen is a Chief Engineer at the Norwegian software company Computas AS, which supplies IT solutions to the public and the private sector in Norway.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>1</day>
+    <track>7</track>
+    <description>This talk will present how Web 2.0 technologies can be used to distribute distributed computing architectures even more than traditionally has been done. In particular, what would otherwise be a central database behind a central server can be outsourced to Web 2.0 services like Twitter, or constructed using RSS feeds. This can of course only be done for problems where the decision-taking process can be distributed as well, and in particular when a complete overview over all results submitted so far is not necessary. On the other hand, this is also an advantage and an opportunity, as it allows to a much larger degree the creation of specialized clients helping to solve the problem faster.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>Jon Skeet</name>
+        <info>Jon Skeet is a Java developer for Google in London, but he plays with C# (somewhat obsessively) in his free time</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>1</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Ruby for .NET developers</title>
+    <speakers>
+      <speaker>
+        <name>Scott Bellware</name>
+        <info>Scott Bellware is a software product designer, developer, manager, and agile coach living in Austin, Texas. He is a five-time recipient of Microsoft's Most Valuable Professional award and the founder of the AgileATX community of agile software practitioners in Austin.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>2</track>
+    <description>After having spent many years coding in C#, and after having spent equally as much time in the C# language culture, Ruby seemed like a lot of bad ideas and heresy. In fact, much of Ruby is heretical to a C# or VB.NET mono-culture, but the productivity gains demonstrated by Ruby on Rails teams remains an unavoidable elephant in the room. This presentation looks at C# code examples side by side with some equivalent Ruby code and shines a little light on what it means to have either "ceremony" and "essence". It challenges the claims of static typing's effect on tooling to deliver "developer productivity". And finally, some examples of Ruby meta programming are given to demonstrate direct solutions to programming problems that would require much ado with restrictions in C# that don't end up doing much more than reducing the efficiency of software development efforts.</description>
+  </session>
+  <session>
+    <title>Strategic Design</title>
+    <speakers>
+      <speaker>
+        <name>Eric Evans</name>
+        <info>Eric Evnas is a specialist in domain modeling and design in large business systems.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>3</track>
+    <description>As software development leaders, we need to think more strategically. Some design decisions affect the trajectory of the whole project or even the organization. These decisions arise in early chartering and throughout development, and they are about much more than architecture. This talk will examine these issues through the lens of the Strategic Design principles of domain-driven design, which systematize a few critical practices some successful teams do intuitively.It is common for skilled teams to deliver software they are not proud of, due to compromises with legacy designs. Others toil for years, producing a platform that is never used to good advantage. These are strategic failures. On the other hand, there are projects with a direct explanation of how the software contributes to business goals. There are projects where designers work with a realistic view of the context of their development within the larger system, allowing them to maintain design clarity and integrity. These are strategic successes. Winning strategy starts with the domain.Two domain-driven design principles, "Context Mapping" and "Distilling the Core Domain", help you see your strategic situation more clearly and approach strategic design decisions more systematically. These techniques require extensive interaction with domain experts as well as the leaders of the organization, in discussions broader than functional requirements. They sometimes lead to priorities quite different from our most comfortable notions.</description>
+  </session>
+  <session>
+    <title>Silverlight for Windows Phone</title>
+    <speakers>
+      <speaker>
+        <name>Tim Heuer</name>
+        <info>Tim Heuer is a program manager for Microsoft Silverlight.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>4</track>
+    <description>Windows Phone 7 Series is coming…and if you are a Silverlight developer there is good news: Silverlight *is* the development platform for Windows Phone applications. This session will provide an overview of the tools, the emulator, and the core APIs for Silverlight for Windows Phone development. Find out what is (and is not) possible in creating and porting your Silverlight applications ready for Windows Phone 7.</description>
+  </session>
+  <session>
+    <title>Claims Based Security &amp; Windows Identity Foundation</title>
+    <speakers>
+      <speaker>
+        <name>Vittorio Bertocci</name>
+        <info>Vittorio is a Senior Architect Evangelist in the Windows Azure Platform Evangelism team with Microsoft Corp.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>5</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Big-Ass View on Competency</title>
+    <speakers>
+      <speaker>
+        <name>Jurgen Appelo</name>
+        <info>Jurgen is a writer, speaker, developer, entrepreneur, manager, blogger, reader, dreamer, leader, freethinker, and… Dutch guy.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>6</track>
+    <description>Agile team members create their own rules, based on constraints imposed by the environment. But something else is needed for good results: some call it discipline, craftsmanship, or competence. Traffic management teaches us that there are 7 approaches to achieving competence in a self-organizing system. We are going to look at all of them.</description>
+  </session>
+  <session>
+    <title>Putting Some Testing Into Your TFS Build</title>
+    <speakers>
+      <speaker>
+        <name>Richard Fennell</name>
+        <info>Richard Fennell is the Engineering Director of the Black Marble Ltd a Microsoft Gold Partner based in the North of England. Black Marble specialises in BizTalk &amp; SharePoint based business automation.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Continuous Integration and scheduled builds are an important part of any development process. To get the best out of these tools, as much testing as possible should be wired into the post build process. With the 2010 release of Visual Studio we get the Lab Manager product that allows us to deploy our automated build to a virtualised test environment for either manual and/or automated testing. In this session I will show by doing an end to end demo, showing how an application can be build, deployed and tested with the Lab Manager environment.</description>
+  </session>
+  <session>
+    <title>jQuery for ASP.NET developers</title>
+    <speakers>
+      <speaker>
+        <name>Scott Allen</name>
+        <info>Scott is the founder and Principal Consultant with OdeToCode LLC. He is also a member of the Pluralsight technical staff.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>1</track>
+    <description>This session is a practical tour of the “write less, do more” JavaScript library - jQuery. In this session we will build an application using ASP.NET and jQuery while learning about CSS selectors, DOM manipulation, and asynchronous communications using the jQuery library. We’ll also look at the jQuery plug-in model, examine common jQuery programming paradigms, and see how to invoke WCF web services using jQuery.</description>
+  </session>
+  <session>
+    <title>Service Oriented Development Process</title>
+    <speakers>
+      <speaker>
+        <name>Juval Löwy</name>
+        <info>Juval Lowy is a software architect and the principal of IDesign, specializing in .NET architecture consulting and advanced training. Juval is Microsoft’s Regional Director for the Silicon Valley, working with Microsoft on helping the industry adopt .NET 4.0.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>2</track>
+    <description>When you develop a service-oriented application, it would be naive of you to expect that the only things you will do differently will be limited to design and technology. The development process itself needs to be service-oriented. You cannot "stare into the fire" of WCF without a mature service-oriented development process supporting your effort. This talk presents you with a service-oriented development process that you can apply to your WCF-based products to achieve robust applications, manage requirements and ensure faster time to market.</description>
+  </session>
+  <session>
+    <title>Entity Framework Persistance Ignorance</title>
+    <speakers>
+      <speaker>
+        <name>Julie Lerman</name>
+        <info>Julie Lerman is a Microsoft MVP, .NET mentor and consultant who lives in the hills of Vermont.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>3</track>
+    <description>Entity Framework in .NET 4 has finally embraced agile development. Thanks to it's new POCO support, you can now build completely persistent ignorant entity classes. In this session, we'll look at building an intelligent repository from entity classes and mocking up some extra classes in order to build unit tests against methods that have some dependency on the Entity Framework without touching the EF APIs. A prior understanding of the PI and Unit Testing should keep your head from spinning too much.</description>
+  </session>
+  <session>
+    <title>Silverlight Applications for Windows Phone 7</title>
+    <speakers>
+      <speaker>
+        <name>Jonas Follesø</name>
+        <info>Jonas is a senior consultant at Capgemini in Trondheim. He has broad experience and in-depth knowledge of the .NET Framework, ASP.NET, WPF, Silverlight and the C# programming language.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>4</track>
+    <description>Windows Phone 7 is brand new, totally fresh operating system that will appear in phones before Christmas. The new platform is a complete rewrite and offers lots of interesting opportunities to third party developers. The development platform for Windows Phone 7 is all based around managed code and the tools and frameworks you already know and love. This presentation you will give you an overview of the Windows Phone 7 development platform, and how you can leverage your existing Silverlight skills to build great applications for the Windows Phone 7 marketplace. The session assumes some prior knowledge of Silverlight, as the focus of this presentation will be features that are specific to the phone. It will not only cover the basics of the Windows Phone 7 platform, but also how you can re-use many of the same patterns, frameworks, techniques and practices that you use when building regular Silverlight applications.</description>
+  </session>
+  <session>
+    <title>Unit Testing Best Practices &amp; Test Reviews</title>
+    <speakers>
+      <speaker>
+        <name>Roy Osherove</name>
+        <info>The chief architect at Typemock, Roy Osherove is one of the original ALT.NET organizers. He consults and trains teams worldwide on the gentle art of unit testing and test-driven development. He frequently speaks at international conferences such as NDC, TechEd and JAOO.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>5</track>
+    <description>In this session we look at existing .NET code form open source projects and discuss anti patterns worst practices when doing unit testing in the wild. From abuse of mock objects, unmaintainable tests and unreadable tests to checking interactions vs. state - this talk will take you deep into the real ugly world of unit testing.</description>
+  </session>
+  <session>
+    <title>IronRuby - A Brave New World for .NET</title>
+    <speakers>
+      <speaker>
+        <name>Ben Hall</name>
+        <info>Ben Hall is a UK C# developer\tester with a strong passion for software development and loves writing code.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>6</track>
+    <description>.NET developers are about to enter a brave new world. With Microsoft's Dynamic Language Runtime (DLR) developers can start taking advantage of dynamic languages, such as IronRuby and IronPython, on top of the .Net platform and integrating the language into their existing .net based applications. However, why is this important? In this session, Ben will provide an insight into the deep dark secrets of why he loves the Ruby language and how it can result in a more effective solution when compared to C#. After demonstrating the powerful capabilities, Ben will explain how the DLR with IronRuby allows you to take full advantage of Ruby from C# applications, resulting in you choosing the appropriate language (C# or Ruby) for the appropriate feature. The combination results in a powerful tool-set and opens some amazing possibilities for both C# and Ruby developers. With C# 4.0, these capabilities are taken a step further. But the advantage is not just one way, there are also advantages for Ruby developers by allowing them to develop against the .Net framework.</description>
+  </session>
+  <session>
+    <title>Product Development in TANDBERG</title>
+    <speakers>
+      <speaker>
+        <name>Olve Maudal</name>
+        <info>Olve Maudal loves to write code, but is perhaps more interested in how software is developed than what it actually does.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>2</day>
+    <track>7</track>
+    <description>TANDBERG has never cared much about documentation, procedures, methodologies and risk reduction. However, we do care very much about our culture and our principles. This has enabled us to outperform all competition in the video conferencing and telepresence market during the last decade. In retrospect, we realize that TANDBERG has for 10-15 years built a culture that is quite compatible with Agile and Lean ideas. This talk will give a glimpse into how we do product development in TANDBERG R&amp;D at Lysaker. I will show an example of how we developed a particular product with emphasis on software development, before I dive into the principles that we follow.</description>
+  </session>
+  <session>
+    <title>Folding Design to Agile</title>
+    <speakers>
+      <speaker>
+        <name>Eric Evans</name>
+        <info>Eric Evnas is a specialist in domain modeling and design in large business systems.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>1</track>
+    <description>After a decade of heavy process, the Agile revolution of the late '90s threw off the dead hand of big upfront design. The bloody purge that followed was needed!There were unintended consequences. Too many teams interpret "Agile" as a permit to not think about design. But if they have ambitious goals, Agile teams need more than standup meetings and iterations. Many teams get off to a quick start, building lots of features in early iterations, but end up with a "Big Ball of Mud". Without clear and well-structured code, they cannot sustain their pace and also put themselves at risk of, one day, encountering a critical feature they simply cannot deliver. Without the common understanding between developers and stakeholders that is forged in domain analysis, one of the greatest benefits of iteration, the deepening communication about what the software should do and how it should do it, is never realized.We must not return to the "Analysis Paralysis" that we used to endure (and that many teams still do), but interpreting "Do the Simplest Thing" as "Do the Easiest Thing" doesn't work either.This talk will consider ways of incorporating modeling and design into the iterative process in a lightweight way that increases communication with stakeholders and decreases the likelihood of painting ourselves into corners, without returning to the dead-hand of the analysis phase. As a concrete example of how such techniques can be incorporated into the Agile framework, we'll have an overview of a simple process Domain Language has used with its clients for the last six years.The right kind of modeling and design, far from bogging down a project, leads to a livelier and more sustainable development pace.</description>
+  </session>
+  <session>
+    <title>Modularization, Testing &amp; Technical Debt in a Large Agile Project</title>
+    <speakers>
+      <speaker>
+        <name>Harald Søvik</name>
+        <info>Harald is working as technical architect with Computas AS, on a 5-year-long project with 25 developers.</info>
+      </speaker>
+      <speaker>
+        <name>Morten Forfang</name>
+        <info>Morten is a Ph.D. in computer science, is the Architecture and Integration Lead at Computas AS and works as a web architect on a 5-year long development project with 25 developers.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>1</track>
+    <description>This experience reports focuses on the major scrum-related technical challenges that arose during a 120 000 hour scrum controlled project. For each of them, we try to identify the cause and the consequence, and then follow up with any solutions we tried. Finally we sum up and assess whether the problem was successfully solved or not.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>2</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>A Dive in the Microsoft Ajax Library</title>
+    <speakers>
+      <speaker>
+        <name>Gill Cleeren</name>
+        <info>Gill Cleeren is Microsoft Regional Director (www.theregion.com), MVP ASP.NET, INETA speaker bureau member and Silverlight Insider.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Fluent Nhibernate</title>
+    <speakers>
+      <speaker>
+        <name>James Gregory</name>
+        <info>James Gregory is an independent consultant specialising in .Net, and the creator of Fluent NHibernate, a popular .NET open-source project.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>4</track>
+    <description>An introduction and overview to object/relational mapping using Fluent NHibernate. See how Fluent NHibernate can help you map your domain with the least amount of effort, how you can remain flexible with your database, and how to drive your design through convention-over-configuration; all without writing a single line of XML.The talk is an introduction to Fluent NHibernate for those that aren't familiar with it, and assumes some NHibernate experience and is for .Net developers primarily. The goal is to show people how low-impact NHibernate can be with Fluent NHibernate, and how it can actually speed up development in rapid-change environments.I'll cover an overview of what Fluent NHibernate is, the various parts of it (the fluent interface, the conventions, and the auto-mappings, and the configuration aspect), then expand on how these features can be utilised to improve your NHibernate experience and simplify your development process.</description>
+  </session>
+  <session>
+    <title>The Secret Ingredient of a Successful WPF/Silverlight/Windows Phone 7 Application</title>
+    <speakers>
+      <speaker>
+        <name>Gøran Hansen</name>
+        <info>Gøran is an experienced software developer on his journey to become a master in the craft of software development.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>6</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Solid C++ code by example</title>
+    <speakers>
+      <speaker>
+        <name>Olve Maudal</name>
+        <info>Olve Maudal loves to write code, but is perhaps more interested in how software is developed than what it actually does.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Sometimes you see code that is perfectly OK according to the definition of the language, but which is flawed because it breaks too many established idioms and conventions. On the other hand, a solid piece of code is something that looks like it is written by an experienced person who cares about professionalism in programming. This will be an interactive discussion about good vs bad C++ code. We will discuss simple C++ idioms and coding conventions, but we will also touch upon best practices when working with C++ in large codebases with lots of developers with mixed skills.</description>
+  </session>
+  <session>
+    <title>Software Is Not Manufacturing</title>
+    <speakers>
+      <speaker>
+        <name>Scott Bellware</name>
+        <info>Scott Bellware is a software product designer, developer, manager, and agile coach living in Austin, Texas. He is a five-time recipient of Microsoft's Most Valuable Professional award and the founder of the AgileATX community of agile software practitioners in Austin.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>1</track>
+    <description>While we assert that software development is not manufacturing, we often slip into manufacturing metaphors and analogies and then fail to extricate our explorations of how software development unfolds from manufacturing. Some of these analogies are so deeply-rooted into our customs that we readily contradict our own assertions. This presentation looks at just how handicapped your software development becomes at the hand of these engrained manufacturing perspectives. It looks at product development theory as a better analogy to software development and a more practicable body of knowledge for software development. And it looks at how even product development theory fails to illuminate software development when we backslide into manufacturing-specific product development. Lean and Agile methods are framed in terms of product development and software development productivity problems are laid open under the surgical precision of product development analogies to building software machines.</description>
+  </session>
+  <session>
+    <title>Rocking the Access Control Service: Practical Scenarios, Killer Code and Wicked Tools</title>
+    <speakers>
+      <speaker>
+        <name>Michele Bustamante</name>
+        <info>Michele Leroux Bustamante is not only an IDesign Chief Architect, she is also Microsoft Regional Director for San Diego, Microsoft MVP for Connected Systems and a BEA Technical Director.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>2</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Unleash Your Domain</title>
+    <speakers>
+      <speaker>
+        <name>Greg Young</name>
+        <info>Greg Young is an independent consultant who lives in two suitcases (literally).</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Introduction to MonoTouch</title>
+    <speakers>
+      <speaker>
+        <name>Chris Hardy</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>4</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Improving Your ASP.NET Application Performance with Asynchcronous Pages and Parallel Extensions</title>
+    <speakers>
+      <speaker>
+        <name>Tiberiu Covaci</name>
+        <info>Tiberiu started his developer career in 1991, but wasn't until 1994 that he got introduced into the Microsoft world of technologies. He wrote his first scheduler for multitasking systems that run under DOS 1995.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>5</track>
+    <description>Asynchronous pages and handlers can be used in ASP.NET to improve the performance of the application, especially the throughput, but wrongly used can lead to unexpected behavior, including a degraded performance. One of the key technologies that are part of the Visual Studio 2010 is Parallel Extensions. So come to this interactive session to see how you can benefit from those new technologies and how they can help you to mitigate some of the problems.</description>
+  </session>
+  <session>
+    <title>Testers Are Not Your Enemy</title>
+    <speakers>
+      <speaker>
+        <name>Karianne Berg</name>
+        <info>Karianne Berg holds a MSc from University of Bergen, Norway, and is currently employed at the Norwegian consulting firm Objectware.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>6</track>
+    <description>Manual testing has been marginalized in agile development. Us developers seems to think that manual testing is outdated and should now be replaced by automatic test scripts. I think that manual testing should still be a part of the development process, and in this talk, you will learn why that is and how we can integrate manual testers on agile teams.</description>
+  </session>
+  <session>
+    <title>Bridging code between Java &amp; .NET</title>
+    <speakers>
+      <speaker>
+        <name>Harald Fianbakken</name>
+        <info>Harald is a developer and solution architect at CIBER. He is a core .NET developer and tech-enthusiast, working with both Java and .NET. Passionate for low level details and performance.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Frustrated .NET developer forced to work with old, boring java? Or are you a java developer having to work with the incompatible and evil .NET technology? With IVKM.NET you can compile your java byte code to the .NET IL and run your favorite java code on .NET and maybe even your Java applications will run faster under IVKM.NET than under SUNs JVM? We take a look at IKVM.NET and how it can be used to bridge your java libraries to your .NET application and the other way around, reusing .NET APIs in your java code. We also show how to use IVKM.NET for creating java-stubs from already existing .NET libraries in order to access your .NET code in java.</description>
+  </session>
+  <session>
+    <title>C# 4.0</title>
+    <speakers>
+      <speaker>
+        <name>Mads Torgersen</name>
+        <info>A former computer science professor from Aarhus University. Mads joined the C# team at Microsoft as a Senior Program Manager.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Advanced Tips &amp; Tricks for ASP.NET MVC 2</title>
+    <speakers>
+      <speaker>
+        <name>Scott Allen</name>
+        <info>Scott is the founder and Principal Consultant with OdeToCode LLC. He is also a member of the Pluralsight technical staff.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>2</track>
+    <description>In this session we’ll not only look at improving the maintainability and performance of an MVC application, but also how to increase your productivity. Topics include model binding, meta-data providers, and T4 Templates.</description>
+  </session>
+  <session>
+    <title>What I've learned About DDD Since the Book</title>
+    <speakers>
+      <speaker>
+        <name>Eric Evans</name>
+        <info>Eric Evnas is a specialist in domain modeling and design in large business systems.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>3</track>
+    <description>In the 5 years since the book was published, I've practiced DDD on various client projects, and I've continued to learn about what works, what doesn't work, and how to conceptualize and describe it all. Also, I've gained perspective and learned a great deal from the increasing number of expert practitioners of DDD who have emerged.The fundamentals have held up well, as well as most patterns, but there are differences in how I do things and look at things now. I will try to describe them, very informally, in this talk.Over this time, I have folded in a couple of additional patterns, and essentially come to ignore a few, but the biggest change has been a subtle shift of emphasis. Ubiquitous Language and Context Mapping and Core Domain are at the center, with aggregates in close orbit. Why, I ask myself, did I put context mapping in Chapter 14? Core domain in Chapter 15?! Before the book, it seemed self-evident to me that SOA fit well with DDD, but five years of questions on that topic have made it clear that my early explanations were inadequate and helped me clarify how it fits. Increased emphasis on events and distributed processing have crystallized the significance of aggregates and refined the building blocks.The talk cannot go into depth on all these topics, but the goal will be to give a quick look at where my view of DDD has been heading.</description>
+  </session>
+  <session>
+    <title>MonoTouch Deep Dive</title>
+    <speakers>
+      <speaker>
+        <name>Chris Hardy</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>4</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Windows Identity Foundation &amp; Windows Azure</title>
+    <speakers>
+      <speaker>
+        <name>Vittorio Bertocci</name>
+        <info>Vittorio is a Senior Architect Evangelist in the Windows Azure Platform Evangelism team with Microsoft Corp.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>5</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Making Manual Testing a Part of Your Development Process</title>
+    <speakers>
+      <speaker>
+        <name>Richard Fennell</name>
+        <info>Richard Fennell is the Engineering Director of the Black Marble Ltd a Microsoft Gold Partner based in the North of England. Black Marble specialises in BizTalk &amp; SharePoint based business automation.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>6</track>
+    <description>Software has always needed to be tested manually, automation can help, but it is never going to replace the need for manual testing totally. How a team manages this requirement for manual testing can be key to a projects success or failure.In the 2010 release of Visual Studio, Microsoft have provided a whole new set of tools to aid in this process - Microsoft Test Manager. In this session I will show how MTM can be used to assist a tester in creating detailed, accurate and repeatable testing that are a joy to use (well might be stretching a point there!). Also I will show how the tooling can allow these manual tests can become the basis for automated tests and Coded UI tests, and how the advanced logging features of the tools allow bugs to be accurately passed back to developers for speed the production of fixes.</description>
+  </session>
+  <session>
+    <title>Technology Supported Requirement Handling and Estimation</title>
+    <speakers>
+      <speaker>
+        <name>Kjetil Moløkken-Østvold</name>
+        <info>Kjetil Moløkken-Østvold has extensive experience with software estimation and process improvement, both as a consultant and researcher. He is a frequent speaker at conference venues, including Agile, Smidig, JavaZone and Sofware.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Lindorff Group is a leading outsourced receivables management company in Europe, and one of the leading on a global basis. For the past three-four years, they have increasingly adopted agile practices, especially in a large scale project converting and improving an old system written in Powerhouse to new .Net-technology.The results from adopting agile practices have been mostly positive, however, there were challenging issues related to requirement handling and estimation that needed attention. In 2008, Lindorff joined a project with Symphonical funded by Innovation Norway. The purpose of the project was to develop software for requirements handling, estimation and knowledge management for the Symphonical platform. Symphonical is a flexible web-based collaboration platform, where users can brainstorm, plan, organize and coordinate any process.This talk presents results from a case study detailing the challenges faced by Lindorff as they simultaneously adopted agile practices and introduced a new system for requirement handling and estimation. According to the respondents of the case study, Lindorff appears to have improved on two of the main points of concern presented in the 2007 study: requirement handling and estimation. Many users report that the introduction of agile methods and the platform Symphonical has improved the quality of important work processes. Furthermore, they report that the introduction of Symphonical has provided a framework for structured discussions regarding individual requirements, which helps maintaining the focus of IT projects. Furthermore, the flexible sharing regime where one can easily share information to external participants improves the effectiveness and efficiency of collaboration with all project contributors.</description>
+  </session>
+  <session>
+    <title>If I Ruled the World - C# 5.0 According to Jon</title>
+    <speakers>
+      <speaker>
+        <name>Jon Skeet</name>
+        <info>Jon Skeet is a Java developer for Google in London, but he plays with C# (somewhat obsessively) in his free time</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Code Excavations, Wishful Invocations, and Domain Specific Unit Test Frameworks</title>
+    <speakers>
+      <speaker>
+        <name>Roy Osherove</name>
+        <info>The chief architect at Typemock, Roy Osherove is one of the original ALT.NET organizers. He consults and trains teams worldwide on the gentle art of unit testing and test-driven development. He frequently speaks at international conferences such as NDC, TechEd and JAOO.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>2</track>
+    <description>In this talk I'll describe a technique for unit-testing code embedded in an impenetrable framework (such as Sharepoint, Silverlight, and BizTalk) that make such code inaccessible. We know we should write code that is easy to test because it has clean boundaries, but sometimes the vendors we work with make that kind of modularity just too hard. I will talk about how we can test such plug-in code by faking its environment in memory, simulating the underlying engines. As an example, I'll be showing SilverUnit, a framework to test code written for the Silverlight framework without driving through the browser. I'll talk about how the need for this sort of testing arose during silverlight development and how it allowed me to make sure my silverlight code worked as expected. even the UI logic.</description>
+  </session>
+  <session>
+    <title>Domain Driven Entity Framework</title>
+    <speakers>
+      <speaker>
+        <name>Julie Lerman</name>
+        <info>Julie Lerman is a Microsoft MVP, .NET mentor and consultant who lives in the hills of Vermont.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>3</track>
+    <description>If you think of your database as an "implementation detail", it is likely that you are not interested in building your all important domain classes based on a database or being bound by the limitations of a modeling tool. In the U.S., Telemark skiers cry "Free the Heel". In this session we'll make that a call to "Free the Domain Classes". We'll take a look at the different mechanisms that do not involve reverse engineering a database. In VS2010, EF's Model-First support and in the Entity Framework Feature CTP, the completely model-less Code Only support. We'll finish with a quick look at SQL Server Modeling's M language, which provides yet another option for defining entity classes without the EDM designer .</description>
+  </session>
+  <session>
+    <title>Building Applications with Silverlight 4</title>
+    <speakers>
+      <speaker>
+        <name>Tim Heuer</name>
+        <info>Tim Heuer is a program manager for Microsoft Silverlight.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>4</track>
+    <description>Now that Silverlight 4 is released, find out what is new/changed and how to write great data-driven applications with Silverlight 4. Learn about how you can leverage Silverlight 4 for rich desktop applications using the new ‘trusted application’ model and how to best take advantage of these features. Accessing data using RIA Services makes data-driven applications easier and can support a ViewModel development pattern approach. This session will be faced pace in overview, but deep in code. Few slides, mostly code.</description>
+  </session>
+  <session>
+    <title>Top 10 Security Scenarios for WCF Services: On Premises &amp; in the Cloud</title>
+    <speakers>
+      <speaker>
+        <name>Michele Bustamante</name>
+        <info>Michele Leroux Bustamante is not only an IDesign Chief Architect, she is also Microsoft Regional Director for San Diego, Microsoft MVP for Connected Systems and a BEA Technical Director.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>5</track>
+    <description></description>
+  </session>
+  <session>
+    <title>From one web server to two: Making the leap to web farms</title>
+    <speakers>
+      <speaker>
+        <name>Richard Campbell</name>
+        <info>Richard Campbell is a Microsoft Regional Director, MVP and co-host of .NET Rocks!, the Internet Audio Talkshow for .NET Developers as well as host of RunAs Radio, the podcast for Microsoft IT Professionals.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Every web application starts out on a single web server. And while we've been told over and over again that you can always move to multiple web servers, it's not as simple as that! This session digs into the details of what it takes to make that leap - all the changes needed to let your application function properly with more than one server. You'll learn about replicating your web application between two servers and how to keep the content in sync. The techniques and challenges of load balancing are explored. And you'll explore the critical challenge of moving to multiple servers - getting rid of affinity. There's more affinity than just the session object, but that is a key starting point. Moving to multiple servers isn't easy, but this session will give you the check list of what to do to be successful.</description>
+  </session>
+  <session>
+    <title>The Purpose of Leadership and Governance</title>
+    <speakers>
+      <speaker>
+        <name>Jurgen Appelo</name>
+        <info>Jurgen is a writer, speaker, developer, entrepreneur, manager, blogger, reader, dreamer, leader, freethinker, and… Dutch guy.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>2</day>
+    <track>7</track>
+    <description>There are three types of organizations: ordered, chaotic, and complex organizations. The best management approach depends on the type of organization, and the amount of rule-making a development manager/team leader should concern himself with. However, this distinction is a false (but useful) metaphor. In reality, development teams are complex _adaptive_ systems, meaning that they should be doing their own rule-making, as self-organizing systems.However, self-organization alone is not enough. Management is needed for imposing boundaries and constraints. There's a great checklist available to managers and team leaders for defining boundaries to authority in self-organizing teams.There are two kinds of purpose: archeo-purpose and neo-purpose. Both the team itself and the manager can assign a neo-purpose to a team. This neo-purpose is not the same as the goal of the project they are working on, or the goals of any of the stakeholders. One thing a manager/leader can do is to assign purpose to a self-organizing team. We will discuss how to do that.Goals usually lead to actions. But action lists are best rewritten as lists of subgoals. And sometimes compromises have to be found between the (sub)goals of employees, the (sub)goals of teams, and the (sub)goals of management.Finally, self-organizing systems have blind spots for two things: protection of individual people and protection of shared resources. It is the manager's job to keep an eye on all of those.</description>
+  </session>
+  <session>
+    <title>Language Design. Q&amp;A Session w/Jon Skeet and Mystery Guests</title>
+    <speakers>
+      <speaker>
+        <name>Mads Torgersen</name>
+        <info>A former computer science professor from Aarhus University. Mads joined the C# team at Microsoft as a Senior Program Manager.</info>
+      </speaker>
+      <speaker>
+        <name>Jon Skeet</name>
+        <info>Jon Skeet is a Java developer for Google in London, but he plays with C# (somewhat obsessively) in his free time</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>1</track>
+    <description>.</description>
+  </session>
+  <session>
+    <title>Beautiful Teams &amp; Leaders</title>
+    <speakers>
+      <speaker>
+        <name>Roy Osherove</name>
+        <info>The chief architect at Typemock, Roy Osherove is one of the original ALT.NET organizers. He consults and trains teams worldwide on the gentle art of unit testing and test-driven development. He frequently speaks at international conferences such as NDC, TechEd and JAOO.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>2</track>
+    <description>A look at what makes teams productive, and what makes team leaders effective. from team practices such as automation and communication, to team leads that grow and coach their people, confront problems and finds ways to make people better. this is an overview session. specific issues are elaborated in other sessions.</description>
+  </session>
+  <session>
+    <title>5 reasons why projects using DDD fail</title>
+    <speakers>
+      <speaker>
+        <name>Greg Young</name>
+        <info>Greg Young is an independent consultant who lives in two suitcases (literally).</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>4</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Architecting for the .NET Event Model</title>
+    <speakers>
+      <speaker>
+        <name>Kevin McNeish</name>
+        <info>Kevin McNeish is President and Chief Software Architect of Oak Leaf Enterprises, Inc, and has been a Microsoft .NET MVP for the last seven years.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>5</track>
+    <description>You may have a basic understanding of .NET's event model, but how can you best architect your applications to take advantage of .NET events? This session spends a few minutes on the basics, then provides real-world examples showing how you can design your applications to take advantage of the .NET event model for things such as:* Custom data binding in Windows Forms and Web Forms* Establishing relationships between business components* Creating world-class, end-user-configurable security* Localizing the user interface dynamically at run time</description>
+  </session>
+  <session>
+    <title>Introducing the .NET Service Bus</title>
+    <speakers>
+      <speaker>
+        <name>Juval Löwy</name>
+        <info>Juval Lowy is a software architect and the principal of IDesign, specializing in .NET architecture consulting and advanced training. Juval is Microsoft’s Regional Director for the Silicon Valley, working with Microsoft on helping the industry adopt .NET 4.0.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>6</track>
+    <description>The .NET services bus is part of the new Microsoft Cloud Computing Windows Azure initiative, and arguably, it is the most accessible, ready to use, powerful, and needed piece. The service bus allows clients to connects to services across any machine, network, firewall, NAT, routers, load balancers, virtualization, IP and DNS as if they were part of the same local network, and doing all that without compromising on the programming model or security. The service bus also supports callbacks, event publishing, authentication and authorization and doing all that in a WCF-friendly manner. This session will present the service bus programming model, how to configure and administer service bus solutions, working with the dedicated relay bindings including the available communication modes, relying on authentication in the cloud for local services and the various authentication options, and how to provide for end-to-end security through the relay service. You will also see some advanced WCF programming techniques, original helper classes, productivity-enhancing utilities and tools, as well as discussion of design best practices and pitfalls.</description>
+  </session>
+  <session>
+    <title>ASP.NET performance for free using caching</title>
+    <speakers>
+      <speaker>
+        <name>Gill Cleeren</name>
+        <info>Gill Cleeren is Microsoft Regional Director (www.theregion.com), MVP ASP.NET, INETA speaker bureau member and Silverlight Insider.</info>
+      </speaker>
+    </speakers>
+    <time>17:40 - 18:40</time>
+    <day>2</day>
+    <track>7</track>
+    <description>Is your ASP.NET application not performing like you wished it would? Performance not what it has to be? Have you considered caching? While many developers know the basics of caching in ASP.NET, there's actually a lot more possible than initially thought. Also, not every technique is good to solve every problem. In this session, we'll do an overview of all the options ASP.NET has to offer for caching and state management, helping you to get a better performing application.</description>
+  </session>
+  <session>
+    <title>The Three Laws of TDD</title>
+    <speakers>
+      <speaker>
+        <name>Robert C. Martin</name>
+        <info>Robert C. Martin has been a software professional since 1970. In the last 35 years, he has worked in various capacities on literally hundreds of software projects.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>1</track>
+    <description>The jury is in, the case is closed. TDD works, and works well. In this talk Uncle Bob makes the point that TDD is not a testing technique at all. Rather, TDD is a way to ensure good architecture, good design, good documentation, and that the software works as the programmer intended. TDD is a necessary discipline for those developers seeking to become professionals. This talk is half lecture and half demonstration. Examples are in Java and Junit.</description>
+  </session>
+  <session>
+    <title>Practical IronRuby</title>
+    <speakers>
+      <speaker>
+        <name>Shay Friedman</name>
+        <info>Shay Friedman is a Visual C#/IronRuby MVP and the author of IronRuby Unleashed.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>2</track>
+    <description>Ruby has been a home for some great innovative frameworks like Ruby on Rails, Cucumber and Rake. IronRuby version 1.0 will soon be released, unleashing the power of Ruby to the .NET world. In this session you will get familiar with the Ruby language and its amazing ecosystem and you will learn to take advantage of it in your everyday development tasks. Come and see how this great new addition to the .NET family makes your development process faster, clearer and happier!</description>
+  </session>
+  <session>
+    <title>Lessons Learned From Design By Contract</title>
+    <speakers>
+      <speaker>
+        <name>Greg Young</name>
+        <info>Greg Young is an independent consultant who lives in two suitcases (literally).</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Getting Agile with Scrum</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>4</track>
+    <description>Scrum is one of the leading agile software development processes. Over 12,000 project managers have become certified to run Scrum projects . Since its origin on Japanese new product development projects in the 1980s, Scrum has become recognized as one of the best project management frameworks for handling rapidly changing or evolving projects. Especially useful on projects with lots of technology or requirements uncertainty, Scrum is a proven, scalable agile process for managing software projects.Through lecture, discussion and exercises, this fast-paced tutorial covers the basics of what you need to know to get started with Scrum. You will learn about all key aspects of Scrum including product and sprint backlog, the sprint planning meeting, the sprint review, conducting a sprint retrospective, activities that occur during sprints, measuring and monitoring progress, and scaling Scrum to work with large and distributed teams. Also covered are the roles and responsibilities of the ScrumMaster, the product owner, and the Scrum team.This session will be equally suited for managers, programmers, testers, product managers and anyone else interested in improving product delivery.</description>
+  </session>
+  <session>
+    <title>Why WebForms Is Dead</title>
+    <speakers>
+      <speaker>
+        <name>Rob Conery</name>
+        <info>Rob Conery recently worked at Microsoft on the ASP.NET team. He is co-founder of Tekpub and the creator of SubSonic.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>5</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Developing for SharePoint 2010</title>
+    <speakers>
+      <speaker>
+        <name>Sahil Malik</name>
+        <info>Sahil Malik is a Microsoft MVP (Currently in SharePoint server competency, previously C#), INETA Speaker, a .NET author, consultant and trainer and a well-rounded overweight geek.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>6</track>
+    <description>Sure you're a .NET developer. Maybe you are even a SharePoint developer. But have you seen development for SharePoint 2010? It comes with full tooling support in VS2010, and massive improvements in the platform itself. Developing for SharePoint is finally manageable, but is it easy to be a SharePoint developer? Come and find out!</description>
+  </session>
+  <session>
+    <title>Introduction to GIT</title>
+    <speakers>
+      <speaker>
+        <name>James Gregory</name>
+        <info>James Gregory is an independent consultant specialising in .Net, and the creator of Fluent NHibernate, a popular .NET open-source project.</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>3</day>
+    <track>7</track>
+    <description>An introduction to distributed version control using Git, and how your VCS should work with you and not against you. How DVCS can completely alter your development process, streamline it, and help you produce better software, faster. Covering how local repositories speed up your development, multiple authoritative sources, distributed teams, multiple workflows, and some of the more distinct features of Git. With experiences from an OSS team on how the migration from SVN to Git has helped the project and changed how the team works (Fluent NHibernate).</description>
+  </session>
+  <session>
+    <title>The Solid Principles of OO &amp; Agile Design</title>
+    <speakers>
+      <speaker>
+        <name>Robert C. Martin</name>
+        <info>Robert C. Martin has been a software professional since 1970. In the last 35 years, he has worked in various capacities on literally hundreds of software projects.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>1</track>
+    <description>What happens to software? Why does is rot over time? How does an Agile development team prevent this rot, and prevent good designs from becoming legacy code? How can we be sure our designs are good in the first place? This class presents the agile S.O.L.I.D. principles for designing object oriented class structures. These principles govern the structure and interdependencies between classes in large object oriented systems. The principles include: The Open Closed Principle, The Liskov Substitution Principle, and the Dependency Inversion Principle, among others.</description>
+  </session>
+  <session>
+    <title>Advanced Debugging with Visual Studio</title>
+    <speakers>
+      <speaker>
+        <name>Ingo Rammer</name>
+        <info>Ingo Rammer is co-founder of thinktecture, a company providing architecture, design, review, and troubleshooting services for software architects and developers. He focuses mainly on improving performance, scalability and reliability of critical .NET applications.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>2</track>
+    <description>Basically every .NET developer knows the Visual Studio debugger, but only few know its little secrets. In this session, Ingo shows you what you can achieve with this tool beyond the setting of simple breakpoints. You will learn how advanced breakpoints, debugger macros and visualizers, interactive breakpoints, tracepoints and interactive object instantiation at development time can support your hunt for bugs in your applications. Ingo will also show you the new crash-dump debugging features of Visual Studio 2010 which allow you to get closer to your problem even if you don't have access to Visual Studio on the machine which exhibits the unexpected behavior.</description>
+  </session>
+  <session>
+    <title>Testable C#</title>
+    <speakers>
+      <speaker>
+        <name>Michael Feathers</name>
+        <info>Michael Feathers is a senior member of Object Mentor team. He provides training, coaching and mentoring services in Agile/XP programming practices, test-driven development, refactoring, object-oriented design, Java, C#, and C++.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>User Stories for Agile Requirements</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>4</track>
+    <description>The technique of expressing requirements as user stories is one of the most broadly applicable techniques introduced by the agile processes. User stories are an effective approach on all time constrained projects and are a great way to begin introducing a bit of agility to your projects. In this session, we will look at how to identify and write good user stories. The class will describe the six attributes that good stories should exhibit and present thirteen guidelines for writing better stories. We will explore how user role modeling can help when gathering a project’s initial stories. Because requirements touch all job functions on a development project, this tutorial will be equally suited for analysts, customers, testers, programmers, managers, or anyone involved in a software development project. By the end of this tutorial, you will leave knowing the six attributes of a good story, learn a good format for writing most user stories, learn practical techniques for gathering user stories, know how much work to do up-front and how much to do just-in-time.</description>
+  </session>
+  <session>
+    <title>Introducing Spark View Engine</title>
+    <speakers>
+      <speaker>
+        <name>Louis Dejardin</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>5</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Developing Testable Web Parts for SharePoint</title>
+    <speakers>
+      <speaker>
+        <name>Richard Fennell</name>
+        <info>Richard Fennell is the Engineering Director of the Black Marble Ltd a Microsoft Gold Partner based in the North of England. Black Marble specialises in BizTalk &amp; SharePoint based business automation.</info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>6</track>
+    <description>The development of components for use in SharePoint is a complex process, and often seems to fly in the face of what is considered good development practice in a Test Driven Development world.In this session I will show how using some good design practices and tools such as Typemock Isolator you can develop testable components for SharePoint (2007 &amp; 2010); often without even having to have SharePoint on your development PC.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>10:20 - 11:20</time>
+    <day>3</day>
+    <track>7</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Clean Code I: Arguments</title>
+    <speakers>
+      <speaker>
+        <name>Robert C. Martin</name>
+        <info>Robert C. Martin has been a software professional since 1970. In the last 35 years, he has worked in various capacities on literally hundreds of software projects.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>1</track>
+    <description>Keeping code clean is a simple matter of professional ethics. In this talk Robert Martin shows how a Java module can start clean, grow to become messy, and then be refactored back to cleanliness. Be forewarned: his tutorial is about CODE. We will put code on the screen and we will read and critique it. And then, one tiny step at a time, we will clean it. In this tutorial you will participate in the step by step improvement of a module. You will see the techniques of the Prime Directive (Never Be Blocked), and Agile Design Principles brought into play. You will witness the decision making process that Agile Developers employ to write code that is expressive, flexible, and clean. Finally, you learn an attitude of professional ethics that defines the software developer’s craft.</description>
+  </session>
+  <session>
+    <title>SharePoint 2010 - Business Connectivity Services</title>
+    <speakers>
+      <speaker>
+        <name>Sahil Malik</name>
+        <info>Sahil Malik is a Microsoft MVP (Currently in SharePoint server competency, previously C#), INETA Speaker, a .NET author, consultant and trainer and a well-rounded overweight geek.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>2</track>
+    <description>Business connectivity services, now enables you to bring external data into SharePoint and office with full CRUD (Create/Retrieve/Update/Delete) capabilities. This talk explains BCS in SharePoint 2010 in an end-to-end fashion, covering from the browser, through SPD, to the Visual Studio 2010 story</description>
+  </session>
+  <session>
+    <title>The Deep Synergy Between Testability and Good Design</title>
+    <speakers>
+      <speaker>
+        <name>Michael Feathers</name>
+        <info>Michael Feathers is a senior member of Object Mentor team. He provides training, coaching and mentoring services in Agile/XP programming practices, test-driven development, refactoring, object-oriented design, Java, C#, and C++.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>3</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Agile Estimating</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>5</track>
+    <description>The first step in creating a useful plan is the ability to estimate reliably. In this session we will discuss how to do this. We will look at various approaches to estimating including unit-less points and ideal time. The class will present four specific techniques for deriving reliable estimates, including how to use the popular Planning Poker technique and other techniques that dramatically improve a project's chances of on-time completion.</description>
+  </session>
+  <session>
+    <title>Spark Deep Dive</title>
+    <speakers>
+      <speaker>
+        <name>Louis Dejardin</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>6</track>
+    <description></description>
+  </session>
+  <session>
+    <title>Code Contracts</title>
+    <speakers>
+      <speaker>
+        <name>Hadi Hariri</name>
+        <info>Hadi Hariri is a Technical Evangelist at JetBrains. His passions include software architecture and best practices.</info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>7</track>
+    <description>Code Contracts are a new feature of .NET 4 and present themselves as a way of greatly simplifying our code by using the concepts of Design by contract. In this talk we will cover the basics of Code Contracts and see how they can be used in real-world applications, how they can be tested, and see if they are all they are cut out to be.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>11:40 - 12:40</time>
+    <day>3</day>
+    <track>7</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>The Art of the Method</title>
+    <speakers>
+      <speaker>
+        <name>Michael Feathers</name>
+        <info>Michael Feathers is a senior member of Object Mentor team. He provides training, coaching and mentoring services in Agile/XP programming practices, test-driven development, refactoring, object-oriented design, Java, C#, and C++.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>SharePoint 2010 - Is it Scalable or not?</title>
+    <speakers>
+      <speaker>
+        <name>Sahil Malik</name>
+        <info>Sahil Malik is a Microsoft MVP (Currently in SharePoint server competency, previously C#), INETA Speaker, a .NET author, consultant and trainer and a well-rounded overweight geek.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>2</track>
+    <description>If there is any topic that has generated more debate, it is the scalability of SharePoint lists and document libraries. In this session, Sahil will talk about the new and improved details around the scalability, and performance aspects of SharePoint 2010. Topics covered will include List management infrastructure, content database schema improvements, and RBS capabilities, with practical gotchas and things to watch out for.</description>
+  </session>
+  <session>
+    <title>Hardcore .NET Production Debugging</title>
+    <speakers>
+      <speaker>
+        <name>Ingo Rammer</name>
+        <info>Ingo Rammer is co-founder of thinktecture, a company providing architecture, design, review, and troubleshooting services for software architects and developers. He focuses mainly on improving performance, scalability and reliability of critical .NET applications.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>3</track>
+    <description>But ... it used to work yesterday! In this newest version of his classic session, Ingo Rammer will introduce the hardcore and low-level tools used for production debugging of .NET applications. You'll learn how to attack the nastiest bugs in your applications, how to look at what's causing that grinding halt of your ASP.NET application and how to find the cause of that horrible memory leak in your Windows Forms application. Knowledge of these production debugging tools like WinDbg and SOS is not only important for cases when you really don't have access to Visual Studio and your source code, but these tools also reveal a lot more information than just the regular managed code debuggers.</description>
+  </session>
+  <session>
+    <title>Advanced Topics in Agile Planning</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>4</track>
+    <description>Velocity is perhaps the most useful metric available to agile teams. In this session we will look at advanced uses of velocity for planning under special but common circumstances. We will see how to forecast velocity in the complete absence of any historical data. We will look at how a new team can forecast velocity by looking at other teams. We will see how to predict the velocity of a team that will grow or shrink in size. Most importantly we will look at the use of confidence intervals to create plans we can be 90% confident in, even on fixed-price or fixed-date contracts.</description>
+  </session>
+  <session>
+    <title>Riding IronRuby on Rails</title>
+    <speakers>
+      <speaker>
+        <name>Shay Friedman</name>
+        <info>Shay Friedman is a Visual C#/IronRuby MVP and the author of IronRuby Unleashed.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>5</track>
+    <description>The most famous Ruby-driven framework is, by far, Ruby on Rails. With IronRuby, .NET developers can now take advantage of this incredible web framework without leaving their comfort zone. In this session, Shay Friedman will build an entire Web 2.0 site from scratch while using and explaining the key features of Ruby on Rails. Come and see what Ruby on Rails is all about and what's made it the success it is today.</description>
+  </session>
+  <session>
+    <title>Testing C# and ASP.NET Applications with Ruby</title>
+    <speakers>
+      <speaker>
+        <name>Ben Hall</name>
+        <info>Ben Hall is a UK C# developer\tester with a strong passion for software development and loves writing code.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>6</track>
+    <description>With the reach and diversity of different programming languages and paradigms at the moment, it's possible to use the appropriate language for the appropriate task. In my case, I develop applications using C# but test the code using Ruby. The Ruby community has always understood the importance of testing. They strive to make applications more testable while improving the approaches and tools they use. As a result, they have created some amazing frameworks and a series of best practices to support testing. While this is great for Ruby developers, C# and ASP.net developers can take full advantage for their own applications. This session provides an insight into the Ruby world and how you can take advantage to create readable, maintainable and valuable tests for ASP.net based web applications, from the business logic up to the user interface. Taken from my own experiences of using this approach, the session will demonstrate how to integrate Ruby frameworks such as RSpec and Cucumber into your application development cycle, and how different frameworks combined with Ruby can solve a number of problems traditionally faced when using C#. There will also be discussion around IronRuby and JRuby and their implications for the future and the future of Testing ASP.net applications in general.</description>
+  </session>
+  <session>
+    <title>Aspect Oriented Programming: Learning by Re-Invention</title>
+    <speakers>
+      <speaker>
+        <name>Fredrik Kalseth</name>
+        <info>Fredrik works as a senior consultant for Capgemini in Stavanger - at least that is what his business card will tell you. In his own words, Fredrik is a software craftsman apprentice, solving client’s software needs by day and studying the craft of software development by night.</info>
+      </speaker>
+    </speakers>
+    <time>13:40 - 14:40</time>
+    <day>3</day>
+    <track>7</track>
+    <description>This talk aims to provide an in-depth understanding of the concept of Aspect Oriented Programming and how an AOP framework does what it does, by taking the audience through the implementation of (a simple) one from scratch.</description>
+  </session>
+  <session>
+    <title>Clean Code III: Functions</title>
+    <speakers>
+      <speaker>
+        <name>Robert C. Martin</name>
+        <info>Robert C. Martin has been a software professional since 1970. In the last 35 years, he has worked in various capacities on literally hundreds of software projects.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>1</track>
+    <description>Get ready for a challenge as Robert Martin dives deep into the topic of clean Java code by examining what makes a good function. In this talk you will look at a lot of code; some good and some bad. You will experience how such code is analyzed, critiqued, and eventually refactored. You will understand the decisions made by an expert in the field as bad code is gradually transformed into good code. How big should a function be? How should it be named? How should it be documented. How many indent levels should it have? How should it deal with exceptions, arguments, and return values. This talk is all about code at the lowest level. And yet the principles and techniques presented have far reaching implications.</description>
+  </session>
+  <session>
+    <title>Get Your Business Out of My Face: Legacy Refactorings for Testable User Interface Code</title>
+    <speakers>
+      <speaker>
+        <name>Brett Schuchert</name>
+        <info>Brett Schuchert currently works for Object Mentor as an agile coach and trainer.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>2</track>
+    <description>Traditional acceptance testing works at the front-end of a fully-integrated system. There is a need for this kind of testing, however the need accounts for a comparatively small amount of the overall checking you should do on your system. Unfortunately, effectively checking your system requires some basic design principles, which are typically not applied.This session will give you an idea of the kinds of design changes you?ll need to make to improve the testability of your system through a demonstration of legacy refactoring techniques targeted at getting business logic out of UI code.This session will be code-driven. I?ll begin with some example code, displayed for the audience. We will begin by writing automated tests to verify some of the business logic leaving the code as is.After writing a few tests, we will review the pros and cons of the testing approach.I will then provide a few basic design principles that apply to the particular situation: dependency inversion principle, single responsibility principle, not mixing enabling code with business logic.We will then make some ?obvious? legacy refactorings, done badly. Review the results. This first round will be an application of the Single Responsibility Principle. Then we will discuss the Dependency Inversion Principle and do the refactoring more effectively.We will continue with a comparison of the first tests with their final form and the first version of the business logic with the refactored version. We will review the required setup, maintainability and the speed of execution.Finally, we will summarize the basic principles involved, provide several more examples (in general, not in discussing code), show how those same principles apply to other parts of the system and conclude with a Q &amp; A session.Throughout the presentation, I will be eliciting questions from the audience and generally using the Socratic approach to provide answers through a series of questions participants can answer themselves.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>3</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Scaling Agile to Work with a Distributed Team</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>5</track>
+    <description>The early agile literature was adamant about two things: stick with small teams and put everyone in one room. However, in the years since the Agile Manifesto, the increasing popularity of agile and the dramatic improvements it brings has pushed it onto larger and larger projects. Additionally, having an entire team--especially on a large project--in one room, or even one building is a luxury no longer enjoyed by many projects.In this presentation, we will look at how agile can be scaled to work on any multi-team project. Even a project with two teams will benefit from learning how to proactively manage interteam dependencies, conduct iteration planning for multiple teams, cultivate communities of practice, and coordinating work. Because so many projects are spread across multiple sites we will also look at overcoming the unique challenges facing distributed teams. We will look at deciding how to distribute a team, how to create coherence among team members, the importance of getting together and when are the most important times to use the travel budget, changes to what the team documents, and how to handle meetings when spread across timezones. Whether your project is spread across two locations in the same city or spread around the globe, you will leave with practical advice to try tomorrow.</description>
+  </session>
+  <session>
+    <title>Creating Web Sites with Open Rasta</title>
+    <speakers>
+      <speaker>
+        <name>Sebastien Lambla</name>
+        <info>Sebastien Lambla runs Caffeine IT, a .net consultancy / contracting company helping the good people of London adopt new technologies, new processes, new methodologies and in general anything that's new and shiny.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>5</track>
+    <description>OpenRasta is a framework built from the ground-up to unleash the power of HTTP. Be it web sites, forms or web services, OpenRasta lets you build your application quickly and efficiently, without the hassle of complicated APIs and god objects. Come and discover why OpenRasta is the most talked about ReST framework on .net, and how it can help you deliver better, more http-friendly systems.</description>
+  </session>
+  <session>
+    <title>Collaboration in ABB - from drawing board to real-life solution using SharePoint 2010</title>
+    <speakers>
+      <speaker>
+        <name>Unni Løland</name>
+        <info>Unni has been working with .NET development in BEKK since 2006.</info>
+      </speaker>
+      <speaker>
+        <name>Anders Taucher</name>
+        <info>Anders has been working on IT systems development projects since 1997, the last ten years as a project manager at Bekk Consulting.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>6</track>
+    <description>ABB is a global leader in power and automation technologies, operates in around 100 countries and employs about 117,000 people. ABB's global intranet is a complex and highly tailored solution containing several hundred thousand pages in more than fifty country sites. The intranet was named one of "The Ten Best Intranets of the Year" by Nielsen Norman Group in 2002, but the general concept of the intranet has not evolved substantially since then. For several years ABB worked on new concepts for making the intranet more valuable to users, by increasing findability, quality of content and opportunities for collaboration. Late last year, SharePoint 2010 was selected as the technical platform to achieve these goals. This talk will outline the collaboration concept that ABB envisioned, and what happened when the concept from the drawing board met the real-life platform SharePoint 2010. The talk will focus on the "social" aspects of the solution such as profiles, networking with colleagues, sharing of information through status updates, activity feeds, social tagging and commenting. It will describe, feature by feature, which parts of SharePoint were used as they are, and which were tailored to achieve a more interactive and collaborative intranet for ABB. The talk will focus both on functionality and on hands-on technical implementation.The speakers will share their experiences of what worked well and what not in terms of conceptual design, development of improved or new social features in SharePoint, and visual styling of the solution in order to reflect ABB's visual identity.</description>
+  </session>
+  <session>
+    <title>No Source Code, No Problem - Reverse Code Engineering in Product Development</title>
+    <speakers>
+      <speaker>
+        <name>Ole André Vadla Ravnås</name>
+        <info>Ole André is a self-taught aspiring software craftsman who joined TANDBERG in 2006.</info>
+      </speaker>
+    </speakers>
+    <time>15:00 - 16:00</time>
+    <day>3</day>
+    <track>7</track>
+    <description>Reverse Code Engineering (RCE) is commonly applied to solve security-related challenges. It is all about understanding the behavior of software without access to its source code. This often means studying low-level machine code generated from a higher level language like C or C++. Such translation is lossy and highly architecture and compiler dependent, which makes going in the reverse direction quite challenging. In this talk I'm going to discuss RCE from a product development perspective, where interoperability with platform-specific undocumented APIs could be a necessity. First some background including practical examples of key challenges solved by RCE from my own experience, followed by a live demonstration of some tools and techniques.</description>
+  </session>
+  <session>
+    <title>Rough Cuts in Legacy Code</title>
+    <speakers>
+      <speaker>
+        <name>Michael Feathers</name>
+        <info>Michael Feathers is a senior member of Object Mentor team. He provides training, coaching and mentoring services in Agile/XP programming practices, test-driven development, refactoring, object-oriented design, Java, C#, and C++.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>1</track>
+    <description></description>
+  </session>
+  <session>
+    <title>State vs. Interaction Testing</title>
+    <speakers>
+      <speaker>
+        <name>Hadi Hariri</name>
+        <info>Hadi Hariri is a Technical Evangelist at JetBrains. His passions include software architecture and best practices.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>2</track>
+    <description>Mocking frameworks allow you to stub out behaviour in order to perform tests of individual peices of functionality in isolation. However, there are times when performing certain actions and assert a result is not sufficient. In this session we will drill deep into unit testing and explain the differences between state and interaction-based testing. We will examine the role of stubs versus mocks and how to correctly write unit tests that are not fragile or counter-productive.</description>
+  </session>
+  <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info></info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>3</track>
+    <description>TBA</description>
+  </session>
+  <session>
+    <title>Leading a Self-Organizing Team</title>
+    <speakers>
+      <speaker>
+        <name>Mike Cohn</name>
+        <info>Mike Cohn is the author of Succeeding with Agile: Software Development Using Scrum, User Stories Applied for Agile Software Development and Agile Estimating and Planning, as well as books on Java and C++ programming.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>5</track>
+    <description>One of the challenges of agile development is coming to grips with the role of leaders and managers of self-organizing teams. Many would-be ScrumMasters and agile coaches go to the extreme of refusing to exert any influence on their teams at all. Others retain too much of their prior command-and-control management styles and fail to unleash the creativity and productivity of a self-organizing team.Leading a self-organizing team can be a fine line. In this session you will learn the proper ways to influence the path taken by a team to solving the problems given to it. You will learn how to become comfortable in this role. You’ll understand why influencing a self-organizing team is neither sneaky nor inappropriate but is necessary.Drawing on analogies from fields such as evolutionary biology and the study of complex adaptive systems, the instructor will describe three factors necessary for self-organization to occur and then provide seven tools for guiding the direction taken by the team as they self-organize.</description>
+  </session>
+  <session>
+    <title>LINQ - Beyond Queries</title>
+    <speakers>
+      <speaker>
+        <name>Scott Allen</name>
+        <info>Scott is the founder and Principal Consultant with OdeToCode LLC. He is also a member of the Pluralsight technical staff.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>5</track>
+    <description>The C# language and the .NET platform introduced many new features to support language integrated query. In this session, we’ll look at using these LINQ related features to build rich, intention revealing logic. We’ll dive into the magic of expression trees and use them to implement type-safe reflection, apply lambda expressions for a functional programming style, and use extension methods to build an internal DSL in C#.</description>
+  </session>
+  <session>
+    <title>A Style of Programming</title>
+    <speakers>
+      <speaker>
+        <name>Tore Vestues</name>
+        <info>Tore is a managing consultant at BEKK. He has a special interest in code quality, productivity, architecture, process and agile thinking.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>6</track>
+    <description>This talk describes a set of coding principles that constitutes a style of programming that focuses on ease of coding, ease of changing the code, and ease of testing the code. The presentation aims at helping programmers understand how the principles relate to actual code. Every principle is made concrete through examples. This style of programming is influenced by leading object oriented and agile developers, and it is perfect for applying on object oriented languages such as C#.</description>
+  </session>
+  <session>
+    <title>Fubu MVC</title>
+    <speakers>
+      <speaker>
+        <name>Mark Nijhof</name>
+        <info>Mark Nijhof has been working in software development since 2000 and recently founded Cre8ive Thought to be the next step in his career.</info>
+      </speaker>
+    </speakers>
+    <time>16:20 - 17:20</time>
+    <day>3</day>
+    <track>7</track>
+    <description>FubuMVC is an open source framework for web development using the ModelView Controller (MVC) pattern. FubuMVC is built in C# and depends on theSystem.Web.Routing subsystem of the base CLR, but has no dependency on the ASP.Net MVC framework. In this talk I will highlight the architectural design of FubuMVC, how it works and more importantly the reasoning behind it. I will not make this into a comparison match with ASP.NET MVC, but there are so many interesting patterns being used in the FubuMVC code base that in its self should make this a very interesting talk. The FubuMVC code base has been an example for many others even in different areas outside of web development.</description>
+  </session>
+</sessions>
