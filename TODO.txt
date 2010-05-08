@@ -1,0 +1,25 @@
+"My Schedule" functionality:
+ - Should have the ability to select a session and click "add to my schedule"
+ - Should have the ability to view your schedule on a 4th tab
+
+
+Smoother scrolling on the Twitter tab
+
+
+Better artwork and images
+
+
+More information on the screen detailing a session:
+ - The track
+ - The time
+ - The date
+ - The speaker(s)
+
+
+More information on the screen detailing a speaker:
+ - A list of sessions that speaker is speaking in
+
+
+Other bits and bobs:
+ - Add the gridlines back in on the Twitter tab
+ - Deselect the cells when navigating backwards
