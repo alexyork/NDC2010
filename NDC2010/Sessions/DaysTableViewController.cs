@@ -47,9 +47,11 @@ namespace NDC2010
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
-				var cell = _tvc.DequeueOrCreateTableCell(tableView, CELL_ID);
+				var cell = _tvc.DequeueOrCreateTableCell(tableView, CELL_ID, UITableViewCellStyle.Subtitle);
 				
-				cell.TextLabel.Text = _tvc.Presenter.GetTextForDay(indexPath.Row);
+				// TODO: cleanup
+				cell.TextLabel.Text = "Day " + (indexPath.Row + 1);
+				cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForDay(indexPath.Row);
 		
 				return cell;
 			}
@@ -59,7 +61,7 @@ namespace NDC2010
 				if (_sessionsTableViewController == null)
 					_sessionsTableViewController = new SessionsTableViewController();
 				
-				_sessionsTableViewController.Day = indexPath.Row + 1;
+				_sessionsTableViewController.Day = (indexPath.Row + 1);
 				
 				_tvc.NavigationController.PushViewController(_sessionsTableViewController, true);
 			}

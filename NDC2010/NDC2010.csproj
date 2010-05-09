@@ -16,6 +16,7 @@
     <BundleIcon>Icon.png</BundleIcon>
     <BundleIdentifier>net.alexyork.ndc2010</BundleIdentifier>
     <BundleVersion>1.0.0</BundleVersion>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,7 +105,6 @@
     </Compile>
     <Compile Include="Reachability.cs" />
     <Compile Include="NetworkActivity.cs" />
-    <Compile Include="StopwatchTimer.cs" />
     <Compile Include="NDC2010DetailsTableViewSource.cs" />
     <Compile Include="NDC2010NavigationController.cs" />
     <Compile Include="NDC2010TableViewController.cs" />

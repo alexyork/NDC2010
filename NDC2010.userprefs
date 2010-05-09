@@ -1,13 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/Twitter/TwitterTableViewController.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/AppDelegateUIBuilder.cs" ctype="Workbench">
     <Files>
-      <File FileName="NDC2010/Twitter/TwitterTableViewController.cs" Line="204" Column="3" />
+      <File FileName="NDC2010/Twitter/TwitterTableViewController.cs" Line="212" Column="6" />
+      <File FileName="NDC2010/AppDelegate.cs" Line="39" Column="56" />
+      <File FileName="NDC2010/Sessions/SessionsTableViewController.cs" Line="53" Column="86" />
+      <File FileName="NDC2010/NDC2010TableViewController.cs" Line="25" Column="3" />
+      <File FileName="NDC2010/AppDelegateUIBuilder.cs" Line="71" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="NDC2010" expanded="True" selected="True" />
+          <Node name="NDC2010" expanded="True">
+            <Node name="Sessions" expanded="True" />
+            <Node name="AppDelegateUIBuilder.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">

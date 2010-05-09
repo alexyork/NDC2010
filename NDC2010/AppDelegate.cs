@@ -36,10 +36,7 @@ namespace NDC2010
 		{
 			InitializeWindow();
 			
-			using (var timer = new StopwatchTimer("Sessions XML load"))
-			{
-				Sessions = new DefaultSessionsRepository().GetAll();
-			}
+			Sessions = new DefaultSessionsRepository().GetAll();
 			
 			InitializeMainViewControllers();
 			InitializeTabController();
