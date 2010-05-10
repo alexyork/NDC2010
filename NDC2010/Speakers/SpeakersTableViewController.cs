@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using MonoTouch.Foundation;
@@ -16,7 +15,7 @@ namespace NDC2010
 		
 		public SpeakersPresenter Presenter { get; set; }
 		
-		protected IEnumerable<Speaker> Speakers { get; set; }
+		protected Speaker[] Speakers { get; set; }
         
 		public SpeakersTableViewController() : base(UITableViewStyle.Plain)
 		{

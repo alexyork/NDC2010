@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using NDC2010.Model;
 
@@ -7,7 +6,7 @@ namespace NDC2010.Logic.Presenters
 {
 	public class SessionsPresenter
 	{
-		public IEnumerable<Session> Sessions { get; set; }
+		public Session[] Sessions { get; set; }
 		public int Day { get; set; }
 		
 		public SessionsPresenter()
@@ -15,13 +14,13 @@ namespace NDC2010.Logic.Presenters
 		{
 		}
 		
-		public SessionsPresenter(IEnumerable<Session> sessions, int day)
+		public SessionsPresenter(Session[] sessions, int day)
 		{
 			Sessions = sessions;
 			Day = day;
 		}
 		
-		public IEnumerable<Session> GetSessionsForDay(int day)
+		public Session[] GetSessionsForDay(int day)
 		{
 			var query = from session in Sessions
 						where session.Day == day
@@ -45,7 +44,7 @@ namespace NDC2010.Logic.Presenters
 			}
 		}
 		
-		public IEnumerable<Session> GetSessionsForSection(int section)
+		public Session[] GetSessionsForSection(int section)
 		{
 			var query = from session in Sessions
 						where session.Day == Day &&

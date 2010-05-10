@@ -68,10 +68,5 @@ namespace NDC2010
 			
 			window.AddSubview(tabBarController.View);
 		}
-		
-		// This method is required in iPhoneOS 3.0
-		public override void OnActivated (UIApplication application)
-		{
-		}
 	}
 }

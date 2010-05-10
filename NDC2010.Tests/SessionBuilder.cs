@@ -80,13 +80,9 @@ namespace NDC2010.Tests
 			return this;
 		}
 		
-		public List<Session> Build()
+		public Session[] Build()
 		{
-			/*
-			foreach (var session in _sessions)
-				Console.WriteLine(session.Title + ". Day " + session.Day);
-			*/
-			return _sessions;
+			return _sessions.ToArray();
 		}
 	}
 }
