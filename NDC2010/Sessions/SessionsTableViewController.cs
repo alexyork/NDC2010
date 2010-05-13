@@ -68,7 +68,17 @@ namespace NDC2010
 				_sessionTableViewController.BindSession(session);
 				
 				_tvc.NavigationController.PushViewController(_sessionTableViewController, true);
+				_tvc.SelectedRow = indexPath;
 			}
+		}
+		
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear (animated);
+			
+			Title = "Sessions, Day " + Day;
+			Presenter.Day = Day;
+			TableView.ReloadData();
 		}
 		
 		public override void ViewDidLoad()
@@ -82,15 +92,7 @@ namespace NDC2010
 				BackgroundColor = UIColor.Clear
 			};
 			
-			
 			View.AddSubview(TableView);
-		}
-		
-		public override void ViewWillAppear(bool animated)
-		{
-			Title = "Sessions, Day " + Day;
-			Presenter.Day = Day;
-			TableView.ReloadData();
 		}
 	}
 }

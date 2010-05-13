@@ -1,4 +1,5 @@
 using System;
+using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
 namespace NDC2010
@@ -7,6 +8,7 @@ namespace NDC2010
 	{
 		protected UITableView TableView { get; set; }
 		protected UITableViewStyle Style { get; set; }
+		protected NSIndexPath SelectedRow { get; set; }
 		
 		public NDC2010TableViewController() : this(UITableViewStyle.Plain)
 		{
@@ -33,6 +35,14 @@ namespace NDC2010
 			}
 			
 			return cell;
+		}
+		
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
+			
+			if (SelectedRow != null)
+				TableView.DeselectRow(SelectedRow, true);
 		}
 	}
 }

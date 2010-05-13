@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A652ADE8-0DA4-4633-AB7D-419BC624826D}</ProjectGuid>
+    <ProjectGuid>{FDF1F452-C3E8-4811-B099-F15C87538F07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>NDC2010.Tests</RootNamespace>
     <AssemblyName>NDC2010.Tests</AssemblyName>
@@ -27,61 +27,65 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
-    <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\iPhone\Distribution</OutputPath>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.core, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
     <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.Xml.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\monotouch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SpeakerPresenterTests\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="TestExtensionsHelpers.cs" />
-    <Compile Include="SessionBuilder.cs" />
-    <Compile Include="MockSessionsRepository.cs" />
-    <Compile Include="Converting_session_XML_elements.cs" />
-    <Compile Include="SessionsPresenterTests\Getting_sessions_by_day.cs" />
-    <Compile Include="SessionsPresenterTests\Getting_sessions_for_section.cs" />
-    <Compile Include="SessionsPresenterTests\Getting_time_for_section.cs" />
-    <Compile Include="SessionsPresenterTests\SessionsPresenterTestBase.cs" />
-    <Compile Include="SessionPresenterTests\Getting_cell_text_for_section.cs" />
-    <Compile Include="SessionPresenterTests\Getting_title_for_section.cs" />
-    <Compile Include="SessionPresenterTests\SessionPresenterTestBase.cs" />
-    <Compile Include="SpeakersPresenterTests\Getting_all_speakers.cs" />
-    <Compile Include="SpeakersPresenterTests\SpeakersPresenterTestBase.cs" />
-    <Compile Include="SpeakerPresenterTests\Getting_title_for_section.cs" />
-    <Compile Include="SpeakerPresenterTests\SpeakerPresenterTestBase.cs" />
-    <Compile Include="SpeakerPresenterTests\Get_cell_text_for_section.cs" />
-    <Compile Include="DaysPresenterTests\DaysPresenterTestBase.cs" />
-    <Compile Include="DaysPresenterTests\Getting_number_of_days.cs" />
-    <Compile Include="DaysPresenterTests\Getting_cell_text_for_day.cs" />
-    <Compile Include="DaysPresenterTests\Getting_title.cs" />
-    <Compile Include="SessionsPresenterTests\Getting_number_of_daily_timeslots.cs" />
-    <Compile Include="Converting_twitter_XML_elements.cs" />
-    <Compile Include="Creating_a_FriendlyDateTime.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NDC2010.Logic\NDC2010.Logic.csproj">
-      <Project>{F4090AB0-145B-4BE8-9962-81D10B815A91}</Project>
-      <Name>NDC2010.Logic</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NDC2010.Model\NDC2010.Model.csproj">
       <Project>{7DA1FBBF-1EB5-4D22-A5E1-49BA1219D9EB}</Project>
       <Name>NDC2010.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NDC2010.Logic\NDC2010.Logic.csproj">
+      <Project>{F4090AB0-145B-4BE8-9962-81D10B815A91}</Project>
+      <Name>NDC2010.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DaysPresenterTests\DaysPresenterTestBase.cs" />
+    <Compile Include="DaysPresenterTests\Getting_cell_text_for_day.cs" />
+    <Compile Include="DaysPresenterTests\Getting_number_of_days.cs" />
+    <Compile Include="DaysPresenterTests\Getting_title.cs" />
+    <Compile Include="SessionPresenterTests\Getting_cell_text_for_section.cs" />
+    <Compile Include="SessionPresenterTests\Getting_title_for_section.cs" />
+    <Compile Include="SessionPresenterTests\SessionPresenterTestBase.cs" />
+    <Compile Include="SessionsPresenterTests\Getting_number_of_daily_timeslots.cs" />
+    <Compile Include="SessionsPresenterTests\Getting_sessions_by_day.cs" />
+    <Compile Include="SessionsPresenterTests\Getting_sessions_for_section.cs" />
+    <Compile Include="SessionsPresenterTests\Getting_time_for_section.cs" />
+    <Compile Include="SessionsPresenterTests\SessionsPresenterTestBase.cs" />
+    <Compile Include="SpeakerPresenterTests\Get_cell_text_for_section.cs" />
+    <Compile Include="SpeakerPresenterTests\Getting_title_for_section.cs" />
+    <Compile Include="SpeakerPresenterTests\SpeakerPresenterTestBase.cs" />
+    <Compile Include="SpeakersPresenterTests\Getting_all_speakers.cs" />
+    <Compile Include="SpeakersPresenterTests\SpeakersPresenterTestBase.cs" />
+    <Compile Include="TwitterPresenterTests\TwitterPresenterTestBase.cs" />
+    <Compile Include="Converting_session_XML_elements.cs" />
+    <Compile Include="Converting_twitter_XML_elements.cs" />
+    <Compile Include="Creating_a_FriendlyDateTime.cs" />
+    <Compile Include="MockSessionsRepository.cs" />
+    <Compile Include="SessionBuilder.cs" />
+    <Compile Include="TestExtensionsHelpers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -57,6 +57,7 @@ namespace NDC2010
 				_speakerTableViewController.BindSpeaker(speaker);
 				
 				_tvc.NavigationController.PushViewController(_speakerTableViewController, true);
+				_tvc.SelectedRow = indexPath;
 			}
 		}
 		

@@ -1,36 +1,36 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/AppDelegateUIBuilder.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010.Tests/Converting_twitter_XML_elements.cs" ctype="Workbench">
     <Files>
-      <File FileName="NDC2010/Twitter/TwitterTableViewController.cs" Line="212" Column="6" />
-      <File FileName="NDC2010/AppDelegate.cs" Line="39" Column="56" />
-      <File FileName="NDC2010/Sessions/SessionsTableViewController.cs" Line="53" Column="86" />
-      <File FileName="NDC2010/NDC2010TableViewController.cs" Line="25" Column="3" />
-      <File FileName="NDC2010/AppDelegateUIBuilder.cs" Line="71" Column="3" />
+      <File FileName="NDC2010/Sessions/DaysTableViewController.cs" Line="1" Column="1" />
+      <File FileName="NDC2010.Tests/Converting_twitter_XML_elements.cs" Line="3" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="NDC2010" expanded="True">
-            <Node name="Sessions" expanded="True" />
-            <Node name="AppDelegateUIBuilder.cs" selected="True" />
+          <Node name="NDC2010.Model" selected="True" />
+          <Node name="NDC2010.Tests" expanded="True">
+            <Option id="ShowVersionControlOverlays" value="True" />
+            <Option id="ShowAllFiles" value="False" />
           </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True" selected="True">
-          <Node name="NDC2010.Tests" expanded="True" />
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True" />
-      </Pad>
       <Pad Id="ConnectionManagerPad">
         <State selected="True" />
       </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
 </Properties>

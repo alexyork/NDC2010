@@ -64,6 +64,7 @@ namespace NDC2010
 				_sessionsTableViewController.Day = (indexPath.Row + 1);
 				
 				_tvc.NavigationController.PushViewController(_sessionsTableViewController, true);
+				_tvc.SelectedRow = indexPath;
 			}
 		}
 		

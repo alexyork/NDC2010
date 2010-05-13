@@ -2,4 +2,4 @@ obj
 bin
 *.pidb
 test-results
-.userprefs
+*.userprefs

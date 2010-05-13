@@ -22,4 +22,3 @@ More information on the screen detailing a speaker:
 
 Other bits and bobs:
  - Add the gridlines back in on the Twitter tab
- - Deselect the cells when navigating backwards
