@@ -63,11 +63,6 @@ namespace NDC2010
 		
 				return cell;
 			}
-		
-			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
-			{
-				Console.WriteLine("NDC2010.Sessions: Row selected {0}", indexPath.Row);
-			}
 			
 			public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 			{

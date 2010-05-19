@@ -9,13 +9,29 @@ using NDC2010.Logic;
 
 namespace NDC2010
 {
+	
+	// [tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+	
+	
 	[Register("SessionsTableViewController")]
 	public partial class SessionsTableViewController : NDC2010TableViewController
     {
 		private static NSString CELL_ID = new NSString("SessionsTableCell");
 		
-		public int Day { get; set; }
-		public SessionsPresenter Presenter { get; set; }
+		private int _day;
+		public int Day
+		{
+			get { return _day; }
+			set
+			{
+				ReloadData = true;
+				_day = value;
+			}
+		}
+		
+		protected SessionsPresenter Presenter { get; set; }
+		
+		protected bool ReloadData { get; set; }
 		
 		public SessionsTableViewController() : base(UITableViewStyle.Grouped)
 		{
@@ -69,16 +85,21 @@ namespace NDC2010
 				
 				_tvc.NavigationController.PushViewController(_sessionTableViewController, true);
 				_tvc.SelectedRow = indexPath;
+				_tvc.ReloadData = false;
 			}
 		}
 		
 		public override void ViewWillAppear(bool animated)
 		{
-			base.ViewWillAppear (animated);
+			base.ViewWillAppear(animated);
 			
 			Title = "Sessions, Day " + Day;
 			Presenter.Day = Day;
-			TableView.ReloadData();
+			
+			if (ReloadData)
+			{
+				TableView.ReloadData();
+			}
 		}
 		
 		public override void ViewDidLoad()

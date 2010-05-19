@@ -195,7 +195,7 @@ namespace NDC2010
 			
 			if (_activityView == null)
 			{
-				_activityView = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
+				_activityView = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
 		    		_activityView.Frame = new RectangleF(140, 140, 30, 30);
 				View.AddSubview(_activityView);
 			}

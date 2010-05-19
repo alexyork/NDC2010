@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sessions>
   <session>
+    <title>TBA</title>
+    <speakers>
+      <speaker>
+        <name>TBA</name>
+        <info>TBA</info>
+      </speaker>
+    </speakers>
+    <time>9:00 - 10:00</time>
+    <day>1</day>
+    <track>1</track>
+    <description>TBA</description>
+  </session>
+  <session>
     <title>Strategies Against Architecture</title>
     <speakers>
       <speaker>
