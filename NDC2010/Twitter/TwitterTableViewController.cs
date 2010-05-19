@@ -155,7 +155,11 @@ namespace NDC2010
 		public override void ViewDidLoad()
 		{
 			TableView.Source = new TableSource(this);
+			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+			// TODO: use a static color?
+			TableView.SeparatorColor = new UIColor(255/255f, 245/255f, 188/255f, 1.0f);
 			
+			// TODO: move to logic
 			Title = "Twitter";
 			View.BackgroundColor = UIColor.Clear;
 			
@@ -191,7 +195,6 @@ namespace NDC2010
 		{
 			TableView.UserInteractionEnabled = false;
 			NavigationItem.RightBarButtonItem.Enabled = false;
-			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
 			
 			if (_activityView == null)
 			{
@@ -221,7 +224,6 @@ namespace NDC2010
 			// Unblock the UI
 			TableView.UserInteractionEnabled = true;
 			NavigationItem.RightBarButtonItem.Enabled = true;
-			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
 			_activityView.StopAnimating();
 		}
 		

@@ -11,6 +11,7 @@ namespace NDC2010.Logic.Presenters
 		{
 		}
 		
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public string GetSectionHeadingText(int section)
 		{
 			switch (section)
@@ -26,6 +27,7 @@ namespace NDC2010.Logic.Presenters
 			}
 		}
 		
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public string GetCellTextForSection(int section)
 		{
 			switch (section)

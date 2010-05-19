@@ -29,6 +29,7 @@ namespace NDC2010.Logic.Presenters
 			return query.ToArray();
 		}
 			
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public string GetTimeForSection(int section)
 		{
 			switch (section)
@@ -44,6 +45,7 @@ namespace NDC2010.Logic.Presenters
 			}
 		}
 		
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public Session[] GetSessionsForSection(int section)
 		{
 			var query = from session in Sessions

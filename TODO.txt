@@ -18,7 +18,3 @@ More information on the screen detailing a session:
 
 More information on the screen detailing a speaker:
  - A list of sessions that speaker is speaking in
-
-
-Other bits and bobs:
- - Add the gridlines back in on the Twitter tab

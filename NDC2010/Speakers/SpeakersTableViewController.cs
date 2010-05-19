@@ -65,6 +65,7 @@ namespace NDC2010
 		{
 			base.ViewDidLoad();
 			
+			// TODO: move to logic
 			Title = "Speakers";
 			Speakers = Presenter.GetAllSpeakers();
 			
@@ -72,7 +73,10 @@ namespace NDC2010
 			TableView = new UITableView(frame, Style)
 			{
 				Source = new TableSource(this),
-				BackgroundColor = UIColor.Clear
+				BackgroundColor = UIColor.Clear,
+				SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine,
+				// TODO: use a static color?
+				SeparatorColor = new UIColor(255/255f, 245/255f, 188/255f, 1.0f)
 			};
 			View.AddSubview(TableView);
 		}

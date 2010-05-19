@@ -11,6 +11,7 @@ namespace NDC2010.Logic.Presenters
 		{
 		}
 		
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public string GetCellTextForSection(int section)
 		{
 			string cellText;
@@ -30,6 +31,7 @@ namespace NDC2010.Logic.Presenters
 			return string.IsNullOrEmpty(cellText) ? "TBA" : cellText;
 		}
 		
+		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
 		public string GetSectionHeadingText(int section)
 		{
 			switch (section)
