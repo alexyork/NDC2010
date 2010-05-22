@@ -89,6 +89,8 @@
     <Compile Include="DaysPresenterTests\Getting_title_for_section.cs" />
     <Compile Include="TwitterPresenterTests\Getting_title.cs" />
     <Compile Include="SessionsPresenterTests\Getting_title.cs" />
+    <Compile Include="SpeakersPresenterTests\Getting_title.cs" />
+    <Compile Include="SessionPresenterTests\Getting_title.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

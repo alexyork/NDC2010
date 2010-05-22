@@ -65,8 +65,7 @@ namespace NDC2010
 		{
 			base.ViewDidLoad();
 			
-			// TODO: move to logic
-			Title = "Speakers";
+			Title = Presenter.GetTitle();
 			Speakers = Presenter.GetAllSpeakers();
 			
 			var frame = new RectangleF(0, 0, View.Bounds.Width, 367);

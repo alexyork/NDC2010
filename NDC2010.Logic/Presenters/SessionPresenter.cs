@@ -44,5 +44,10 @@ namespace NDC2010.Logic.Presenters
 					throw new Exception("Can't find text for section " + section);
 			}
 		}
+		
+		public string GetTitle()
+		{
+			return "Session";
+		}
 	}
 }

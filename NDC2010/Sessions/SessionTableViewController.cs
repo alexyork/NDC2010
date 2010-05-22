@@ -13,6 +13,7 @@ namespace NDC2010
 	public partial class SessionTableViewController : UITableViewController
     {
 		private static NSString CELL_ID = new NSString("SessionTableCell");
+		private static NSString CELL_WITHID = new NSString("SessionTableCell_");
 		
 		protected SessionPresenter Presenter;
 	
@@ -66,9 +67,7 @@ namespace NDC2010
 			
 			public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 			{
-				return GetCellHeightForRow(_tvc.Presenter.GetCellTextForSection(indexPath.Section),
-                                           tableView,
-				                           indexPath);
+				return GetCellHeightForRow(_tvc.Presenter.GetCellTextForSection(indexPath.Section), tableView, indexPath);
 			}
 		}
 		
@@ -76,7 +75,7 @@ namespace NDC2010
 		{
 			base.ViewDidLoad();
 			
-			Title = "Session";
+			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
 			TableView.Source = new TableSource(this);
 		}

@@ -29,5 +29,10 @@ namespace NDC2010.Logic.Presenters
 			
 			return speakers.Distinct(SpeakerComparer.Instance).OrderBy(s => s.Name).ToArray();
 		}
+		
+		public string GetTitle()
+		{
+			return "Speakers";
+		}
 	}
 }
