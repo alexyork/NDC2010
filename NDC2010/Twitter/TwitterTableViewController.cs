@@ -9,6 +9,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using NDC2010.Model;
 using NDC2010.Logic;
+using NDC2010.Logic.Presenters;
 
 namespace NDC2010
 {
@@ -17,17 +18,23 @@ namespace NDC2010
     {
 		protected static NSString CELL_ID = new NSString("TwitterTableCell");
 		
+		protected TwitterPresenter Presenter;
+		
 		protected List<Tweet> Tweets = new List<Tweet>();
 		protected Dictionary<int, TweetCellController> CellControllers = new Dictionary<int, TweetCellController>();
 		
 		private UIActivityIndicatorView _activityView;
+		
+		public TwitterTableViewController()
+		{
+			Presenter = new TwitterPresenter();
+		}
 		
 		class TableSource : UITableViewSource
 		{
 			private TwitterTableViewController _tvc;
 			private Dictionary<string, UIImage> _images;
 			
-			private UIFont _cellFont;
 			private SizeF _baseLabelSize;
 			
 			private const int PADDING = 5;
@@ -38,7 +45,6 @@ namespace NDC2010
 				_tvc = tvc;
 				_images = new Dictionary<string, UIImage>();
 				
-				_cellFont = UIFont.FromName("Helvetica", 14.0f);
 				_baseLabelSize = new SizeF(258, 1000.0f);
 			}
 		
@@ -136,7 +142,7 @@ namespace NDC2010
 				Tweet tweet = _tvc.Tweets[indexPath.Row];
 				
 				// Calculate the height of the label, but force the width
-				SizeF labelSize = tableView.StringSize(tweet.Content, _cellFont, _baseLabelSize, UILineBreakMode.TailTruncation);
+				SizeF labelSize = tableView.StringSize(tweet.Content, NDC2010Fonts.CellFont, _baseLabelSize, UILineBreakMode.TailTruncation);
 				labelSize.Width = _baseLabelSize.Width;
 				
 				// Calculate the size of the cell
@@ -156,11 +162,9 @@ namespace NDC2010
 		{
 			TableView.Source = new TableSource(this);
 			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
-			// TODO: use a static color?
-			TableView.SeparatorColor = new UIColor(255/255f, 245/255f, 188/255f, 1.0f);
+			TableView.SeparatorColor = NDC2010Colors.LightYellow;
 			
-			// TODO: move to logic
-			Title = "Twitter";
+			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
 			
 			SetupRefreshButton();

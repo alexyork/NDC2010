@@ -7,8 +7,6 @@ namespace NDC2010
 {
 	public class NDC2010DetailsTableViewSource : UITableViewSource
 	{
-		protected static UIFont TitleFont = UIFont.FromName("Helvetica", 16.0f);
-		protected static UIFont CellFont = UIFont.FromName("Helvetica", 14.0f);
 		protected static SizeF BaseSize = new SizeF(280f, 1000.0f);
 		
 		protected const int CELL_PADDING = 10;
@@ -29,35 +27,20 @@ namespace NDC2010
 			
 			UIFont font = GetFont(indexPath);
 			
-			SizeF labelSize = tableView.StringSize(cellText,
-			                                       font,
-			                                       BaseSize,
-			                                       UILineBreakMode.WordWrap);
+			SizeF labelSize = tableView.StringSize(cellText, font, BaseSize, UILineBreakMode.WordWrap);
 			
 			// Return height plus padding for the top and bottom
 			return CELL_PADDING + labelSize.Height + CELL_PADDING;
 		}
 		
-		/*
-		Extract and override to test UI padding logic
-		
-		protected virtual SizeF StringSizeOf(UITableView tableView, ..)
-		{
-			return tableView.StringSize(cellText,
-			                                       font,
-			                                       BaseSize,
-			                                       UILineBreakMode.WordWrap);
-			
-		}
-		*/
 		protected UIFont GetFont(NSIndexPath indexPath)
 		{
 			switch (indexPath.Section)
 			{
 				case 0:
-					return TitleFont;
+					return NDC2010Fonts.TitleFont;
 				default:
-					return CellFont;
+					return NDC2010Fonts.CellFont;
 			}
 		}
 		
@@ -74,7 +57,6 @@ namespace NDC2010
 				cell.Frame = new RectangleF(CELL_PADDING, CELL_PADDING, 320, 200);
 			}
 			
-			cell.TextLabel.MinimumFontSize = cell.TextLabel.Font.PointSize;
 			cell.TextLabel.Font = GetFont(indexPath);
 			
 			return cell;

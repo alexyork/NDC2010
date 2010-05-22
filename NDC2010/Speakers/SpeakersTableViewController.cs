@@ -75,8 +75,7 @@ namespace NDC2010
 				Source = new TableSource(this),
 				BackgroundColor = UIColor.Clear,
 				SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine,
-				// TODO: use a static color?
-				SeparatorColor = new UIColor(255/255f, 245/255f, 188/255f, 1.0f)
+				SeparatorColor = NDC2010Colors.LightYellow
 			};
 			View.AddSubview(TableView);
 		}

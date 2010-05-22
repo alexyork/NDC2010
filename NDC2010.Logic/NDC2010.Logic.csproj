@@ -81,6 +81,7 @@
     <Compile Include="Presenters\SpeakerPresenter.cs" />
     <Compile Include="TweetConverter.cs" />
     <Compile Include="FriendlyDateTime.cs" />
+    <Compile Include="Presenters\TwitterPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NDC2010.Model\NDC2010.Model.csproj">

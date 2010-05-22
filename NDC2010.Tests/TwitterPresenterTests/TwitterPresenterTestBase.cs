@@ -1,15 +1,15 @@
 using System;
 using NDC2010.Logic.Presenters;
 
-namespace NDC2010.Tests.SpeakersPresenterTests
+namespace NDC2010.Tests.TwitterPresenterTests
 {
 	public class TwitterPresenterTestBase
 	{
-		protected SpeakersPresenter Presenter;
+		protected TwitterPresenter Presenter;
 		
 		protected void SetupPresenterAndMocks()
 		{
-			Presenter = new SpeakersPresenter();
+			Presenter = new TwitterPresenter();
 		}
 	}
 }

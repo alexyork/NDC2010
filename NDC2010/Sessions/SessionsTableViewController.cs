@@ -9,9 +9,7 @@ using NDC2010.Logic;
 
 namespace NDC2010
 {
-	
 	// [tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
-	
 	
 	[Register("SessionsTableViewController")]
 	public partial class SessionsTableViewController : NDC2010TableViewController
@@ -93,8 +91,8 @@ namespace NDC2010
 		{
 			base.ViewWillAppear(animated);
 			
-			Title = "Sessions, Day " + Day;
 			Presenter.Day = Day;
+			Title = Presenter.GetTitle();
 			
 			if (ReloadData)
 			{

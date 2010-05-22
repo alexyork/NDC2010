@@ -10,12 +10,8 @@ namespace NDC2010.Logic
 			
 			var timeDifference = dateNow - dateInThePast;
 			
-			/*
-			var differenceInMonths = dateNow.Month - dateInThePast.Month;
-			if (timeDifference.Days > 0)
-				return string.Format("{0} months ago", differenceInMonths);
-			*/
-			
+			if (timeDifference.Days > 30)
+				return string.Format("{0} months ago", timeDifference.Days / 30);
 			if (timeDifference.Days == 1)
 				return "yesterday";
 			else if (timeDifference.Days > 0)

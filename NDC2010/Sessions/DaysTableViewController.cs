@@ -42,7 +42,7 @@ namespace NDC2010
 			
 			public override string TitleForHeader(UITableView tableView, int section)
 			{
-				return _tvc.Presenter.GetTitle();
+				return _tvc.Presenter.GetTitleForSection();
 			}
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -72,7 +72,7 @@ namespace NDC2010
 		{
 			base.ViewDidLoad();
 			
-			NavigationItem.Title = "NDC 2010";
+			NavigationItem.Title = Presenter.GetTitle();
 			
 			TableView = new UITableView(View.Bounds, Style)
 			{

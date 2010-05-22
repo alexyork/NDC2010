@@ -108,6 +108,7 @@
     <Compile Include="NDC2010DetailsTableViewSource.cs" />
     <Compile Include="NDC2010NavigationController.cs" />
     <Compile Include="NDC2010TableViewController.cs" />
+    <Compile Include="NDC2010Styles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sessions\" />

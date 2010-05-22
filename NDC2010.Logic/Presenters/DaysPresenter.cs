@@ -26,9 +26,14 @@ namespace NDC2010.Logic.Presenters
 			return _days.Length;
 		}
 		
-		public string GetTitle()
+		public string GetTitleForSection()
 		{
 			return "Select day";
+		}
+		
+		public string GetTitle()
+		{
+			return "NDC 2010";
 		}
 	}
 }

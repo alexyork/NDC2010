@@ -60,5 +60,10 @@ namespace NDC2010.Logic.Presenters
 		{
 			return 7;
 		}
+		
+		public string GetTitle()
+		{
+			return "Sessions, Day " + Day;
+		}
 	}
 }
