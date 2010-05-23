@@ -23,7 +23,6 @@ namespace NDC2010
 		class TableSource : UITableViewSource
 		{
 			private DaysTableViewController _tvc;
-			private SessionsTableViewController _sessionsTableViewController;
 		
 			public TableSource(DaysTableViewController tvc)
 			{
@@ -58,12 +57,12 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				if (_sessionsTableViewController == null)
-					_sessionsTableViewController = new SessionsTableViewController();
+				var sessionsTableViewController = new SessionsTableViewController();
 				
-				_sessionsTableViewController.Day = (indexPath.Row + 1);
+				// TODO: cleanup
+				sessionsTableViewController.Day = (indexPath.Row + 1);
 				
-				_tvc.NavigationController.PushViewController(_sessionsTableViewController, true);
+				_tvc.NavigationController.PushViewController(sessionsTableViewController, true);
 				_tvc.SelectedRow = indexPath;
 			}
 		}

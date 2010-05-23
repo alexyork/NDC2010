@@ -26,7 +26,6 @@ namespace NDC2010
 		class TableSource : UITableViewSource
 		{
 			private SpeakersTableViewController _tvc;
-			private SpeakerTableViewController _speakerTableViewController;
 		
 			public TableSource(SpeakersTableViewController tvc)
 			{
@@ -50,13 +49,12 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				if (_speakerTableViewController == null)
-					_speakerTableViewController = new SpeakerTableViewController();
+				var speakerTableViewController = new SpeakerTableViewController();
 				
 				var speaker = _tvc.Presenter.GetAllSpeakers().ElementAt(indexPath.Row);
-				_speakerTableViewController.BindSpeaker(speaker);
+				speakerTableViewController.BindSpeaker(speaker);
 				
-				_tvc.NavigationController.PushViewController(_speakerTableViewController, true);
+				_tvc.NavigationController.PushViewController(speakerTableViewController, true);
 				_tvc.SelectedRow = indexPath;
 			}
 		}

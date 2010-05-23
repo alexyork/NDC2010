@@ -9,8 +9,6 @@ using NDC2010.Logic;
 
 namespace NDC2010
 {
-	// [tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
-	
 	[Register("SessionsTableViewController")]
 	public partial class SessionsTableViewController : NDC2010TableViewController
     {
@@ -20,16 +18,10 @@ namespace NDC2010
 		public int Day
 		{
 			get { return _day; }
-			set
-			{
-				ReloadData = true;
-				_day = value;
-			}
+			set { _day = value; }
 		}
 		
 		protected SessionsPresenter Presenter { get; set; }
-		
-		protected bool ReloadData { get; set; }
 		
 		public SessionsTableViewController() : base(UITableViewStyle.Grouped)
 		{
@@ -40,7 +32,6 @@ namespace NDC2010
 		class TableSource : UITableViewSource
 		{
 			private SessionsTableViewController _tvc;
-			private SessionTableViewController _sessionTableViewController;
 		
 			public TableSource(SessionsTableViewController tvc)
 			{
@@ -75,15 +66,13 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				if (_sessionTableViewController == null)
-					_sessionTableViewController = new SessionTableViewController();
+				var sessionTableViewController = new SessionTableViewController();
 				
 				var session = _tvc.Presenter.GetSessionsForSection(indexPath.Section).ElementAt(indexPath.Row);
-				_sessionTableViewController.BindSession(session);
+				sessionTableViewController.BindSession(session);
 				
-				_tvc.NavigationController.PushViewController(_sessionTableViewController, true);
+				_tvc.NavigationController.PushViewController(sessionTableViewController, true);
 				_tvc.SelectedRow = indexPath;
-				_tvc.ReloadData = false;
 			}
 		}
 		
@@ -93,11 +82,6 @@ namespace NDC2010
 			
 			Presenter.Day = Day;
 			Title = Presenter.GetTitle();
-			
-			if (ReloadData)
-			{
-				TableView.ReloadData();
-			}
 		}
 		
 		public override void ViewDidLoad()
