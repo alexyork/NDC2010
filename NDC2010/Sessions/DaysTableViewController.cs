@@ -48,8 +48,7 @@ namespace NDC2010
 			{
 				var cell = _tvc.DequeueOrCreateTableCell(tableView, CELL_ID, UITableViewCellStyle.Subtitle);
 				
-				// TODO: cleanup
-				cell.TextLabel.Text = "Day " + (indexPath.Row + 1);
+				cell.TextLabel.Text = "Day " + GetDay(indexPath);
 				cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForDay(indexPath.Row);
 		
 				return cell;
@@ -57,13 +56,17 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				var sessionsTableViewController = new SessionsTableViewController();
+				int day = GetDay(indexPath);
 				
-				// TODO: cleanup
-				sessionsTableViewController.Day = (indexPath.Row + 1);
-				
+				var sessionsTableViewController = new SessionsTableViewController(day);
 				_tvc.NavigationController.PushViewController(sessionsTableViewController, true);
+				
 				_tvc.SelectedRow = indexPath;
+			}
+			
+			private int GetDay(NSIndexPath indexPath)
+			{
+				return indexPath.Row + 1;
 			}
 		}
 		

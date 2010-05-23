@@ -17,19 +17,10 @@ namespace NDC2010
 		
 		protected SessionPresenter Presenter;
 	
-		public SessionTableViewController() : base(UITableViewStyle.Grouped)
+		public SessionTableViewController(Session session) : base(UITableViewStyle.Grouped)
 		{
 			Presenter = new SessionPresenter();
-		}
-		
-		public void BindSession(Session session)
-		{
 			Presenter.Session = session;
-		}
-		
-		public override void ViewWillAppear(bool animated)
-		{
-			TableView.ReloadData();
 		}
         
 		class TableSource : NDC2010DetailsTableViewSource

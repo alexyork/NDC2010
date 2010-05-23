@@ -49,12 +49,11 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				var speakerTableViewController = new SpeakerTableViewController();
-				
 				var speaker = _tvc.Presenter.GetAllSpeakers().ElementAt(indexPath.Row);
-				speakerTableViewController.BindSpeaker(speaker);
 				
+				var speakerTableViewController = new SpeakerTableViewController(speaker);
 				_tvc.NavigationController.PushViewController(speakerTableViewController, true);
+				
 				_tvc.SelectedRow = indexPath;
 			}
 		}

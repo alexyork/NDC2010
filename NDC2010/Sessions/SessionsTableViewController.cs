@@ -14,19 +14,14 @@ namespace NDC2010
     {
 		private static NSString CELL_ID = new NSString("SessionsTableCell");
 		
-		private int _day;
-		public int Day
-		{
-			get { return _day; }
-			set { _day = value; }
-		}
-		
+		protected int Day { get; set; }
 		protected SessionsPresenter Presenter { get; set; }
 		
-		public SessionsTableViewController() : base(UITableViewStyle.Grouped)
+		public SessionsTableViewController(int day) : base(UITableViewStyle.Grouped)
 		{
 			Presenter = new SessionsPresenter();
 			Presenter.Sessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
+			Presenter.Day = day;
 		}
         
 		class TableSource : UITableViewSource
@@ -66,22 +61,13 @@ namespace NDC2010
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				var sessionTableViewController = new SessionTableViewController();
-				
 				var session = _tvc.Presenter.GetSessionsForSection(indexPath.Section).ElementAt(indexPath.Row);
-				sessionTableViewController.BindSession(session);
 				
+				var sessionTableViewController = new SessionTableViewController(session);
 				_tvc.NavigationController.PushViewController(sessionTableViewController, true);
+				
 				_tvc.SelectedRow = indexPath;
 			}
-		}
-		
-		public override void ViewWillAppear(bool animated)
-		{
-			base.ViewWillAppear(animated);
-			
-			Presenter.Day = Day;
-			Title = Presenter.GetTitle();
 		}
 		
 		public override void ViewDidLoad()
@@ -94,6 +80,8 @@ namespace NDC2010
 				Source = new TableSource(this),
 				BackgroundColor = UIColor.Clear
 			};
+			
+			Title = Presenter.GetTitle();
 			
 			View.AddSubview(TableView);
 		}

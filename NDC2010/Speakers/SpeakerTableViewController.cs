@@ -16,19 +16,10 @@ namespace NDC2010
 		
 		protected SpeakerPresenter Presenter;
 	
-		public SpeakerTableViewController() : base(UITableViewStyle.Grouped)
+		public SpeakerTableViewController(Speaker speaker) : base(UITableViewStyle.Grouped)
 		{
 			Presenter = new SpeakerPresenter();
-		}
-		
-		public void BindSpeaker(Speaker speaker)
-		{
 			Presenter.Speaker = speaker;
-		}
-		
-		public override void ViewWillAppear(bool animated)
-		{
-			TableView.ReloadData();
 		}
         
 		class TableSource : NDC2010DetailsTableViewSource
