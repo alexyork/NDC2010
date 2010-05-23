@@ -11,7 +11,8 @@ namespace NDC2010
 	
 	public static class NDC2010Fonts
 	{
-		public static UIFont TitleFont = UIFont.FromName("Helvetica-Bold", 16.0f);
+		public static UIFont TitleFont = UIFont.FromName("Helvetica-Bold", 17.0f);
+		public static UIFont SubtitleFont = UIFont.FromName("Helvetica-Bold", 15.0f);
 		public static UIFont CellFont = UIFont.FromName("Helvetica", 14.0f);
 	}
 }

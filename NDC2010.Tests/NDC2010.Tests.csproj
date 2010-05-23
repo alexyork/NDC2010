@@ -66,8 +66,6 @@
     <Compile Include="DaysPresenterTests\Getting_cell_text_for_day.cs" />
     <Compile Include="DaysPresenterTests\Getting_number_of_days.cs" />
     <Compile Include="DaysPresenterTests\Getting_title.cs" />
-    <Compile Include="SessionPresenterTests\Getting_cell_text_for_section.cs" />
-    <Compile Include="SessionPresenterTests\Getting_title_for_section.cs" />
     <Compile Include="SessionPresenterTests\SessionPresenterTestBase.cs" />
     <Compile Include="SessionsPresenterTests\Getting_number_of_daily_timeslots.cs" />
     <Compile Include="SessionsPresenterTests\Getting_sessions_by_day.cs" />
@@ -91,6 +89,8 @@
     <Compile Include="SessionsPresenterTests\Getting_title.cs" />
     <Compile Include="SpeakersPresenterTests\Getting_title.cs" />
     <Compile Include="SessionPresenterTests\Getting_title.cs" />
+    <Compile Include="SessionPresenterTests\Getting_heading_text.cs" />
+    <Compile Include="SessionPresenterTests\Getting_session_text.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

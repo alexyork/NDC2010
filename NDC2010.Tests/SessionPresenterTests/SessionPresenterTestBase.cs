@@ -14,13 +14,13 @@ namespace NDC2010.Tests.SessionPresenterTests
 			MockSession = new Session
 			{
 				Day = 1,
-				Description = "desc",
+				Description = "fake description",
 				Speakers = new []
 				{
-					new Speaker { Name = "Speaker 1", Info = "info 1" }
+					new Speaker { Name = "Joe Bloggs", Info = "fake speaker info" }
 				},
 				Time = "time",
-				Title = "tit",
+				Title = "fake title",
 				Track = 1
 			};
 			

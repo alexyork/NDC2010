@@ -11,43 +11,39 @@ namespace NDC2010.Logic.Presenters
 		{
 		}
 		
-		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
-		public string GetCellTextForSection(int section)
-		{
-			string cellText;
-			
-			switch (section)
-			{
-				case 0:
-					cellText = Session.Title;
-					break;
-				case 1:
-					cellText = Session.Description;
-					break;
-				default:
-					throw new Exception("Cannot get text for section " + section);
-			}
-			
-			return string.IsNullOrEmpty(cellText) ? "TBA" : cellText;
-		}
-		
-		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
-		public string GetSectionHeadingText(int section)
-		{
-			switch (section)
-			{
-				case 0:
-					return "Title";
-				case 1:
-					return "Description";
-				default:
-					throw new Exception("Can't find text for section " + section);
-			}
-		}
-		
 		public string GetTitle()
 		{
 			return "Session";
+		}
+		
+		public string GetHeadingTextForSessionInfo()
+		{
+			return "Session Info";
+		}
+		
+		public string GetHeadingTextForSessionDescription()
+		{
+			return "Description";
+		}
+		
+		public string GetTextForSpeakers()
+		{
+			if (Session.Speakers.Length == 0)
+				return string.Empty;
+			
+			if (Session.Speakers.Length == 1)
+				return Session.Speakers[0].Name;
+			
+			string speakersText = string.Empty;
+			foreach (var speaker in Session.Speakers)
+				speakersText += speaker.Name + ", ";
+			
+			return speakersText.Substring(0, speakersText.Length - 2);
+		}
+		
+		public string GetTextForTimeAndPlace()
+		{
+			return string.Format("Day {0}; {1}; Track {2}", Session.Day, Session.Time, Session.Track);
 		}
 	}
 }

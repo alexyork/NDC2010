@@ -46,11 +46,16 @@ namespace NDC2010
 		
 		protected UITableViewCell DequeueOrCreateTableCell(UITableView tableView, NSIndexPath indexPath, string cellId)
 		{
+			return DequeueOrCreateTableCell(tableView, indexPath, cellId, UITableViewCellStyle.Default);
+		}
+		
+		protected UITableViewCell DequeueOrCreateTableCell(UITableView tableView, NSIndexPath indexPath, string cellId, UITableViewCellStyle style)
+		{
 			var cell = tableView.DequeueReusableCell(cellId);
 			
 			if (cell == null)
 			{
-				cell = new UITableViewCell(UITableViewCellStyle.Default, cellId);
+				cell = new UITableViewCell(style, cellId);
 				cell.TextLabel.Lines = 100;
 				cell.SelectionStyle = UITableViewCellSelectionStyle.None;
 				cell.TextLabel.UserInteractionEnabled = false;
