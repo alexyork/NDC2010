@@ -52,28 +52,38 @@ namespace NDC2010
 			
 			public override string TitleForHeader(UITableView tableView, int section)
 			{
-				return _tvc.Presenter.GetSectionHeadingText(section);
+				switch (section)
+				{
+					case 0:
+						return _tvc.Presenter.GetHeadingTextForName();
+					case 1:
+						return _tvc.Presenter.GetHeadingTextForBio();
+					default:
+						return "";
+				}
 			}
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
 				var cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_ID);
 				
-				cell.TextLabel.Text = _tvc.Presenter.GetCellTextForSection(indexPath.Section);
+				cell.TextLabel.Text = GetCellText(indexPath);
 		
 				return cell;
-			}
-		
-			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
-			{
-				Console.WriteLine("namespace: Row selected {0}", indexPath.Row);
 			}
 			
 			public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 			{
-				return GetCellHeightForRow(_tvc.Presenter.GetCellTextForSection(indexPath.Section),
-                                           tableView,
-				                           indexPath);
+				return GetCellHeightForRow(GetCellText(indexPath), tableView,indexPath);
+			}
+			
+			private string GetCellText(NSIndexPath indexPath)
+			{
+				if (indexPath.Section == 0)
+					return _tvc.Presenter.Speaker.Name;
+				if (indexPath.Section == 1)
+					return _tvc.Presenter.Speaker.Info;
+				return "";
 			}
 		}
 		
@@ -81,7 +91,7 @@ namespace NDC2010
 		{
 			base.ViewDidLoad();
 			
-			Title = "Speaker";
+			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
 			TableView.Source = new TableSource(this);
 		}

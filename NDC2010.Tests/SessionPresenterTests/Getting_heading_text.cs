@@ -15,7 +15,7 @@ namespace NDC2010.Tests.SessionPresenterTests
 		[Test]
 		public void Should_return_correct_text_for_session_info()
 		{
-			Presenter.GetHeadingTextForSessionInfo().ShouldBe("Session Info");
+			Presenter.GetHeadingTextForSessionInfo().ShouldBe("Overview");
 		}
 		
 		[Test]

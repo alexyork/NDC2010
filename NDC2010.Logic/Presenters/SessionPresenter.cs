@@ -18,7 +18,7 @@ namespace NDC2010.Logic.Presenters
 		
 		public string GetHeadingTextForSessionInfo()
 		{
-			return "Session Info";
+			return "Overview";
 		}
 		
 		public string GetHeadingTextForSessionDescription()

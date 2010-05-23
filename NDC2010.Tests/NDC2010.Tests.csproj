@@ -72,8 +72,6 @@
     <Compile Include="SessionsPresenterTests\Getting_sessions_for_section.cs" />
     <Compile Include="SessionsPresenterTests\Getting_time_for_section.cs" />
     <Compile Include="SessionsPresenterTests\SessionsPresenterTestBase.cs" />
-    <Compile Include="SpeakerPresenterTests\Get_cell_text_for_section.cs" />
-    <Compile Include="SpeakerPresenterTests\Getting_title_for_section.cs" />
     <Compile Include="SpeakerPresenterTests\SpeakerPresenterTestBase.cs" />
     <Compile Include="SpeakersPresenterTests\Getting_all_speakers.cs" />
     <Compile Include="SpeakersPresenterTests\SpeakersPresenterTestBase.cs" />
@@ -90,7 +88,9 @@
     <Compile Include="SpeakersPresenterTests\Getting_title.cs" />
     <Compile Include="SessionPresenterTests\Getting_title.cs" />
     <Compile Include="SessionPresenterTests\Getting_heading_text.cs" />
+    <Compile Include="SpeakerPresenterTests\Getting_heading_text.cs" />
     <Compile Include="SessionPresenterTests\Getting_session_text.cs" />
+    <Compile Include="SpeakerPresenterTests\Getting_title.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
