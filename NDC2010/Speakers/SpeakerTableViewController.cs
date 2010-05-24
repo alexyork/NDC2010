@@ -13,6 +13,7 @@ namespace NDC2010
 	public partial class SpeakerTableViewController : UITableViewController
     {
 		private static NSString CELL_ID = new NSString("SpeakerTableCell");
+		private static NSString CELL_WITH_DETAIL_ID = new NSString("SpeakerTableCell_WithDetail");
 		
 		protected SpeakerPresenter Presenter;
 	
@@ -26,18 +27,18 @@ namespace NDC2010
 		class TableSource : NDC2010DetailsTableViewSource
 		{
 			private SpeakerTableViewController _tvc;
+			private Session[] _sessions;
 		
 			public TableSource(SpeakerTableViewController tvc)
 			{
 				_tvc = tvc;
+				_sessions = _tvc.Presenter.GetSessions();
 			}
 		
 			public override int RowsInSection(UITableView tableView, int section)
 			{
-				// TODO: cache GetSessions() locally?
-				
 				if (section == 2)
-					return _tvc.Presenter.GetSessions().Length;
+					return _sessions.Length;
 				return 1;
 			}
 			
@@ -50,43 +51,54 @@ namespace NDC2010
 			{
 				switch (section)
 				{
-					case 0:
-						return _tvc.Presenter.GetHeadingTextForName();
-					case 1:
-						return _tvc.Presenter.GetHeadingTextForBio();
-					case 2:
-						return _tvc.Presenter.GetHeadingTextForSessions();
-					default:
-						return "";
+					case 0: return _tvc.Presenter.GetHeadingTextForName();
+					case 1: return _tvc.Presenter.GetHeadingTextForBio();
+					case 2: return _tvc.Presenter.GetHeadingTextForSessions();
 				}
+				return "";
 			}
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
-				var cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_ID);
+				UITableViewCell cell;
 				
-				cell.TextLabel.Text = GetCellText(indexPath);
-		
+				if (CellHasDetailsLabel(indexPath))
+				{
+					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle);
+					cell.TextLabel.Font = NDC2010Fonts.TitleFont;
+					cell.TextLabel.Text = _sessions.ElementAt(indexPath.Row).Title;
+					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).Time;
+				}
+				else
+				{
+					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_ID);
+					cell.TextLabel.Text = GetCellText(indexPath);
+				}
+				
 				return cell;
 			}
 			
 			public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 			{
-				return GetCellHeightForRow(GetCellText(indexPath), tableView,indexPath);
+				return CellHasDetailsLabel(indexPath)
+					? 44f
+					: GetCellHeightForRow(GetCellText(indexPath), tableView,indexPath);
 			}
 			
 			private string GetCellText(NSIndexPath indexPath)
 			{
-				if (indexPath.Section == 0)
-					return _tvc.Presenter.Speaker.Name;
-				if (indexPath.Section == 1)
-					return _tvc.Presenter.Speaker.Info;
-				
-				// TODO: use the cached GetSessions()
-				if (indexPath.Section == 2)
-					return _tvc.Presenter.GetSessions().ElementAt(indexPath.Row).Title;
-				
+				switch (indexPath.Section)
+				{
+					case 0: return _tvc.Presenter.Speaker.Name;
+					case 1: return _tvc.Presenter.Speaker.Info;
+					case 2: return _sessions.ElementAt(indexPath.Row).Title;
+				}
 				return "";
+			}
+			
+			private bool CellHasDetailsLabel(NSIndexPath indexPath)
+			{
+				return (indexPath.Section == 2);
 			}
 		}
 		
