@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010.Logic/Presenters/SessionPresenter.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/Sessions/DaysTableViewController.cs" ctype="Workbench">
     <Files>
-      <File FileName="NDC2010/Sessions/SessionTableViewController.cs" Line="1" Column="1" />
-      <File FileName="NDC2010/NDC2010DetailsTableViewSource.cs" Line="1" Column="1" />
-      <File FileName="NDC2010/NDC2010Styles.cs" Line="1" Column="1" />
-      <File FileName="NDC2010.Tests/SessionPresenterTests/Getting_title_for_section.cs" Line="1" Column="1" />
-      <File FileName="NDC2010.Logic/Presenters/SessionPresenter.cs" Line="40" Column="27" />
+      <File FileName="NDC2010/Sessions/SessionTableViewController.cs" Line="59" Column="54" />
+      <File FileName="NDC2010/Speakers/SpeakerTableViewController.cs" Line="96" Column="15" />
+      <File FileName="NDC2010/Speakers/SpeakersTableViewController.cs" Line="1" Column="1" />
+      <File FileName="NDC2010/Sessions/SessionsTableViewController.cs" Line="1" Column="1" />
+      <File FileName="NDC2010/Sessions/DaysTableViewController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,17 +14,10 @@
           <Node name="NDC2010" expanded="True" selected="True">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
-            <Node name="Images" expanded="True" />
-            <Node name="Sessions" expanded="True" />
-            <Node name="Twitter" expanded="True" />
           </Node>
-          <Node name="NDC2010.Logic" expanded="True">
-            <Node name="Presenters" expanded="True" />
-          </Node>
-          <Node name="NDC2010.Tests" expanded="True">
+          <Node name="NDC2010.Tests">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
-            <Node name="SessionPresenterTests" expanded="True" />
           </Node>
         </State>
       </Pad>

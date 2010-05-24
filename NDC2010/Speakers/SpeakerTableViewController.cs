@@ -15,7 +15,8 @@ namespace NDC2010
 		private static NSString CELL_ID = new NSString("SpeakerTableCell");
 		private static NSString CELL_WITH_DETAIL_ID = new NSString("SpeakerTableCell_WithDetail");
 		
-		protected SpeakerPresenter Presenter;
+		protected SpeakerPresenter Presenter { get; set; }
+		protected NSIndexPath SelectedRow { get; set; }
 	
 		public SpeakerTableViewController(Speaker speaker) : base(UITableViewStyle.Grouped)
 		{
@@ -64,8 +65,7 @@ namespace NDC2010
 				
 				if (CellHasDetailsLabel(indexPath))
 				{
-					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle);
-					cell.TextLabel.Font = NDC2010Fonts.TitleFont;
+					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle, true);
 					cell.TextLabel.Text = _sessions.ElementAt(indexPath.Row).Title;
 					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).Time;
 				}
@@ -100,6 +100,23 @@ namespace NDC2010
 			{
 				return (indexPath.Section == 2);
 			}
+			
+			protected override UIFont GetFont(NSIndexPath indexPath)
+			{
+				if (indexPath.Section == 1)
+					return NDC2010Fonts.CellFont;
+				return NDC2010Fonts.TitleFont;
+			}
+			
+			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+			{
+				var session = _sessions.ElementAt(indexPath.Row);
+				
+				var sessionTableViewController = new SessionTableViewController(session);
+				_tvc.NavigationController.PushViewController(sessionTableViewController, true);
+				
+				_tvc.SelectedRow = indexPath;
+			}
 		}
 		
 		public override void ViewDidLoad()
@@ -109,6 +126,14 @@ namespace NDC2010
 			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
 			TableView.Source = new TableSource(this);
+		}
+		
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
+			
+			if (SelectedRow != null)
+				TableView.DeselectRow(SelectedRow, true);
 		}
 	}
 }

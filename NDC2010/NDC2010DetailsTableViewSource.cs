@@ -1,11 +1,13 @@
 using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
 namespace NDC2010
 {
-	public class NDC2010DetailsTableViewSource : UITableViewSource
+	public abstract class NDC2010DetailsTableViewSource : UITableViewSource
 	{
 		protected static SizeF BaseSize = new SizeF(280f, 1000.0f);
 		
@@ -21,10 +23,10 @@ namespace NDC2010
 			throw new Exception("This method must be overridden in derived types");
 		}
 		
+		protected abstract UIFont GetFont(NSIndexPath indexPath);
+		
 		public float GetCellHeightForRow(string cellText, UITableView tableView, NSIndexPath indexPath)
 		{
-			Console.WriteLine("Getting cell height for section " + indexPath.Section + " row " + indexPath.Row);
-			
 			UIFont font = GetFont(indexPath);
 			
 			SizeF labelSize = tableView.StringSize(cellText, font, BaseSize, UILineBreakMode.WordWrap);
@@ -33,23 +35,12 @@ namespace NDC2010
 			return CELL_PADDING + labelSize.Height + CELL_PADDING;
 		}
 		
-		protected UIFont GetFont(NSIndexPath indexPath)
-		{
-			switch (indexPath.Section)
-			{
-				case 0:
-					return NDC2010Fonts.TitleFont;
-				default:
-					return NDC2010Fonts.CellFont;
-			}
-		}
-		
 		protected UITableViewCell DequeueOrCreateTableCell(UITableView tableView, NSIndexPath indexPath, string cellId)
 		{
-			return DequeueOrCreateTableCell(tableView, indexPath, cellId, UITableViewCellStyle.Default);
+			return DequeueOrCreateTableCell(tableView, indexPath, cellId, UITableViewCellStyle.Default, false);
 		}
 		
-		protected UITableViewCell DequeueOrCreateTableCell(UITableView tableView, NSIndexPath indexPath, string cellId, UITableViewCellStyle style)
+		protected UITableViewCell DequeueOrCreateTableCell(UITableView tableView, NSIndexPath indexPath, string cellId, UITableViewCellStyle style, bool clickable)
 		{
 			var cell = tableView.DequeueReusableCell(cellId);
 			
@@ -57,12 +48,11 @@ namespace NDC2010
 			{
 				cell = new UITableViewCell(style, cellId);
 				cell.TextLabel.Lines = 100;
-				cell.SelectionStyle = UITableViewCellSelectionStyle.None;
-				cell.TextLabel.UserInteractionEnabled = false;
+				cell.SelectionStyle = clickable ? UITableViewCellSelectionStyle.Blue : UITableViewCellSelectionStyle.None;
+				cell.Accessory = clickable ? UITableViewCellAccessory.DisclosureIndicator : UITableViewCellAccessory.None;
+				cell.TextLabel.Font = GetFont(indexPath);
 				cell.Frame = new RectangleF(CELL_PADDING, CELL_PADDING, 320, 200);
 			}
-			
-			cell.TextLabel.Font = GetFont(indexPath);
 			
 			return cell;
 		}

@@ -55,8 +55,7 @@ namespace NDC2010
 				
 				if (CellHasDetailsLabel(indexPath))
 				{
-					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle);
-					cell.TextLabel.Font = NDC2010Fonts.SubtitleFont;
+					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle, false);
 					cell.TextLabel.Text = _tvc.Presenter.GetTextForSpeakers();
 					cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForTimeAndPlace();
 				}
@@ -88,6 +87,15 @@ namespace NDC2010
 				if (indexPath.Section == 1 && indexPath.Row == 0)
 					return _tvc.Presenter.Session.Description;
 				return "";
+			}
+			
+			protected override UIFont GetFont(NSIndexPath indexPath)
+			{
+				if (indexPath.Section == 0 && indexPath.Row == 0)
+					return NDC2010Fonts.TitleFont;
+				else if (indexPath.Section == 0 && indexPath.Row == 1)
+					return NDC2010Fonts.SubtitleFont;
+				return NDC2010Fonts.CellFont;
 			}
 		}
 		
