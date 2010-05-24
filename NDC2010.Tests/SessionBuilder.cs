@@ -92,9 +92,9 @@ namespace NDC2010.Tests
 			return this;
 		}
 		
-		public Session[] Build()
+		public List<Session> Build()
 		{
-			return _sessions.ToArray();
+			return _sessions;
 		}
 	}
 }

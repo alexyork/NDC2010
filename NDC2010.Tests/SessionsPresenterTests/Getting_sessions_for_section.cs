@@ -10,27 +10,23 @@ namespace NDC2010.Tests.SessionsPresenterTests
 	[TestFixture]
 	public class Getting_sessions_for_section : SessionsPresenterTestBase
 	{
-		[SetUp]
-		public void SetUp()
-		{
-			SetupPresenterAndMocks();
-		}
-		
 		[Test]
 		public void Should_return_3_sessions_in_section_0()
 		{
 			// Arrange
-			Presenter.Sessions = SessionBuilder.CreateListWithSize(10)
-                                               .WhereTheFirst(3).HasTime("9:00 - 10:00")
-											   .AndTheNext(7).HasTime("10:20 - 11.20")
-                                               .Build();
+			var sessions = SessionBuilder.CreateListWithSize(10)
+											.WhereTheFirst(3).HasTime("9:00 - 10:00")
+											.AndTheNext(7).HasTime("10:20 - 11.20")
+                                            .Build();
+			
+			Presenter = new SessionsPresenter(sessions, 1);
 			
 			// Act
-			var sessions = Presenter.GetSessionsForSection(0);
+			var result = Presenter.GetSessionsForSection(0);
 			
 			// Assert
-			sessions.Count().ShouldBe(3);
-			foreach (var session in sessions)
+			result.Count().ShouldBe(3);
+			foreach (var session in result)
 				session.Time.ShouldBe("9:00 - 10:00");
 		}
 		
@@ -38,17 +34,19 @@ namespace NDC2010.Tests.SessionsPresenterTests
 		public void Should_return_7_sessions_in_section_1()
 		{
 			// Arrange
-			Presenter.Sessions = SessionBuilder.CreateListWithSize(10)
+			var sessions = SessionBuilder.CreateListWithSize(10)
                                                .WhereTheFirst(3).HasTime("9:00 - 10:00")
 											   .AndTheNext(7).HasTime("10:20 - 11:20")
                                                .Build();
 			
+			Presenter = new SessionsPresenter(sessions, 1);
+			
 			// Act
-			var sessions = Presenter.GetSessionsForSection(1);
+			var result = Presenter.GetSessionsForSection(1);
 			
 			// Assert
-			sessions.Count().ShouldBe(7);
-			foreach (var session in sessions)
+			result.Count().ShouldBe(7);
+			foreach (var session in result)
 				session.Time.ShouldBe("10:20 - 11:20");
 		}
 	}

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using MonoTouch.Foundation;
@@ -15,12 +16,12 @@ namespace NDC2010
 		
 		public SpeakersPresenter Presenter { get; set; }
 		
-		protected Speaker[] Speakers { get; set; }
+		protected List<Speaker> Speakers { get; set; }
         
 		public SpeakersTableViewController() : base(UITableViewStyle.Plain)
 		{
-			Presenter = new SpeakersPresenter();
-			Presenter.Sessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
+			var allSessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
+			Presenter = new SpeakersPresenter(allSessions);
 		}
 		
 		class TableSource : UITableViewSource

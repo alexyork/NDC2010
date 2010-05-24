@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using NDC2010.Model;
 
@@ -6,27 +7,22 @@ namespace NDC2010.Logic.Presenters
 {
 	public class SessionsPresenter
 	{
-		public Session[] Sessions { get; set; }
-		public int Day { get; set; }
+		protected List<Session> Sessions { get; set; }
+		protected int Day { get; set; }
 		
-		public SessionsPresenter()
-			: this(new Session[] { }, 1)
-		{
-		}
-		
-		public SessionsPresenter(Session[] sessions, int day)
+		public SessionsPresenter(List<Session> sessions, int day)
 		{
 			Sessions = sessions;
 			Day = day;
 		}
 		
-		public Session[] GetSessionsForDay(int day)
+		public List<Session> GetSessionsForDay(int day)
 		{
 			var query = from session in Sessions
 						where session.Day == day
 						select session;
 			
-			return query.ToArray();
+			return query.ToList();
 		}
 			
 		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
@@ -46,14 +42,14 @@ namespace NDC2010.Logic.Presenters
 		}
 		
 		// TODO: rename and refactor this: the presenters shouldnt be aware of "sections"
-		public Session[] GetSessionsForSection(int section)
+		public List<Session> GetSessionsForSection(int section)
 		{
 			var query = from session in Sessions
 						where session.Day == Day &&
 							  session.Time == GetTimeForSection(section)
 						select session;
 			
-			return query.ToArray();
+			return query.ToList();
 		}
 		
 		public int GetNumberOfDailyTimeslots()

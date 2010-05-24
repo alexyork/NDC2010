@@ -9,7 +9,7 @@ namespace NDC2010.Tests.SpeakersPresenterTests
 		
 		protected void SetupPresenterAndMocks()
 		{
-			Presenter = new SpeakersPresenter();
+			Presenter = new SpeakersPresenter(null);
 		}
 	}
 }

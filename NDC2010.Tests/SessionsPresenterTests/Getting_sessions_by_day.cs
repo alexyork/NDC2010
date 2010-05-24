@@ -10,20 +10,16 @@ namespace NDC2010.Tests.SessionsPresenterTests
 	[TestFixture]
 	public class Getting_sessions_by_day : SessionsPresenterTestBase
 	{
-		[SetUp]
-		public void SetUp()
-		{
-			SetupPresenterAndMocks();
-		}
-		
 		[Test]
 		public void Should_contain_valid_sessions_for_day_1()
 		{
 			// Arrange
-			Presenter.Sessions = SessionBuilder.CreateListWithSize(10)
+			var sessions = SessionBuilder.CreateListWithSize(10)
                                                .WhereTheFirst(5).HasDay(1)
                                                .AndTheNext(5).HasDay(2)
                                                .Build();
+			
+			Presenter = new SessionsPresenter(sessions, 1);
 			
 			// Act
 			var results = Presenter.GetSessionsForDay(1);
@@ -38,9 +34,11 @@ namespace NDC2010.Tests.SessionsPresenterTests
 		public void Should_return_empty_list_for_day_0()
 		{
 			// Arrange
-			Presenter.Sessions = SessionBuilder.CreateListWithSize(10)
+			var sessions = SessionBuilder.CreateListWithSize(10)
                                                .WhereTheFirst(10).HasDay(2)
                                                .Build();
+			
+			Presenter = new SessionsPresenter(sessions, 1);
 			
 			// Act
 			var results = Presenter.GetSessionsForDay(0);
@@ -53,9 +51,11 @@ namespace NDC2010.Tests.SessionsPresenterTests
 		public void Should_return_empty_list_for_day_4()
 		{
 			// Arrange
-			Presenter.Sessions = SessionBuilder.CreateListWithSize(10)
+			var sessions = SessionBuilder.CreateListWithSize(10)
                                                .WhereTheFirst(10).HasDay(2)
                                                .Build();
+			
+			Presenter = new SessionsPresenter(sessions, 1);
 			
 			// Act
 			var results = Presenter.GetSessionsForDay(4);

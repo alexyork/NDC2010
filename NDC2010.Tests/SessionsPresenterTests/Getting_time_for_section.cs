@@ -13,7 +13,7 @@ namespace NDC2010.Tests.SessionsPresenterTests
 		[SetUp]
 		public void SetUp()
 		{
-			SetupPresenterAndMocks();
+			SetupPresenterForDay(1);
 		}
 		
 		[Test]

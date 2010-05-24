@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
@@ -9,7 +10,7 @@ namespace NDC2010
 	[Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		public Session[] Sessions { get; set; }
+		public List<Session> Sessions { get; set; }
 		
 		// Containers
 		private UIWindow window;
@@ -44,14 +45,14 @@ namespace NDC2010
 			return true;
 		}
 		
-		// This method is required in iPhoneOS 3.0
 		public override void OnActivated(UIApplication application)
 		{
+			Console.WriteLine("OnActivated");
 		}
 		
 		public override void ReceiveMemoryWarning(UIApplication application)
 		{
-			Console.WriteLine("ReceiveMemoryWarning!");
+			Console.WriteLine("ReceiveMemoryWarning");
 		}
 	}
 	

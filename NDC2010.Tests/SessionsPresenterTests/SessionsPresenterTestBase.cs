@@ -7,9 +7,9 @@ namespace NDC2010.Tests.SessionsPresenterTests
 	{
 		protected SessionsPresenter Presenter;
 		
-		protected void SetupPresenterAndMocks()
+		protected void SetupPresenterForDay(int day)
 		{
-			Presenter = new SessionsPresenter();
+			Presenter = new SessionsPresenter(null, day);
 		}
 	}
 }

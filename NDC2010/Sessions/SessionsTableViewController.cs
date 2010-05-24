@@ -14,14 +14,12 @@ namespace NDC2010
     {
 		private static NSString CELL_ID = new NSString("SessionsTableCell");
 		
-		protected int Day { get; set; }
 		protected SessionsPresenter Presenter { get; set; }
 		
 		public SessionsTableViewController(int day) : base(UITableViewStyle.Grouped)
 		{
-			Presenter = new SessionsPresenter();
-			Presenter.Sessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
-			Presenter.Day = day;
+			var allSessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
+			Presenter = new SessionsPresenter(allSessions, day);
 		}
         
 		class TableSource : UITableViewSource

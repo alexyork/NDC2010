@@ -28,7 +28,7 @@ namespace NDC2010
 		class TableSource : NDC2010DetailsTableViewSource
 		{
 			private SpeakerTableViewController _tvc;
-			private Session[] _sessions;
+			private List<Session> _sessions;
 		
 			public TableSource(SpeakerTableViewController tvc)
 			{
@@ -39,7 +39,7 @@ namespace NDC2010
 			public override int RowsInSection(UITableView tableView, int section)
 			{
 				if (section == 2)
-					return _sessions.Length;
+					return _sessions.Count();
 				return 1;
 			}
 			

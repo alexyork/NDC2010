@@ -24,7 +24,7 @@ namespace NDC2010.Tests.SpeakerPresenterTests
 										.HasSpeakers(new [] { new Speaker { Name = "Bill Gates" } })
 									.Build();
 			
-			Presenter.GetSessions().Length.ShouldBe(3);
+			Presenter.GetSessions().Count().ShouldBe(3);
 		}
 		
 		[Test]
@@ -41,7 +41,7 @@ namespace NDC2010.Tests.SpeakerPresenterTests
 										.HasSpeakers(new [] { MockSpeaker, aSpeakerWeAreNotInterestedIn })
 									.Build();
 			
-			Presenter.GetSessions().Length.ShouldBe(3);
+			Presenter.GetSessions().Count().ShouldBe(3);
 		}
 	}
 }
