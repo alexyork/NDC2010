@@ -41,9 +41,11 @@ namespace NDC2010.Logic.Presenters
 			return speakersText.Substring(0, speakersText.Length - 2);
 		}
 		
+		/*
 		public string GetTextForTimeAndPlace()
 		{
-			return string.Format("Day {0}; {1}; Track {2}", Session.Day, Session.Time, Session.Track);
+			throw new Exception();
 		}
+		*/
 	}
 }

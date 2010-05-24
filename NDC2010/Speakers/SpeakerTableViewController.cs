@@ -5,6 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using NDC2010.Model;
+using NDC2010.Logic;
 using NDC2010.Logic.Presenters;
 
 namespace NDC2010
@@ -38,23 +39,24 @@ namespace NDC2010
 		
 			public override int RowsInSection(UITableView tableView, int section)
 			{
-				if (section == 2)
+				if (section == 1)
 					return _sessions.Count();
-				return 1;
+				return 2;
 			}
 			
 			public override int NumberOfSections(UITableView tableView)
 			{
-				return 3;
+				return 2;
 			}
 			
 			public override string TitleForHeader(UITableView tableView, int section)
 			{
 				switch (section)
 				{
-					case 0: return _tvc.Presenter.GetHeadingTextForName();
-					case 1: return _tvc.Presenter.GetHeadingTextForBio();
-					case 2: return _tvc.Presenter.GetHeadingTextForSessions();
+					case 0:
+						return _tvc.Presenter.GetHeadingTextForName();
+					case 1:
+						return _tvc.Presenter.GetHeadingTextForSessions();
 				}
 				return "";
 			}
@@ -67,7 +69,7 @@ namespace NDC2010
 				{
 					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle, true);
 					cell.TextLabel.Text = _sessions.ElementAt(indexPath.Row).Title;
-					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).Time;
+					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).GetInfo();
 				}
 				else
 				{
@@ -87,29 +89,32 @@ namespace NDC2010
 			
 			private string GetCellText(NSIndexPath indexPath)
 			{
-				switch (indexPath.Section)
-				{
-					case 0: return _tvc.Presenter.Speaker.Name;
-					case 1: return _tvc.Presenter.Speaker.Info;
-					case 2: return _sessions.ElementAt(indexPath.Row).Title;
-				}
-				return "";
+				if (indexPath.Section == 0 && indexPath.Row == 0)
+					return _tvc.Presenter.Speaker.Name;
+				if (indexPath.Section == 0 && indexPath.Row == 1)
+					return _tvc.Presenter.Speaker.Info;
+				
+				return _sessions.ElementAt(indexPath.Row).Title;
 			}
 			
 			private bool CellHasDetailsLabel(NSIndexPath indexPath)
 			{
-				return (indexPath.Section == 2);
+				return (indexPath.Section == 1);
 			}
 			
 			protected override UIFont GetFont(NSIndexPath indexPath)
 			{
-				if (indexPath.Section == 1)
+				if (indexPath.Section == 0 && indexPath.Row == 1)
 					return NDC2010Fonts.CellFont;
 				return NDC2010Fonts.TitleFont;
 			}
 			
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
+				// TODO: is this the best way to disable user interaction of the non-clickable cells?
+				// or should this be set when the cells are created?
+				if (indexPath.Section == 0) return;
+				
 				var session = _sessions.ElementAt(indexPath.Row);
 				
 				var sessionTableViewController = new SessionTableViewController(session);

@@ -1,4 +1,5 @@
 using System;
+using NDC2010.Logic;
 using NDC2010.Model;
 using NUnit.Framework;
 
@@ -36,18 +37,6 @@ namespace NDC2010.Tests.SessionPresenterTests
 			};
 			
 			Presenter.GetTextForSpeakers().ShouldBe("Speaker 1, Speaker 2");
-		}
-		
-		[Test]
-		public void Should_get_session_date_and_track_info()
-		{
-			Presenter.Session = new Session {
-				Day = 2,
-				Time = "9:00 - 10:00",
-				Track = 5
-			};
-			
-			Presenter.GetTextForTimeAndPlace().ShouldBe("Day 2; 9:00 - 10:00; Track 5");
 		}
 	}
 }

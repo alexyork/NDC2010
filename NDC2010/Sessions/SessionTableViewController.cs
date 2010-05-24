@@ -5,6 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using NDC2010.Model;
+using NDC2010.Logic;
 using NDC2010.Logic.Presenters;
 
 namespace NDC2010
@@ -57,7 +58,7 @@ namespace NDC2010
 				{
 					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle, false);
 					cell.TextLabel.Text = _tvc.Presenter.GetTextForSpeakers();
-					cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForTimeAndPlace();
+					cell.DetailTextLabel.Text = _tvc.Presenter.Session.GetInfo();
 				}
 				else
 				{

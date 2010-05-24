@@ -7,7 +7,7 @@ namespace NDC2010.Logic
 	{
 		public static string GetInfo(this Session session)
 		{
-			return null;
+			return string.Format("Day {0}; {1}; Track {2}", session.Day, session.Time, session.Track);
 		}
 	}
 }

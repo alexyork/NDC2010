@@ -21,12 +21,7 @@ namespace NDC2010.Logic.Presenters
 		
 		public string GetHeadingTextForName()
 		{
-			return "Name";
-		}
-		
-		public string GetHeadingTextForBio()
-		{
-			return "Bio";
+			return "Speaker";
 		}
 		
 		public string GetHeadingTextForSessions()

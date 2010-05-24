@@ -126,6 +126,7 @@
     <Content Include="Default.png" />
     <Content Include="Images\background.png" />
     <Content Include="Icon.png" />
+    <Content Include="Default-old.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Twitter\TweetCellController.xib" />

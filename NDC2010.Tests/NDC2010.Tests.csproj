@@ -92,6 +92,7 @@
     <Compile Include="SessionPresenterTests\Getting_session_text.cs" />
     <Compile Include="SpeakerPresenterTests\Getting_title.cs" />
     <Compile Include="SpeakerPresenterTests\Getting_sessions_for_speaker.cs" />
+    <Compile Include="Session_extension_method_tests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
