@@ -20,6 +20,7 @@ namespace NDC2010
 		{
 			Presenter = new SpeakerPresenter();
 			Presenter.Speaker = speaker;
+			Presenter.Sessions = (UIApplication.SharedApplication.Delegate as AppDelegate).Sessions;
 		}
         
 		class TableSource : NDC2010DetailsTableViewSource
@@ -33,12 +34,16 @@ namespace NDC2010
 		
 			public override int RowsInSection(UITableView tableView, int section)
 			{
+				// TODO: cache GetSessions() locally?
+				
+				if (section == 2)
+					return _tvc.Presenter.GetSessions().Length;
 				return 1;
 			}
 			
 			public override int NumberOfSections(UITableView tableView)
 			{
-				return 2;
+				return 3;
 			}
 			
 			public override string TitleForHeader(UITableView tableView, int section)
@@ -49,6 +54,8 @@ namespace NDC2010
 						return _tvc.Presenter.GetHeadingTextForName();
 					case 1:
 						return _tvc.Presenter.GetHeadingTextForBio();
+					case 2:
+						return _tvc.Presenter.GetHeadingTextForSessions();
 					default:
 						return "";
 				}
@@ -74,6 +81,11 @@ namespace NDC2010
 					return _tvc.Presenter.Speaker.Name;
 				if (indexPath.Section == 1)
 					return _tvc.Presenter.Speaker.Info;
+				
+				// TODO: use the cached GetSessions()
+				if (indexPath.Section == 2)
+					return _tvc.Presenter.GetSessions().ElementAt(indexPath.Row).Title;
+				
 				return "";
 			}
 		}
