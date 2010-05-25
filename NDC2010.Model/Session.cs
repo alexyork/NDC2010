@@ -4,6 +4,7 @@ namespace NDC2010.Model
 {
 	public class Session
 	{
+		public Guid ID  { get; set; }
 		public string Title { get; set; }
 		public Speaker[] Speakers { get; set; }
 		public int Day { get; set; }

@@ -16,6 +16,7 @@ namespace NDC2010.Tests
 			Console.WriteLine("1");
 			var xml = XElement.Parse(
 			            @"<session>
+						    <id>11111111-1111-1111-1111-111111111111</id>
 						    <title>Test session title</title>
 						    <speakers>
 						      <speaker>
@@ -32,6 +33,7 @@ namespace NDC2010.Tests
 			
 			var session = SessionConverter.FromXml(xml);
 			
+			session.ID.ShouldBe(new Guid("11111111-1111-1111-1111-111111111111"));
 			session.Title.ShouldBe("Test session title");
 			session.Speakers.Count().ShouldBe(1);
 			session.Speakers[0].Name.ShouldBe("Alex York");
@@ -48,6 +50,7 @@ namespace NDC2010.Tests
 			Console.WriteLine("1");
 			var xml = XElement.Parse(
 			            @"<session>
+						    <id>11111111-1111-1111-1111-111111111111</id>
 						    <title>Test session title</title>
 						    <speakers>
 						      <speaker>

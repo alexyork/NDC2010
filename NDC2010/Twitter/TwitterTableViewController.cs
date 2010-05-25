@@ -215,7 +215,7 @@ namespace NDC2010
 			{
 				using (var threadAutoRelease = new NSAutoreleasePool())
 				{
-					var twitterXml = XDocument.Load("http://search.twitter.com/search.atom?q=NDC2010");
+					var twitterXml = XDocument.Load("http://search.twitter.com/search.atom?q=%23NDC2010");
 					BindTweetsToTable(twitterXml);
 				}
 			}

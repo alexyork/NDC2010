@@ -11,6 +11,7 @@ namespace NDC2010.Logic
    		{
 			return new Session
 				    {
+						ID = (Guid) xml.Element("id"),
 						Title = (string) xml.Element("title"),
 						Speakers = (from speaker in xml.Element("speakers").Elements("speaker")
 				            			select new Speaker

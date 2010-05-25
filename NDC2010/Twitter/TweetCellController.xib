@@ -128,8 +128,8 @@
 									<int key="NSfFlags">16</int>
 								</object>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MC4yIDAuNCAwLjYAA</bytes>
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC41MDk4MDM5NTA4IDAuMDA3ODQzMTM3NzE5IDAuMDA3ODQzMTM3NzE5AA</bytes>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">1</int>
