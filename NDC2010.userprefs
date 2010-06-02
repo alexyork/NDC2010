@@ -1,21 +1,28 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/Sessions/DaysTableViewController.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010.Tests/MyScheduleManagerTests.cs" ctype="Workbench">
     <Files>
-      <File FileName="NDC2010/Sessions/SessionTableViewController.cs" Line="59" Column="54" />
-      <File FileName="NDC2010/Speakers/SpeakerTableViewController.cs" Line="96" Column="15" />
-      <File FileName="NDC2010/Speakers/SpeakersTableViewController.cs" Line="1" Column="1" />
-      <File FileName="NDC2010/Sessions/SessionsTableViewController.cs" Line="1" Column="1" />
-      <File FileName="NDC2010/Sessions/DaysTableViewController.cs" Line="1" Column="1" />
+      <File FileName="NDC2010.Tests/MySchedulePresenterTests/Getting_sessions.cs" Line="24" Column="30" />
+      <File FileName="NDC2010.Logic/Presenters/MySchedulePresenter.cs" Line="20" Column="4" />
+      <File FileName="NDC2010.Logic/Managers/MyScheduleManager.cs" Line="11" Column="54" />
+      <File FileName="NDC2010/AppDelegate.cs" Line="19" Column="4" />
+      <File FileName="NDC2010/SessionsOnDisk.cs" Line="16" Column="4" />
+      <File FileName="NDC2010/AppDelegateUIBuilder.cs" Line="8" Column="3" />
+      <File FileName="NDC2010.Tests/MyScheduleManagerTests.cs" Line="37" Column="6" />
+      <File FileName="NDC2010.Model/MySchedule/IScheduleRepository.cs" Line="9" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="NDC2010" expanded="True" selected="True">
+          <Node name="NDC2010" expanded="True">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
           </Node>
-          <Node name="NDC2010.Tests">
+          <Node name="NDC2010.Logic" expanded="True" />
+          <Node name="NDC2010.Model" expanded="True">
+            <Node name="MySchedule" expanded="True" />
+          </Node>
+          <Node name="NDC2010.Tests" expanded="True" selected="True">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
           </Node>

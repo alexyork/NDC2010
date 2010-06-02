@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using NDC2010.Model;
+using NDC2010.Model.MySchedule;
+using NDC2010.Logic.Managers;
 
 namespace NDC2010
 {
@@ -11,32 +12,16 @@ namespace NDC2010
 	public partial class AppDelegate : UIApplicationDelegate
 	{
 		public List<Session> Sessions { get; set; }
-		
-		// Containers
-		private UIWindow window;
-		private UITabBarController tabBarController;
-		
-		// Sessions
-		private UINavigationController sessionsNavigationController;
-		private DaysTableViewController daysTableViewController;
-		
-		// Speakers
-		private NDC2010NavigationController speakersNavigationController;
-		private SpeakersTableViewController speakersTableViewController;
-		
-		// Twitter
-		private NDC2010NavigationController twitterNavigationController;
-		private TwitterTableViewController twitterTableViewController;
-		
-		// Schedule
-		private NDC2010NavigationController scheduleNavigationController;
-		private UITableViewController scheduleTableViewController;
+		public MyScheduleManager MyScheduleManager { get; set; }
 		
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			InitializeWindow();
 			
-			Sessions = new DefaultSessionsRepository().GetAll();
+			// TODO: put this in a thread when the UI is blocked
+			Sessions = SessionsOnDisk.GetAll();
+			MyScheduleManager = new MyScheduleManager(new ScheduleTextFileRepository(), Sessions);
+			MyScheduleManager.SetSelectedSessions();
 			
 			InitializeMainViewControllers();
 			InitializeTabController();

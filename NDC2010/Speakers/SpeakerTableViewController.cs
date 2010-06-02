@@ -11,13 +11,12 @@ using NDC2010.Logic.Presenters;
 namespace NDC2010
 {
 	[Register("SpeakerTableViewController")]
-	public partial class SpeakerTableViewController : UITableViewController
+	public partial class SpeakerTableViewController : NDC2010TableViewController
     {
 		private static NSString CELL_ID = new NSString("SpeakerTableCell");
 		private static NSString CELL_WITH_DETAIL_ID = new NSString("SpeakerTableCell_WithDetail");
 		
 		protected SpeakerPresenter Presenter { get; set; }
-		protected NSIndexPath SelectedRow { get; set; }
 	
 		public SpeakerTableViewController(Speaker speaker) : base(UITableViewStyle.Grouped)
 		{
@@ -69,7 +68,7 @@ namespace NDC2010
 				{
 					cell = DequeueOrCreateTableCell(tableView, indexPath, CELL_WITH_DETAIL_ID, UITableViewCellStyle.Subtitle, true);
 					cell.TextLabel.Text = _sessions.ElementAt(indexPath.Row).Title;
-					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).GetInfo();
+					cell.DetailTextLabel.Text = _sessions.ElementAt(indexPath.Row).GetDayTimeTrackInfo();
 				}
 				else
 				{
@@ -117,10 +116,7 @@ namespace NDC2010
 				
 				var session = _sessions.ElementAt(indexPath.Row);
 				
-				var sessionTableViewController = new SessionTableViewController(session);
-				_tvc.NavigationController.PushViewController(sessionTableViewController, true);
-				
-				_tvc.SelectedRow = indexPath;
+				_tvc.PushSessionViewController(session, indexPath);
 			}
 		}
 		
@@ -130,7 +126,14 @@ namespace NDC2010
 			
 			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
-			TableView.Source = new TableSource(this);
+			
+			var frame = new RectangleF(0, 0, View.Bounds.Width, 367);
+			TableView = new UITableView(frame, Style)
+			{
+				Source = new TableSource(this),
+				BackgroundColor = UIColor.Clear
+			};
+			View.AddSubview(TableView);
 		}
 		
 		public override void ViewWillAppear(bool animated)

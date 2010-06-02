@@ -93,6 +93,18 @@
     <Compile Include="SpeakerPresenterTests\Getting_title.cs" />
     <Compile Include="SpeakerPresenterTests\Getting_sessions_for_speaker.cs" />
     <Compile Include="Session_extension_method_tests.cs" />
+    <Compile Include="MySchedulePresenterTests\Getting_sessions.cs" />
+    <Compile Include="MyScheduleManagerTests\When_adding_a_session_to_schedule.cs" />
+    <Compile Include="MyScheduleManagerTests\FakeScheduleRepository.cs" />
+    <Compile Include="MyScheduleManagerTests\When_removing_a_session_from_schedule.cs" />
+    <Compile Include="MyScheduleManagerTests\MyScheduleManagerTestBase.cs" />
+    <Compile Include="MyScheduleManagerTests\When_setting_the_selected_sessions.cs" />
+    <Compile Include="MySchedulePresenterTests\Getting_heading_text.cs" />
+    <Compile Include="MySchedulePresenterTests\Getting_title.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="MySchedulePresenterTests\" />
+    <Folder Include="MyScheduleManagerTests\" />
+  </ItemGroup>
 </Project>

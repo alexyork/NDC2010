@@ -8,16 +8,16 @@ using NDC2010.Logic;
 
 namespace NDC2010
 {
-	public class DefaultSessionsRepository
+	public static class SessionsOnDisk
 	{
-		public List<Session> GetAll()
+		public static List<Session> GetAll()
 		{
 			var rawXml = File.ReadAllText("App_Data/sessions.xml");
-			var sessionsXml = XDocument.Parse(rawXml);
 			
-			return sessionsXml.Descendants("session")
-							  .Select(tweetXml => SessionConverter.FromXml(tweetXml))
-							  .ToList();
+			return XDocument.Parse(rawXml)
+							.Descendants("session")
+							.Select(tweetXml => SessionConverter.FromXml(tweetXml))
+							.ToList();
 		}
 	}
 }

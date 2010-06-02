@@ -11,5 +11,6 @@ namespace NDC2010.Model
 		public int Track { get; set; }
 		public string Time { get; set; }
         public string Description { get; set; }
+		public bool IsSelected { get; set; }
 	}
 }

@@ -9,7 +9,7 @@ namespace NDC2010.Tests
 	public class Session_extension_method_tests
 	{
 		[Test]
-		public void Should_get_session_date_and_track_info()
+		public void GetDayTimeTrackInfo_Should_get_day_time_and_track_info()
 		{
 			var session = new Session
 			{
@@ -18,7 +18,20 @@ namespace NDC2010.Tests
 				Track = 5
 			};
 			
-			session.GetInfo().ShouldBe("Day 2; 9:00 - 10:00; Track 5");
+			session.GetDayTimeTrackInfo().ShouldBe("Day 2; 9:00 - 10:00; Track 5");
+		}
+		
+		[Test]
+		public void GetTimeTrackSpeakerInfo_Should_get_time_track_and_speaker_info()
+		{
+			var session = new Session
+			{
+				Time = "9:00 - 10:00",
+				Track = 5,
+				Speakers = new Speaker[] { new Speaker { Name = "Alex York" } }
+			};
+			
+			session.GetTimeTrackSpeakerInfo().ShouldBe("9:00 - 10:00; Track 5; Alex York");
 		}
 	}
 }

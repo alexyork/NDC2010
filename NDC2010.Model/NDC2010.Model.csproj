@@ -71,6 +71,7 @@
     <Compile Include="Session.cs" />
     <Compile Include="Speaker.cs" />
     <Compile Include="Tweet.cs" />
+    <Compile Include="MySchedule\IScheduleRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -78,4 +79,7 @@
       <Properties InternalTargetFrameworkVersion="IPhone" />
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="MySchedule\" />
+  </ItemGroup>
 </Project>

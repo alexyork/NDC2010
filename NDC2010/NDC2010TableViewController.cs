@@ -1,6 +1,7 @@
 using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using NDC2010.Model;
 
 namespace NDC2010
 {
@@ -35,6 +36,14 @@ namespace NDC2010
 			}
 			
 			return cell;
+		}
+		
+		public void PushSessionViewController(Session session, NSIndexPath indexPath)
+		{
+			var sessionTableViewController = new SessionTableViewController(session);
+			NavigationController.PushViewController(sessionTableViewController, true);
+			
+			SelectedRow = indexPath;
 		}
 		
 		public override void ViewWillAppear(bool animated)

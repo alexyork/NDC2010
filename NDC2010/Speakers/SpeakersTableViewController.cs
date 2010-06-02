@@ -14,8 +14,7 @@ namespace NDC2010
     {
 		private static NSString CELL_ID = new NSString("SpeakersTableCell");
 		
-		public SpeakersPresenter Presenter { get; set; }
-		
+		protected SpeakersPresenter Presenter { get; set; }
 		protected List<Speaker> Speakers { get; set; }
         
 		public SpeakersTableViewController() : base(UITableViewStyle.Plain)

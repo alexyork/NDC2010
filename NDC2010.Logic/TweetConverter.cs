@@ -43,6 +43,8 @@ namespace NDC2010.Logic
 		
 		private static DateTime GetPublishedDate(string tweetedDate)
 		{
+			Console.WriteLine("Tweet date: " + tweetedDate);
+			
 			// Before: 2010-04-09T16:22:00Z
 			tweetedDate = tweetedDate.Replace("T", "-")
 									 .Replace("Z", "")
@@ -54,7 +56,7 @@ namespace NDC2010.Logic
 			return new DateTime(int.Parse(dateParts[0]),
 			                    int.Parse(dateParts[1]),
 			                    int.Parse(dateParts[2]),
-			                    int.Parse(dateParts[3]),
+			                    int.Parse(dateParts[3]) + 2,
 			                    int.Parse(dateParts[4]),
 			                    int.Parse(dateParts[5]));
 		}

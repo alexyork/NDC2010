@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Presenters\" />
+    <Folder Include="Managers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SpeakerComparer.cs" />
@@ -83,6 +84,8 @@
     <Compile Include="FriendlyDateTime.cs" />
     <Compile Include="Presenters\TwitterPresenter.cs" />
     <Compile Include="SessionExtensions.cs" />
+    <Compile Include="Presenters\MySchedulePresenter.cs" />
+    <Compile Include="Managers\MyScheduleManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NDC2010.Model\NDC2010.Model.csproj">

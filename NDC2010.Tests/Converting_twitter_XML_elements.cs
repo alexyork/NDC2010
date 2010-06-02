@@ -86,7 +86,8 @@ namespace NDC2010.Tests
 		public void Should_set_Timestamp_correctly()
 		{
 			// 2010-04-09T16:22:00Z
-			_firstTweet.Timestamp.ShouldBe(new DateTime(2010, 4, 9, 16, 22, 00, 00));
+			// Should be two hours ahead of what the XML says
+			_firstTweet.Timestamp.ShouldBe(new DateTime(2010, 4, 9, 18, 22, 00, 00));
 		}
 	}			                                                   
 }

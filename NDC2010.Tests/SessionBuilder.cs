@@ -80,6 +80,18 @@ namespace NDC2010.Tests
 			return this;
 		}
 		
+		public SessionBuilder IsSelected(bool selected)
+		{
+			int endIndex = (_currentIndex + _currentCount);
+			
+			for (int i = _currentIndex; i < endIndex; i++)
+			{
+				_sessions[i].IsSelected = selected;
+				_currentIndex++;
+			}
+			return this;
+		}
+		
 		public SessionBuilder HasSpeakers(Speaker[] speakers)
 		{
 			int endIndex = (_currentIndex + _currentCount);

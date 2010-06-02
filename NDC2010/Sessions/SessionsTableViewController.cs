@@ -61,10 +61,7 @@ namespace NDC2010
 			{
 				var session = _tvc.Presenter.GetSessionsForSection(indexPath.Section).ElementAt(indexPath.Row);
 				
-				var sessionTableViewController = new SessionTableViewController(session);
-				_tvc.NavigationController.PushViewController(sessionTableViewController, true);
-				
-				_tvc.SelectedRow = indexPath;
+				_tvc.PushSessionViewController(session, indexPath);
 			}
 		}
 		

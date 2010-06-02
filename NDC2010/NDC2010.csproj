@@ -15,7 +15,7 @@
     <BundleDisplayName>NDC 2010</BundleDisplayName>
     <BundleIcon>Icon.png</BundleIcon>
     <BundleIdentifier>net.alexyork.ndc2010</BundleIdentifier>
-    <BundleVersion>1.0.0</BundleVersion>
+    <BundleVersion>1.1.0</BundleVersion>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -96,7 +96,6 @@
     <Compile Include="Twitter\TwitterTableViewController.cs" />
     <Compile Include="Sessions\DaysTableViewController.cs" />
     <Compile Include="Sessions\SessionTableViewController.cs" />
-    <Compile Include="DefaultSessionsRepository.cs" />
     <Compile Include="Speakers\SpeakerTableViewController.cs" />
     <Compile Include="Twitter\TweetCellController.xib.cs">
       <DependentUpon>TableCell\TweetCellController.xib</DependentUpon>
@@ -110,6 +109,9 @@
     <Compile Include="NDC2010NavigationController.cs" />
     <Compile Include="NDC2010TableViewController.cs" />
     <Compile Include="NDC2010Styles.cs" />
+    <Compile Include="SessionsOnDisk.cs" />
+    <Compile Include="MySchedule\MyScheduleTableViewController.cs" />
+    <Compile Include="MySchedule\ScheduleTextFileRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sessions\" />
@@ -117,6 +119,7 @@
     <Folder Include="Twitter\" />
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
+    <Folder Include="MySchedule\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sessions\TabIcon.png" />
@@ -126,6 +129,9 @@
     <Content Include="Icon.png" />
     <Content Include="App_Data\sessions.xml" />
     <Content Include="Default.png" />
+    <Content Include="MySchedule\TabIcon.png" />
+    <Content Include="Images\star-selected.png" />
+    <Content Include="Images\star-unselected.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Twitter\TweetCellController.xib" />
