@@ -52,7 +52,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer: Alex York (UHY85SS74C)</CodesignKey>
-    <CodesignProvision>9341E463-AB83-405F-AB2E-82302610F9F0</CodesignProvision>
+    <CodesignProvision>D9C0CC01-7C3D-412E-BBB0-8F0DC2D3087B</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>

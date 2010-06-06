@@ -85,6 +85,15 @@ namespace NDC2010
 				Source = new TableSource(this),
 				BackgroundColor = UIColor.Clear
 			};
+			
+			/*
+			var editButton = new UIBarButtonItem(UIBarButtonSystemItem.Edit);
+			editButton.Clicked += delegate {
+				TableView.Editing = true;
+			};
+			NavigationItem.RightBarButtonItem = editButton;
+			*/
+			
 			View.AddSubview(TableView);
 		}
 		

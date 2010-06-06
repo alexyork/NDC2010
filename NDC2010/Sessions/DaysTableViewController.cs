@@ -81,6 +81,7 @@ namespace NDC2010
 				Source = new TableSource(this),
 				BackgroundColor = UIColor.Clear
 			};
+			
 			View.AddSubview(TableView);
 		}
 	}
