@@ -41,9 +41,15 @@ namespace NDC2010
 				return _tvc.Presenter.GetSessionsForSection(section).Count();
 			}
 			
-			public override string TitleForHeader(UITableView tableView, int section)
+			public override UIView GetViewForHeader(UITableView tableView, int section)
 			{
-				return _tvc.Presenter.GetTimeForSection(section);
+				var headingText = _tvc.Presenter.GetTimeForSection(section);
+				return _tvc.GetViewForHeader(section, headingText);
+			}
+			
+			public override float GetHeightForHeader(UITableView tableView, int section)
+			{
+				return 44f;
 			}
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)

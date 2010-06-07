@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using NDC2010.Model;
@@ -44,6 +45,22 @@ namespace NDC2010
 			NavigationController.PushViewController(sessionTableViewController, true);
 			
 			SelectedRow = indexPath;
+		}
+		
+		protected UIView GetViewForHeader(int section, string headingText)
+		{
+			var customView = new UIView(new RectangleF(10, 0, 300, 44));
+				
+			var headerLabel = new UILabel();
+			headerLabel.BackgroundColor = UIColor.Clear;
+			headerLabel.TextColor = NDC2010Colors.DarkRed;
+			headerLabel.Font = UIFont.BoldSystemFontOfSize(16f);
+			headerLabel.Frame = new RectangleF(20, 0, 200, 44);
+			headerLabel.Text = headingText;
+				
+			customView.AddSubview(headerLabel);
+			
+			return customView;
 		}
 		
 		public override void ViewWillAppear(bool animated)

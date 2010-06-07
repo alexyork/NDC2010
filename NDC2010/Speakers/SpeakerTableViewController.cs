@@ -48,16 +48,22 @@ namespace NDC2010
 				return 2;
 			}
 			
-			public override string TitleForHeader(UITableView tableView, int section)
+			private string TitleForHeader(int section)
 			{
-				switch (section)
-				{
-					case 0:
-						return _tvc.Presenter.GetHeadingTextForName();
-					case 1:
-						return _tvc.Presenter.GetHeadingTextForSessions();
-				}
-				return "";
+				return (section == 0)
+					? _tvc.Presenter.GetHeadingTextForName()
+					: _tvc.Presenter.GetHeadingTextForSessions();
+			}
+			
+			public override UIView GetViewForHeader(UITableView tableView, int section)
+			{
+				var headingText = TitleForHeader(section);
+				return _tvc.GetViewForHeader(section, headingText);
+			}
+			
+			public override float GetHeightForHeader(UITableView tableView, int section)
+			{
+				return 44f;
 			}
 	
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)

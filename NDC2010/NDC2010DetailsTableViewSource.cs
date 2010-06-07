@@ -27,9 +27,8 @@ namespace NDC2010
 		
 		public float GetCellHeightForRow(string cellText, UITableView tableView, NSIndexPath indexPath)
 		{
-			UIFont font = GetFont(indexPath);
-			
-			SizeF labelSize = tableView.StringSize(cellText, font, BaseSize, UILineBreakMode.WordWrap);
+			var font = GetFont(indexPath);
+			var labelSize = tableView.StringSize(cellText, font, BaseSize, UILineBreakMode.WordWrap);
 			
 			// Return height plus padding for the top and bottom
 			return CELL_PADDING + labelSize.Height + CELL_PADDING;

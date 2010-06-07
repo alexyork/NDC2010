@@ -65,17 +65,22 @@ namespace NDC2010
 				_tvc.PushSessionViewController(session, indexPath);
 			}
 			
-			public override string TitleForHeader(UITableView tableView, int section)
+			public override UIView GetViewForHeader(UITableView tableView, int section)
 			{
 				int day = section + 1;
-				return _tvc.Presenter.GetHeadingTextForDay(day);
+				var headingText = _tvc.Presenter.GetHeadingTextForDay(day);
+				return _tvc.GetViewForHeader(section, headingText);
+			}
+			
+			public override float GetHeightForHeader(UITableView tableView, int section)
+			{
+				return 44f;
 			}
 		}
 		
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			Console.WriteLine("ViewDidLoad");
 			
 			NavigationItem.Title = Presenter.GetTitle();
 			
@@ -99,7 +104,6 @@ namespace NDC2010
 		
 		public override void ViewWillAppear(bool animated)
 		{
-			Console.WriteLine("ViewWillAppear");
 			SelectedSessions = Presenter.GetSessions();
 			TableView.ReloadData();
 		}

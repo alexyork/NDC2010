@@ -12,7 +12,7 @@ using NDC2010.Logic.Presenters;
 namespace NDC2010
 {
 	[Register("SessionTableViewController")]
-	public partial class SessionTableViewController : UITableViewController
+	public partial class SessionTableViewController : NDC2010TableViewController
     {
 		private static NSString CELL_ID = new NSString("SessionTableCell");
 		private static NSString CELL_WITH_DETAIL_ID = new NSString("SessionTableCell_WithDetail");
@@ -28,7 +28,7 @@ namespace NDC2010
 		class TableSource : NDC2010DetailsTableViewSource
 		{
 			private SessionTableViewController _tvc;
-			private UIButton _addToScheduleButton;
+			//private UIButton _addToScheduleButton;
 			
 			protected MyScheduleManager MyScheduleManager
 			{
@@ -59,17 +59,15 @@ namespace NDC2010
 			
 			public override UIView GetViewForHeader(UITableView tableView, int section)
 			{
-				// TODO: put this code somewhere where it can be resused in the other tables
-				
-				var customView = new UIView(new RectangleF(10, 0, 300, 44));
-				
-				var headerLabel = new UILabel();
-				headerLabel.BackgroundColor = UIColor.Clear;
-				headerLabel.TextColor = NDC2010Colors.DarkRed;
-				headerLabel.Font = UIFont.BoldSystemFontOfSize(16f);
-				headerLabel.Frame = new RectangleF(20, 0, 200, 44);
-				headerLabel.Text = GetTitleForHeader(section);
-				
+				var headingText = GetTitleForHeader(section);
+				return _tvc.GetViewForHeader(section, headingText);
+			}
+			
+			public override float GetHeightForHeader(UITableView tableView, int section)
+			{
+				return 44f;
+			}
+				/*
 				if (section == 0)
 				{
 					_addToScheduleButton = UIButton.FromType(UIButtonType.Custom);
@@ -82,12 +80,8 @@ namespace NDC2010
 					};
 					customView.AddSubview(_addToScheduleButton);
 				}
-				
-				customView.AddSubview(headerLabel);
-			
-				return customView;
-			}
-			
+				*/
+			/*
 			private void ToggleSessionFromSchedule()
 			{
 				if (_tvc.Presenter.Session.IsSelected)
@@ -101,11 +95,7 @@ namespace NDC2010
 					MyScheduleManager.AddToSchedule(_tvc.Presenter.Session);
 				}
 			}
-			
-			public override float GetHeightForHeader(UITableView tableView, int section)
-			{
-				return 44f;
-			}
+			*/
 			
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
@@ -163,7 +153,14 @@ namespace NDC2010
 			
 			Title = Presenter.GetTitle();
 			View.BackgroundColor = UIColor.Clear;
-			TableView.Source = new TableSource(this);
+			
+			var frame = new RectangleF(0, 0, View.Bounds.Width, 367);
+			TableView = new UITableView(frame, Style)
+			{
+				Source = new TableSource(this),
+				BackgroundColor = UIColor.Clear
+			};
+			View.AddSubview(TableView);
 		}
 	}
 }
