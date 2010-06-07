@@ -56,9 +56,9 @@ namespace NDC2010.Logic
 			return new DateTime(int.Parse(dateParts[0]),
 			                    int.Parse(dateParts[1]),
 			                    int.Parse(dateParts[2]),
-			                    int.Parse(dateParts[3]) + 2,
+			                    int.Parse(dateParts[3]),
 			                    int.Parse(dateParts[4]),
-			                    int.Parse(dateParts[5]));
+			                    int.Parse(dateParts[5])).AddHours(2);
 		}
 	}
 }

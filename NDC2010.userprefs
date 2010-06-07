@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/NDC2010TableViewController.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Distribution|iPhone" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010.Logic/FriendlyDateTime.cs" ctype="Workbench">
     <Files>
-      <File FileName="NDC2010/Sessions/SessionTableViewController.cs" Line="67" Column="6" />
-      <File FileName="NDC2010/NDC2010TableViewController.cs" Line="64" Column="5" />
+      <File FileName="NDC2010/SessionsOnDisk.cs" Line="1" Column="1" />
+      <File FileName="NDC2010.Logic/Presenters/DaysPresenter.cs" Line="31" Column="4" />
+      <File FileName="NDC2010.Logic/FriendlyDateTime.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,8 +12,6 @@
           <Node name="NDC2010" expanded="True" selected="True">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
-            <Node name="App_Data" expanded="True" />
-            <Node name="Sessions" expanded="True" />
           </Node>
           <Node name="NDC2010.Tests">
             <Option id="ShowVersionControlOverlays" value="True" />
