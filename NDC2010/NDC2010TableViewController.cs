@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
@@ -11,6 +12,8 @@ namespace NDC2010
 		protected UITableView TableView { get; set; }
 		protected UITableViewStyle Style { get; set; }
 		protected NSIndexPath SelectedRow { get; set; }
+		
+		private Dictionary<int, UIView> _headingViews = new Dictionary<int, UIView>();
 		
 		public NDC2010TableViewController() : this(UITableViewStyle.Plain)
 		{
@@ -49,16 +52,29 @@ namespace NDC2010
 		
 		protected UIView GetViewForHeader(int section, string headingText)
 		{
+			return GetViewForHeader(section, headingText, null);
+		}
+		
+		protected UIView GetViewForHeader(int section, string headingText, UIView subView)
+		{
+			if (_headingViews.ContainsKey(section))
+				return _headingViews[section];
+			
 			var customView = new UIView(new RectangleF(10, 0, 300, 44));
 				
 			var headerLabel = new UILabel();
 			headerLabel.BackgroundColor = UIColor.Clear;
 			headerLabel.TextColor = NDC2010Colors.DarkRed;
 			headerLabel.Font = UIFont.BoldSystemFontOfSize(16f);
-			headerLabel.Frame = new RectangleF(20, 0, 200, 44);
+			headerLabel.Frame = new RectangleF(20, 0, 250, 44);
 			headerLabel.Text = headingText;
 				
 			customView.AddSubview(headerLabel);
+			
+			if (subView != null)
+				customView.AddSubview(subView);
+			
+			_headingViews[section] = customView;
 			
 			return customView;
 		}

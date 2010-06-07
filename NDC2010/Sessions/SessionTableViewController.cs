@@ -28,7 +28,7 @@ namespace NDC2010
 		class TableSource : NDC2010DetailsTableViewSource
 		{
 			private SessionTableViewController _tvc;
-			//private UIButton _addToScheduleButton;
+			private UIButton _addToScheduleButton;
 			
 			protected MyScheduleManager MyScheduleManager
 			{
@@ -59,29 +59,41 @@ namespace NDC2010
 			
 			public override UIView GetViewForHeader(UITableView tableView, int section)
 			{
+				if (AddToScheduleButtonShouldBeInitialized(section))
+				{
+					InitializeAddToScheduleButton();
+					
+					_addToScheduleButton.TouchUpInside += delegate {
+						ToggleSessionFromSchedule();
+					};
+				}
+				
 				var headingText = GetTitleForHeader(section);
-				return _tvc.GetViewForHeader(section, headingText);
+				var headingView = _tvc.GetViewForHeader(section, headingText, _addToScheduleButton);
+				
+				return headingView;
+			}
+			
+			private bool AddToScheduleButtonShouldBeInitialized(int section)
+			{
+				return (section == 0 && _addToScheduleButton == null);
+			}
+			
+			private void InitializeAddToScheduleButton()
+			{
+				_addToScheduleButton = UIButton.FromType(UIButtonType.Custom);
+				_addToScheduleButton.Frame = new RectangleF(280, 10, 30, 30);
+				_addToScheduleButton.BackgroundColor =
+					_tvc.Presenter.Session.IsSelected
+						? UIColor.FromPatternImage(UIImage.FromFile("Images/star-selected.png"))
+						: UIColor.FromPatternImage(UIImage.FromFile("Images/star-unselected.png"));
 			}
 			
 			public override float GetHeightForHeader(UITableView tableView, int section)
 			{
 				return 44f;
 			}
-				/*
-				if (section == 0)
-				{
-					_addToScheduleButton = UIButton.FromType(UIButtonType.Custom);
-					_addToScheduleButton.Frame = new RectangleF(280, 10, 30, 30);
-					_addToScheduleButton.BackgroundColor = _tvc.Presenter.Session.IsSelected
-						? UIColor.FromPatternImage(UIImage.FromFile("Images/star-selected.png"))
-						: UIColor.FromPatternImage(UIImage.FromFile("Images/star-unselected.png"));
-					_addToScheduleButton.TouchUpInside += delegate {
-						ToggleSessionFromSchedule();
-					};
-					customView.AddSubview(_addToScheduleButton);
-				}
-				*/
-			/*
+			
 			private void ToggleSessionFromSchedule()
 			{
 				if (_tvc.Presenter.Session.IsSelected)
@@ -95,7 +107,6 @@ namespace NDC2010
 					MyScheduleManager.AddToSchedule(_tvc.Presenter.Session);
 				}
 			}
-			*/
 			
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{

@@ -54,6 +54,7 @@ namespace NDC2010.Logic.Presenters
 		
 		public int GetNumberOfDailyTimeslots()
 		{
+			if (Day == 3) return 6;
 			return 7;
 		}
 		

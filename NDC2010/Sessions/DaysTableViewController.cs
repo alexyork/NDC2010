@@ -41,7 +41,7 @@ namespace NDC2010
 			
 			public override UIView GetViewForHeader(UITableView tableView, int section)
 			{
-				var headingText = _tvc.Presenter.GetTitleForSection();
+				var headingText = _tvc.Presenter.GetHeadingText();
 				return _tvc.GetViewForHeader(section, headingText);
 			}
 			
@@ -54,8 +54,9 @@ namespace NDC2010
 			{
 				var cell = _tvc.DequeueOrCreateTableCell(tableView, CELL_ID, UITableViewCellStyle.Subtitle);
 				
-				cell.TextLabel.Text = "Day " + GetDay(indexPath);
-				cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForDay(indexPath.Row);
+				int day = GetDay(indexPath);
+				cell.TextLabel.Text = "Day " + day;
+				cell.DetailTextLabel.Text = _tvc.Presenter.GetTextForDay(day);
 		
 				return cell;
 			}
@@ -68,6 +69,11 @@ namespace NDC2010
 				_tvc.NavigationController.PushViewController(sessionsTableViewController, true);
 				
 				_tvc.SelectedRow = indexPath;
+			}
+			
+			public override string TitleForFooter(UITableView tableView, int section)
+			{
+				return _tvc.Presenter.GetFooterText();
 			}
 			
 			private int GetDay(NSIndexPath indexPath)

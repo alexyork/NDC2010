@@ -18,13 +18,13 @@ namespace NDC2010
 		private NDC2010NavigationController speakersNavigationController;
 		private SpeakersTableViewController speakersTableViewController;
 		
-		// Twitter
-		private NDC2010NavigationController twitterNavigationController;
-		private TwitterTableViewController twitterTableViewController;
-		
 		// My Schedule
 		private NDC2010NavigationController myScheduleNavigationController;
 		private MyScheduleTableViewController myScheduleTableViewController;
+		
+		// Twitter
+		private NDC2010NavigationController twitterNavigationController;
+		private TwitterTableViewController twitterTableViewController;
 		
 		private void InitializeWindow()
 		{
@@ -36,8 +36,8 @@ namespace NDC2010
 		{
 			InitializeSessionsTab();
 			InitializeSpeakersTab();
-			InitializeTwitterTab();
 			InitializeMyScheduleTab();
+			InitializeTwitterTab();
 		}
 		
 		private void InitializeSessionsTab()
@@ -58,15 +58,6 @@ namespace NDC2010
 			speakersNavigationController.PushViewController(speakersTableViewController, false);
 		}
 		
-		private void InitializeTwitterTab()
-		{
-			twitterTableViewController = new TwitterTableViewController();
-			
-			twitterNavigationController = new NDC2010NavigationController();
-			twitterNavigationController.TabBarItem = new UITabBarItem("Twitter", UIImage.FromFile("Twitter/TabIcon.png"), 0);
-			twitterNavigationController.PushViewController(twitterTableViewController, false);
-		}
-		
 		private void InitializeMyScheduleTab()
 		{
 			myScheduleTableViewController = new MyScheduleTableViewController();
@@ -76,16 +67,25 @@ namespace NDC2010
 			myScheduleNavigationController.PushViewController(myScheduleTableViewController, false);
 		}
 		
+		private void InitializeTwitterTab()
+		{
+			twitterTableViewController = new TwitterTableViewController();
+			
+			twitterNavigationController = new NDC2010NavigationController();
+			twitterNavigationController.TabBarItem = new UITabBarItem("Twitter", UIImage.FromFile("Twitter/TabIcon.png"), 0);
+			twitterNavigationController.PushViewController(twitterTableViewController, false);
+		}
+		
 		private void InitializeTabController()
 		{
 			tabBarController = new UITabBarController();
 			tabBarController.SelectedIndex = 0;
-			tabBarController.ViewControllers = new UIViewController [] 
+			tabBarController.ViewControllers = new UIViewController[] 
 				{
 					sessionsNavigationController,
 					speakersNavigationController,
-					twitterNavigationController,
-					myScheduleNavigationController
+					myScheduleNavigationController,
+					twitterNavigationController
 				};
 			
 			window.AddSubview(tabBarController.View);

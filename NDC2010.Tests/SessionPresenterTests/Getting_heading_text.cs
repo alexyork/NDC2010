@@ -15,13 +15,13 @@ namespace NDC2010.Tests.SessionPresenterTests
 		[Test]
 		public void Should_return_correct_text_for_session_info()
 		{
-			Presenter.GetHeadingTextForSessionInfo().ShouldBe("Overview");
+			Presenter.GetHeadingTextForSessionInfo().ShouldNotBeNullOrEmpty();
 		}
 		
 		[Test]
 		public void Should_return_correct_text_for_session_description()
 		{
-			Presenter.GetHeadingTextForSessionDescription().ShouldBe("Description");
+			Presenter.GetHeadingTextForSessionDescription().ShouldNotBeNullOrEmpty();
 		}
 	}
 }

@@ -7,13 +7,18 @@ namespace NDC2010.Tests.MySchedulePresenterTests
 	[TestFixture]
 	public class Getting_title
 	{
+		protected MySchedulePresenter Presenter;
+		
+		[SetUp]
+		public void SetUp()
+		{
+			Presenter = new MySchedulePresenter(null);
+		}
+		
 		[Test]
 		public void Should_return_correct_title()
 		{
-			var sessions = SessionBuilder.CreateListWithSize(10).Build();
-			var presenter = new MySchedulePresenter(sessions);
-			
-			presenter.GetTitle().ShouldBe("My Schedule");
+			Presenter.GetTitle().ShouldNotBeNullOrEmpty();
 		}
 	}
 }

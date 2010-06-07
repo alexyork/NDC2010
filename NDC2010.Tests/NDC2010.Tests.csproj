@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaysPresenterTests\DaysPresenterTestBase.cs" />
-    <Compile Include="DaysPresenterTests\Getting_cell_text_for_day.cs" />
     <Compile Include="DaysPresenterTests\Getting_number_of_days.cs" />
     <Compile Include="DaysPresenterTests\Getting_title.cs" />
     <Compile Include="SessionPresenterTests\SessionPresenterTestBase.cs" />
@@ -82,7 +81,6 @@
     <Compile Include="MockSessionsRepository.cs" />
     <Compile Include="SessionBuilder.cs" />
     <Compile Include="TestExtensionsHelpers.cs" />
-    <Compile Include="DaysPresenterTests\Getting_title_for_section.cs" />
     <Compile Include="TwitterPresenterTests\Getting_title.cs" />
     <Compile Include="SessionsPresenterTests\Getting_title.cs" />
     <Compile Include="SpeakersPresenterTests\Getting_title.cs" />
@@ -101,6 +99,9 @@
     <Compile Include="MyScheduleManagerTests\When_setting_the_selected_sessions.cs" />
     <Compile Include="MySchedulePresenterTests\Getting_heading_text.cs" />
     <Compile Include="MySchedulePresenterTests\Getting_title.cs" />
+    <Compile Include="DaysPresenterTests\Getting_text_for_day.cs" />
+    <Compile Include="DaysPresenterTests\Getting_heading_text.cs" />
+    <Compile Include="DaysPresenterTests\Getting_footer_text.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

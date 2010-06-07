@@ -1,11 +1,10 @@
 using System;
-using System.Linq;
 using NUnit.Framework;
 
-namespace NDC2010.Tests.SessionPresenterTests
+namespace NDC2010.Tests.DaysPresenterTests
 {
 	[TestFixture]
-	public class Getting_title : SessionPresenterTestBase
+	public class Getting_heading_text : DaysPresenterTestBase
 	{
 		[SetUp]
 		public void SetUp()
@@ -16,7 +15,7 @@ namespace NDC2010.Tests.SessionPresenterTests
 		[Test]
 		public void Should_return_correct_title()
 		{
-			Presenter.GetTitle().ShouldNotBeNullOrEmpty();
+			Presenter.GetHeadingText().ShouldNotBeNullOrEmpty();
 		}
 	}
 }

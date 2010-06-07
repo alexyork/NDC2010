@@ -13,7 +13,7 @@ namespace NDC2010.Tests.DaysPresenterTests
 		}
 		
 		[Test]
-		public void Should_return_correct_number_of_rows()
+		public void Should_return_correct_number_of_days()
 		{
 			Presenter.GetNumberOfDays().ShouldBe(3);
 		}

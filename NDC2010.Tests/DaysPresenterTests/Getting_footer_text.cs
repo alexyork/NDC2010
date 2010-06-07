@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace NDC2010.Tests.DaysPresenterTests
 {
 	[TestFixture]
-	public class Getting_title_for_section : DaysPresenterTestBase
+	public class Getting_footer_text : DaysPresenterTestBase
 	{
 		[SetUp]
 		public void SetUp()
@@ -13,9 +13,9 @@ namespace NDC2010.Tests.DaysPresenterTests
 		}
 		
 		[Test]
-		public void Should_return_correct_title()
+		public void Should_return_some_footer_text()
 		{
-			Presenter.GetTitleForSection().ShouldBe("Select day");
+			Presenter.GetFooterText().ShouldNotBeNullOrEmpty();
 		}
 	}
 }

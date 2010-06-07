@@ -1,12 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NDC2010/NDC2010TableViewController.cs" ctype="Workbench">
+    <Files>
+      <File FileName="NDC2010/Sessions/SessionTableViewController.cs" Line="67" Column="6" />
+      <File FileName="NDC2010/NDC2010TableViewController.cs" Line="64" Column="5" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="NDC2010" selected="True">
+          <Node name="NDC2010" expanded="True" selected="True">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
+            <Node name="App_Data" expanded="True" />
+            <Node name="Sessions" expanded="True" />
           </Node>
           <Node name="NDC2010.Tests">
             <Option id="ShowVersionControlOverlays" value="True" />
